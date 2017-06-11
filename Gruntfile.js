@@ -20,7 +20,7 @@ module.exports = function (grunt) {
             build: {
                 options: {
                     searchPaths: 'src/templates',
-                    data: grunt.file.readJSON('data/conf.json')
+                    // data: grunt.file.readJSON('data/conf.json')
                 },
                 files: [
                     {
@@ -52,6 +52,6 @@ module.exports = function (grunt) {
     // Load all Grunt tasks that are listed in package.json automagically
     require('load-grunt-tasks')(grunt);
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'sass', 'nunjuckr']);
+    grunt.registerTask('default', ['sass', 'nunjuckr']);
     grunt.registerTask('deploy', ['default', 'gh-pages']);
 };
