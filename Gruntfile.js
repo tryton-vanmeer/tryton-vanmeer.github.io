@@ -20,7 +20,7 @@ module.exports = function (grunt) {
             build: {
                 options: {
                     searchPaths: 'src/templates',
-                    // data: grunt.file.readJSON('data/conf.json')
+                    data: grunt.file.readJSON('data/conf.json')
                 },
                 files: [
                     {
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
         },
         watch: {
             src: {
-                files: ['src/**/*'],
+                files: ['src/**/*', 'data/*'],
                 tasks: ['default']
             }
         },
