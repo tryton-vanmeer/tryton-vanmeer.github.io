@@ -33,19 +33,19 @@
                 </div>
                 <br>
                 <div id="info" class="row text-center">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-4">
                         <i class="fa fa-map-marker"></i> {{ address }}
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-4">
                         <i class="fa fa-mobile-phone"></i> {{ phone }}
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-4">
                         <i class="fa fa-envelope"></i> {{ email  | urlize | safe }}
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-4">
                         <i class="fa fa-globe"></i> {{ website | urlize | safe }}
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-4">
                         <i class="fa fa-github"></i> {{ github | urlize | safe }}
                     </div>
                 </div>
