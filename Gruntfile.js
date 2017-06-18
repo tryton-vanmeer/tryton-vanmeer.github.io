@@ -12,7 +12,7 @@ module.exports = function (grunt) {
                     'sourcemap': 'none'
                 },
                 files: {
-                    'build/style.min.css': 'src/sass/main.scss'
+                    'build/style.css': 'src/sass/main.scss'
                 }
             }
         },
@@ -24,7 +24,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     {
-                        src: 'src/templates/<%= pkg.name %>.njs',
+                        src: 'src/templates/index.njs',
                         dest: 'build/index.html'
                     }
                 ]
