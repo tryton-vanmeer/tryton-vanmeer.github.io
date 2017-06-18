@@ -8,9 +8,27 @@
     "summary": "Loves new technology, FOSS, working in a Linux environment, and all things computers — software and hardware.",
 
     "skills": {
-        "Programming": ["Python", "Bash", "Java", "C"],
-        "Web Development": ["HTML", "CSS", "JavaScript", "Bootstrap"],
-        "Software": ["Linux", "Git", "Docker", "Databases (SQL)"]
+        "Programming": [
+            "Python",
+            "Bash",
+            "Java",
+            "C"
+        ],
+        "Web Development": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Bootstrap",
+            "Grunt"
+        ],
+        "Software": [
+            "Linux",
+            "Git",
+            "Docker",
+            "Android Studio",
+            "IntelliJ IDEA",
+            "Atom"
+        ]
     },
 
     "experience" : {
