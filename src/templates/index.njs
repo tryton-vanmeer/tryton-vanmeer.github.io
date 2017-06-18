@@ -19,7 +19,6 @@
 
         <title>Tryton Van Meer</title>
 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
@@ -34,19 +33,19 @@
                 <br>
                 <div id="info" class="row text-center">
                     <div class="col-md-4 col-sm-4">
-                        <i class="fa fa-map-marker"></i> {{ address }}
+                        <i class="icon-location"></i> {{ address }}
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <i class="fa fa-mobile-phone"></i> {{ phone }}
+                        <i class="icon-mobile"></i> {{ phone }}
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <i class="fa fa-envelope"></i> {{ email  | urlize | safe }}
+                        <i class="icon-mail"></i> {{ email  | urlize | safe }}
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <i class="fa fa-globe"></i> {{ website | urlize | safe }}
+                        <i class="icon-link"></i> {{ website | urlize | safe }}
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <i class="fa fa-github"></i> {{ github | urlize | safe }}
+                        <i class="icon-github"></i> {{ github | urlize | safe }}
                     </div>
                 </div>
             </div>
