@@ -30,6 +30,14 @@ module.exports = function (grunt) {
                 ]
             }
         },
+        copy: {
+            build: {
+                expand: true,
+                cwd: 'src',
+                src: 'font/*',
+                dest: 'build/'
+            }
+        },
         watch: {
             src: {
                 files: ['src/**/*', 'data/*'],
@@ -53,6 +61,6 @@ module.exports = function (grunt) {
     // Load all Grunt tasks that are listed in package.json automagically
     require('load-grunt-tasks')(grunt);
     // Default task(s).
-    grunt.registerTask('default', ['sass', 'nunjuckr']);
+    grunt.registerTask('default', ['copy', 'sass', 'nunjuckr']);
     grunt.registerTask('deploy', ['default', 'gh-pages']);
 };
