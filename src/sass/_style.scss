@@ -1,0 +1,36 @@
+li
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#summary
+{
+    color: lighten($text-color, 20%);
+}
+
+#info
+{
+    a
+    {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
+
+.panel-primary
+{
+    border-color: $text-color;
+}
+
+.panel
+{
+    .panel-heading
+    {
+        text-align: center;
+        color: $text-color;
+        background-color: transparent;
+        border-color: $text-color;
+    }
+}
