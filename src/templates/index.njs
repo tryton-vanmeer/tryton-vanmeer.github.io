@@ -45,7 +45,7 @@
                         <i class="icon-link"></i> {{ website | urlize | safe }}
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <i class="icon-github"></i> {{ github | urlize | safe }}
+                        <i class="icon-github-logo"></i> {{ github | urlize | safe }}
                     </div>
                 </div>
             </div>
