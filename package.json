@@ -1,7 +1,7 @@
 {
-  "name": "resume",
+  "name": "tryton-vanmeer.github.io",
   "version": "1.0.0",
-  "description": "Tryton Van Meers Resume",
+  "description": "Tryton Van Meer's Website",
   "dependencies": {},
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
