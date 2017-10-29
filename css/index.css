@@ -15,7 +15,9 @@ ________  ________   ________
 
 :root {
     --header-color-text: #eee;
-    --header-height: 600px;
+
+    --navbar-height: 600px;
+    --navbar-bg-color: #F44336;
 }
 
 
@@ -23,7 +25,7 @@ ________  ________   ________
 
 main.container {
     margin: 0 auto;
-    padding-top: 5em;
+    padding-top: 8em;
     padding-bottom: 5em;
     width: 80%;
 }
@@ -31,29 +33,30 @@ main.container {
 
 /* Header */
 
-.header-bg-img {
-    background-image: url("../img/header.jpg");
+.header {
     position: relative;
-    height: var(--header-height);
+    height: var(--navbar-height);
+    background-image: url("../img/header.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-.header-bg-img:after {
+.header:after {
+    content: "";
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
     z-index: -1;
-    content: '';
 }
 
 #header-text {
+    position: fixed;
     color: var(--header-color-text);
     padding-top: 5em;
-    padding-left: 5em;
+    padding-left: 20em;
 }
 
 #header-text h5 {
@@ -67,27 +70,38 @@ main.container {
     transition: all 0.25s ease;
     position: fixed;
     z-index: 50;
-    height: 60px;
+    height: 80px;
     top: 0;
     background-color: transparent;
     color: var(--header-color-text);
 }
 
 .navbar-bg-color {
-    background-color: #607D8B !important;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
+    background-color: var(--navbar-bg-color) !important;
 }
 
 #navbar a {
-    text-decoration: none;
+    margin: 6px 3px;
+    padding: 6px 7px;
+    min-width: 70px;
     color: var(--header-color-text);
+    text-decoration: none;
     text-align: center;
-    padding: 0.5em;
-    width: 50px;
 }
 
 #navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+#navbar a > i {
+    font-size: 32px;
+}
+
+#navbar p {
+    margin: 5px 0 0;
+    font-size: 14px;
 }
 
 #navbar-title {
@@ -106,7 +120,7 @@ main.container {
 /* Footer */
 
 #footer {
-    background-color: #455A64;
+    background-color: #C62828;
 }
 
 footer {

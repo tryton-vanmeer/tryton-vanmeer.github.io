@@ -9,9 +9,9 @@
 // \|________|\|__|\|__|\|__|/       \|__|\|__|\_________\|_______|\|__|\|__|\|__|\|__|         \|__|
 //                                         \|_________|
 
-var main = document.querySelector("main").offsetTop;
 var navbar = document.querySelector("#navbar");
 var navbarIcon = document.querySelector("#navbar-icon");
+var headerText = document.querySelector("#header-text");
 
 window.onload = function() {
 
@@ -22,11 +22,15 @@ window.onload = function() {
 }
 
 function updateNav() {
+    var main = document.querySelector("main").offsetTop - 200;
+
     if (window.scrollY > main) {
         navbar.classList.add("navbar-bg-color");
         navbarIcon.classList.add("hide");
+        headerText.classList.add("hide");
     } else {
         navbar.classList.remove("navbar-bg-color")
         navbarIcon.classList.remove("hide");
+        headerText.classList.remove("hide");
     }
 }
