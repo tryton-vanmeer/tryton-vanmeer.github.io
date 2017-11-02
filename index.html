@@ -1,160 +1,123 @@
+<!-- tryton-vanmeer.github.io
 
+ ___  ___  _________  _____ ______   ___
+|\  \|\  \|\___   ___\\   _ \  _   \|\  \
+\ \  \\\  \|___ \  \_\ \  \\\__\ \  \ \  \
+ \ \   __  \   \ \  \ \ \  \\|__| \  \ \  \
+  \ \  \ \  \   \ \  \ \ \  \    \ \  \ \  \____
+   \ \__\ \__\   \ \__\ \ \__\    \ \__\ \_______\
+    \|__|\|__|    \|__|  \|__|     \|__|\|_______|
+-->
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Tryton Van Meer's Resume">
-        <meta name="author" content="tryton-vanmeer">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tryton Van Meer</title>
 
-        <title>Tryton Van Meer</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="css/hljs.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
 
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <div class="page-header">
-                <div class="row text-center">
-                      <h1>Tryton Van Meer</h1>
+    <div class="header hide-md">
+        <div id="header-text">
+            <h1>Programmer</h1>
+            <h5>Passionate about Open Source and Linux</h5>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header id="navbar" class="navbar container">
+        <section class="navbar-section">
+            <img id="navbar-icon" src="assets/img/icon.png">
+            <span id="navbar-title">Tryton Van Meer</span>
+        </section>
+        <section class="navbar-section hide-sm">
+            <a href="https://github.com/tryton-vanmeer" title="Github">
+                <i class="fa fa-github"></i>
+                <p>Github</p>
+            </a>
+            <a href="mailto:trytonvanmeer@gmail.com" title="Email">
+                <i class="fa fa-envelope"></i>
+                <p>Email</p>
+            </a>
+            <a href="assets/resume.pdf">
+                <i class="fa fa-file-pdf-o"></i>
+                <p>Resume</p>
+            </a>
+        </section>
+    </header>
+
+    <main class="container">
+
+        <div class="subject container">
+            <h1 class="subject-header">Projects</h1>
+            <div class="columns">
+
+                <div class="subject-item col-4">
+                    <a href="https://github.com/tryton-vanmeer/AdventurersLogbook"><h5>Adventurer's Logbook</h5></a>
+                    <p>
+                        Adventurer's Logbook is an open source, 5e character management app for Android
+                    </p>
+                    <p>
+                        The app is currently an Alpha level WIP.
+                    </p>
                 </div>
-                <div id="summary" class="row text-center">
-                    Loves new technology, FOSS, working in a Linux environment, and all things computers — software and hardware.
+
+                <div class="subject-item col-4">
+                    <a href="https://tryton-vanmeer.github.io/Startpage/"><h5>Startpage</h5></a>
+                    <p>
+                        A custom startpage with links and the ability to search DuckDuckGo.
+                    </p>
                 </div>
-                <br>
-                <div id="info" class="row text-center">
-                    <div class="col-md-4 col-sm-4">
-                        <i class="icon-location"></i> 38 Seabrooke Drive, Kanata, Ottawa, Ontario
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <i class="icon-mobile"></i> 613-501-9241
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <i class="icon-mail"></i> <a href="mailto:trytonvanmeer@gmail.com">trytonvanmeer@gmail.com</a>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <i class="icon-link"></i> <a href="https://tryton-vanmeer.github.io">https://tryton-vanmeer.github.io</a>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <i class="icon-github-logo"></i> <a href="https://github.com/tryton-vanmeer">https://github.com/tryton-vanmeer</a>
-                    </div>
+
+                <div class="subject-item col-4">
+                    <a href="https://github.com/tryton-vanmeer/titanium-server.local"><h5>Titanium-Server.local</h5></a>
+                    <p>
+                        Dashboard for local media server.
+                    </p>
+                    <p>
+                        Formats and displays information from the APIs of applications
+                        that run on the server. Also provides links to the applications subdomain.
+                    </p>
+                    <p>
+                        Backend is written in Python and uses the Flask framework.
+                        API calls are made manually with `requests` or using a
+                        application specific module.
+                    </p>
+                    <p>
+                        The repo also includes files for deployment:
+                        <ul>
+                            <li>An NGINX conf file. Passes a uWSGI socket and defines subdomains that proxy pass to the ports of the hosted applications</li>
+                            <li>An INI to pass to uWSGI when starting the service</li>
+                            <li>A Systemd service file</li>
+                        </ul>
+                    </p>
                 </div>
-            </div>
-            <div class="row">
-                <h1>Skills</h1>
-                
-                    <div class="col-md-4 col-sm-4">
-                        
-<div class="panel panel-primary">
-    <div class="panel-heading">
-        <h3 class="panel-title">Programming</h3>
-    </div>
-    <div class="panel-body text-center">
-        
-                            
-                                <li>Python</li>
-                            
-                                <li>Bash</li>
-                            
-                                <li>Java</li>
-                            
-                                <li>C</li>
-                            
-                        
-    </div>
-</div>
-
-                    </div>
-                
-                    <div class="col-md-4 col-sm-4">
-                        
-<div class="panel panel-primary">
-    <div class="panel-heading">
-        <h3 class="panel-title">Web Development</h3>
-    </div>
-    <div class="panel-body text-center">
-        
-                            
-                                <li>HTML</li>
-                            
-                                <li>CSS</li>
-                            
-                                <li>JavaScript</li>
-                            
-                                <li>Bootstrap</li>
-                            
-                        
-    </div>
-</div>
-
-                    </div>
-                
-                    <div class="col-md-4 col-sm-4">
-                        
-<div class="panel panel-primary">
-    <div class="panel-heading">
-        <h3 class="panel-title">Software</h3>
-    </div>
-    <div class="panel-body text-center">
-        
-                            
-                                <li>Linux</li>
-                            
-                                <li>Git</li>
-                            
-                                <li>Docker</li>
-                            
-                                <li>Android Studio</li>
-                            
-                                <li>IntelliJ IDEA</li>
-                            
-                                <li>Atom</li>
-                            
-                        
-    </div>
-</div>
-
-                    </div>
-                
-            </div>
-            <div class="row">
-                <h1>Experience</h1>
-                
-                    <div class="col-md-4 col-sm-4">
-                        
-<div class="panel panel-primary">
-    <div class="panel-heading">
-        <h3 class="panel-title">Side Projects</h3>
-    </div>
-    <div class="panel-body text-center">
-        
-                            <p>Programming projects <br/> Contributing to open source projects</p>
-                        
-    </div>
-</div>
-
-                    </div>
-                
-            </div>
-            <div class="row">
-                <h1>Education</h1>
-                
-                    <div class="col-md-4 col-sm-4">
-                        
-<div class="panel panel-primary">
-    <div class="panel-heading">
-        <h3 class="panel-title">Algonquin College</h3>
-    </div>
-    <div class="panel-body text-center">
-        
-                            Computer Programmer
-                        
-    </div>
-</div>
-
-                    </div>
-                
             </div>
         </div>
-    </body>
+
+    </main>
+
+    <div id="footer">
+        <footer class="navbar">
+            <section class="navbar-section">
+                <a id="copyright" href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io/blob/master/LICENSE">
+                    © 2017 Tryton Van Meer
+                </a>
+            </section>
+        </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
 </html>
