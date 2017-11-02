@@ -56,63 +56,66 @@
     </header>
 
     <main class="container">
-        <h1>hello_world.py</h1>
 
-        <pre><code class="python">
-            #!/bin/python3
+        <div class="subject container">
+            <h1 class="subject-header">Projects</h1>
+            <div class="columns">
 
-            from package import module
+                <div class="subject-item col-4">
+                    <a href="https://github.com/tryton-vanmeer/AdventurersLogbook"><h5>Adventurer's Logbook</h5></a>
+                    <p>
+                        Adventurer's Logbook is an open source, 5e character management app for Android
+                    </p>
+                    <p>
+                        The app is currently an Alpha level WIP.
+                    </p>
+                </div>
 
-            def hello(name):
-                print(f'Hello, {name}')
+                <div class="subject-item col-4">
+                    <a href="https://tryton-vanmeer.github.io/Startpage/"><h5>Startpage</h5></a>
+                    <p>
+                        A custom startpage with links and the ability to search DuckDuckGo.
+                    </p>
+                    <p>
+                        Uses NPM/Grunt to compile the SASS, then minify
+                        CSS/JS. Final result is a static webpage that is ~330KB.
+                    </p>
+                </div>
 
-            if __name__ == "__main__":
-                hello("World")
-        </code></pre>
+                <div class="subject-item col-4">
+                    <a href="https://github.com/tryton-vanmeer/titanium-server.local"><h5>Titanium-Server.local</h5></a>
+                    <p>
+                        Dashboard for local media server.
+                    </p>
+                    <p>
+                        Formats and displays information from the APIs of applications
+                        that run on the server. Also provides links to the applications subdomain.
+                    </p>
+                    <p>
+                        Backend is written in Python and uses the Flask framework.
+                        API calls are made manually with `requests` or using a
+                        application specific module.
+                    </p>
+                    <p>
+                        The repo also includes files for deployment:
+                        <ul>
+                            <li>An NGINX conf file. Passes a uWSGI socket and defines subdomains that proxy pass to the ports of the hosted applications</li>
+                            <li>An INI to pass to uWSGI when starting the service</li>
+                            <li>A Systemd service file</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-        <br>
-        <br>
-        <br>
-
-        <h1>hello_world.c</h1>
-        <pre><code class="c">
-            #include "stdio.h"
-
-            void hello(char* name) {
-                printf("Hello, %s\n", name);
-            }
-
-            int main(int argc, char const *argv[]) {
-                hello("World");
-                return 0;
-            }
-        </code></pre>
-
-        <br>
-        <br>
-        <br>
-
-        <h1>HelloWorld.java</h1>
-        <pre><code class="java">
-            public class HelloWorld {
-                public static void hello(String name) {
-                    System.out.println("Hello, " + name);
-                }
-
-                public static void main() {
-                    HelloWorld.hello("World");
-                }
-            }
-        </code></pre>
     </main>
 
     <div id="footer">
         <footer class="navbar">
             <section class="navbar-section">
-                <span>Hello, World</span>
-            </section>
-            <section class="navbar-section">
-                <span>copyright</span>
+                <a id="copyright" href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io/blob/master/LICENSE">
+                    © 2017 Tryton Van Meer
+                </a>
             </section>
         </footer>
     </div>

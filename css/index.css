@@ -14,7 +14,7 @@ ________  ________   ________
 /* Variables */
 
 :root {
-    --header-color-text: #eee;
+    --color-text: #eee;
 
     --navbar-height: 600px;
     --navbar-bg-color: #F44336;
@@ -27,6 +27,18 @@ main.container {
     margin: 0 auto;
     padding-top: 8em;
     padding-bottom: 5em;
+    width: 80%;
+}
+
+.subject a {
+    color: #D50000;
+}
+
+.subject + .subject {
+    padding-top: 5em;
+}
+
+.subject-item p {
     width: 80%;
 }
 
@@ -54,9 +66,9 @@ main.container {
 
 #header-text {
     position: fixed;
-    color: var(--header-color-text);
+    color: var(--color-text);
     padding-top: 5em;
-    padding-left: 20em;
+    padding-left: 5em;
 }
 
 #header-text h5 {
@@ -73,7 +85,7 @@ main.container {
     height: 80px;
     top: 0;
     background-color: transparent;
-    color: var(--header-color-text);
+    color: var(--color-text);
 }
 
 .navbar-bg-color {
@@ -85,7 +97,7 @@ main.container {
     margin: 6px 3px;
     padding: 6px 7px;
     min-width: 70px;
-    color: var(--header-color-text);
+    color: var(--color-text);
     text-decoration: none;
     text-align: center;
 }
@@ -124,10 +136,14 @@ main.container {
 }
 
 footer {
-    color: var(--header-color-text);
+    color: var(--color-text);
     margin: 0 auto;
     width: 80%;
     height: 60px;
+}
+
+#copyright {
+    color: #FFCDD2;
 }
 
 /* Utility */
