@@ -1,0 +1,35 @@
+body {
+    background-color: $primary-color;
+    color: $primary-color-text;
+}
+
+main {
+    text-align: center;
+}
+
+#content {
+    margin: 0 auto;
+    width: 80%;
+    float: right;
+}
+
+#sidebar {
+    background-color: $primary-color-dark;
+    min-height: 100vh;
+    width: 20%;
+    float: left;
+}
+
+#sidebar-links {
+    padding-left: 0;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: $primary-color-text;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

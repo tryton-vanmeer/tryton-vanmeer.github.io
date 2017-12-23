@@ -1,0 +1,16 @@
+@import "normalize/import-now";
+
+// Font
+$font-family: sans-serif;
+
+// Color
+$primary-color-dark:   #2c3e50;
+$primary-color:        #34495e;
+$primary-color-text:   #ecf0f1;
+$accent-color:         #e74c3c;
+
+// Dimen
+$sidebar-width: 400px;
+
+
+@import "triton/base";
