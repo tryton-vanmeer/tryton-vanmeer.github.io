@@ -1,28 +1,9 @@
 body {
-    background-color: $primary-color;
-    color: $primary-color-text;
-}
-
-main {
-    text-align: center;
-}
-
-#content {
-    margin: 0 auto;
-    width: 80%;
-    float: right;
-}
-
-#sidebar {
-    background-color: $primary-color-dark;
+    display: flex;
     min-height: 100vh;
-    width: 20%;
-    float: left;
-}
-
-#sidebar-links {
-    padding-left: 0;
-    list-style: none;
+    flex-direction: column;
+    background-color: $primary-color-dark;
+    color: $primary-color-text;
 
     a {
         text-decoration: none;
@@ -31,5 +12,62 @@ main {
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+main {
+    flex: 1;
+    margin: 0 auto;
+    width: 80%;
+
+    a {
+        color: $base0D;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        text-align: center;
+    }
+}
+
+nav {
+    background-color: $base01;
+    height: 80px;
+}
+
+nav, footer {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+
+        li + li {
+            padding-left: 16px;
+        }
+    }
+}
+
+// Icons
+.icon > svg {
+  display: inline-block;
+  vertical-align: middle;
+
+  path {
+    fill: $primary-color-text;
+  }
+}
+
+.icon:hover > svg {
+    path {
+        fill: rgba(247, 247, 251, .6);
     }
 }

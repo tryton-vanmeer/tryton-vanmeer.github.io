@@ -1,5 +1,4 @@
 ---
+# layout: home
 layout: default
 ---
-
-# Hello World

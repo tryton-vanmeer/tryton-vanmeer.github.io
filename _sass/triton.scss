@@ -4,13 +4,29 @@
 $font-family: sans-serif;
 
 // Color
-$primary-color-dark:   #2c3e50;
-$primary-color:        #34495e;
-$primary-color-text:   #ecf0f1;
-$accent-color:         #e74c3c;
+$base00: #282936;
+$base01: #3a3c4e;
+$base02: #4d4f68;
+$base03: #626483;
+$base04: #62d6e8;
+$base05: #e9e9f4;
+$base06: #f1f2f8;
+$base07: #f7f7fb;
+$base08: #ea51b2;
+$base09: #b45bcf;
+$base0A: #00f769;
+$base0B: #ebff87;
+$base0C: #a1efe4;
+$base0D: #62d6e8;
+$base0E: #b45bcf;
+$base0F: #00f769;
+
+$primary-color-dark:   $base02;
+$primary-color-text:   $base07;
 
 // Dimen
-$sidebar-width: 400px;
+$sidebar-width: 300px;
 
 
 @import "triton/base";
+@import "triton/syntax";

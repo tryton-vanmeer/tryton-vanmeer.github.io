@@ -1,12 +1,11 @@
 <nav>
-    <a href="{% link index.md %}"><h1>{{ site.title }}</h1></a>
+    <div class="container">
+        <a href="{% link index.md %}"><h1>{{ site.title }}</h1></a>
 
-    <!--
-    <ul id="sidebar-links">
-        <li> <a href="{% link projects.md %}">Projects</a> </li>
-        <li> <a href="{% link about.md %}">About</a> </li>
-        <hr>
-        <li> <a href="{{ site.github }}">Github</a> </li>
-        <li> <a href="mailto:{{ site.email }}">Email</a> </li>
-    </ul> -->
+        <ul>
+            <li> <a href="{% link blog.md %}">Blog</a> </li>
+            <li> <a href="{% link projects.md %}">Projects</a> </li>
+            <li> <a href="{% link about.md %}">About</a> </li>
+        </ul>
+    </div>
 </nav>
