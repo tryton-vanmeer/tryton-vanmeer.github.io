@@ -1,0 +1,41 @@
+#post-list {
+    list-style: none;
+    font-size: 1.5em;
+}
+
+#post-link::before {
+    color: $primary-color-text;
+    content: "┌ ";
+}
+
+#post-date::before {
+    content: "└> ";
+}
+
+#post-desc {
+    margin-left: 16px;
+}
+
+#post-divider {
+    margin-left: 16px;
+
+    &::before {
+        content: "• • •";
+    }
+}
+
+#post-header {
+    text-align: center;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    hr {
+        margin-bottom: 32px;
+    }
+}
