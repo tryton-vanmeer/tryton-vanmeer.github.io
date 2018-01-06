@@ -1,0 +1,27 @@
+<div id="sidebar" class="slide-out">
+    <div class="container">
+        <a href="{% link index.md %}"><h2>{{ site.title }}</h2></a>
+
+        <hr>
+
+        <ul>
+            <li> <a href="{% link about.md %}">About</a> </li>
+            <li> <a href="{% link projects.md %}">Projects</a> </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <ul>
+            <li> <a href="{{ site.github }}" title="Github">
+                <span class="icon">{% include icon-github.svg %}</span>
+            </a> </li>
+            <li> <a href="mailto:{{ site.email }}" title="Email">
+                <span class="icon">{% include icon-email.svg %}</span>
+            </a> </li>
+
+            <li> <a href="https://linuxrocks.online/@tryton_vanmeer" title="Mastodon">
+                <span class="icon">{% include icon-mastodon.svg %}</span>
+            </a></li>
+        </ul>
+    </div>
+</div>

@@ -28,6 +28,10 @@ main {
 nav {
     background-color: $base01;
     height: 80px;
+
+    #menu-icon {
+        display: none;
+    }
 }
 
 nav, footer {
@@ -48,6 +52,69 @@ nav, footer {
 
         li + li {
             padding-left: 16px;
+        }
+    }
+}
+
+// Sidebar
+#sidebar {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    transform: translateX(-100%);
+    background: $base01;
+
+    &.slide-in {
+        animation: slide-in 0.5s forwards;
+    }
+
+    &.slide-out {
+        animation: slide-out 0.5s forwards;
+    }
+
+    @keyframes slide-in {
+        100% { transform: translateX(0%); }
+    }
+
+    @keyframes slide-out {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    div:nth-child(1) {
+        flex: 1;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li + li {
+                padding-top: 16px;
+            }
+        }
+    }
+
+    div:nth-child(2) {
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                display: inline-block;
+            }
+
+            li + li {
+                padding-left: 16px;
+            }
         }
     }
 }
