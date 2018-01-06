@@ -1,27 +1,20 @@
 #post-list {
     list-style: none;
     font-size: 1.5em;
+
+    li {
+        padding-bottom: 25px;
+    }
 }
 
-#post-link::before {
-    color: $primary-color-text;
+.post-date::before {
     content: "┌ ";
 }
 
-#post-date::before {
+.post-excerpt::before {
+    color: $primary-color-text;
     content: "└> ";
-}
 
-#post-desc {
-    margin-left: 16px;
-}
-
-#post-divider {
-    margin-left: 16px;
-
-    &::before {
-        content: "• • •";
-    }
 }
 
 #post-header {
