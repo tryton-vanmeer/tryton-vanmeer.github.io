@@ -19,9 +19,11 @@
 <script type="text/javascript">
 
     function toggleSidebar() {
+        var icon = document.getElementById("menu-icon");
         var sidebar = document.getElementById("sidebar");
         var isOpen = sidebar.classList.contains("slide-out");
 
+        icon.setAttribute("class", isOpen ? "slide-in": "slide-out");
         sidebar.setAttribute("class", isOpen ? "slide-in": "slide-out");
     }
 </script>

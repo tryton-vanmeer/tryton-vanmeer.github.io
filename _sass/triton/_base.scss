@@ -33,6 +33,18 @@ nav {
     #menu-icon {
         display: none;
     }
+
+    #menu-icon.slide-out {
+        span:nth-child(2) {
+            display: none;
+        }
+    }
+
+    #menu-icon.slide-in {
+        span:nth-child(1) {
+            display: none;
+        }
+    }
 }
 
 nav, footer {
