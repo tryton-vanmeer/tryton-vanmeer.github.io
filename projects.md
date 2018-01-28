@@ -6,6 +6,8 @@ permalink: /projects/
 
 # {{ page.title }}
 
+[LibreTrivia]({% link projects/LibreTrivia.md %}) — An Open Source Trivia Game for Android <a href="https://github.com/tryton-vanmeer/LibreTrivia"><span class="icon">{% include icon-github.svg %}</span></a>
+
 [Startpage](https://tryton-vanmeer.github.io/Startpage/) — A custom startpage with links and the ability to search DuckDuckGo. <a href="https://github.com/tryton-vanmeer/Startpage"><span class="icon">{% include icon-github.svg %}</span></a>
 
 [Dice Roller](https://tryton-vanmeer.github.io/React-Dice-Roller/) — A simple dice rolling app built with React. Dice and animations were created with pure CSS. <a href="https://github.com/tryton-vanmeer/React-Dice-Roller"><span class="icon">{% include icon-github.svg %}</span></a>
