@@ -20,7 +20,7 @@ permalink: /projects/LibreTrivia
 [![screenshot][screenshot5]](https://raw.githubusercontent.com/tryton-vanmeer/LibreTrivia/master/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png)
 
 
-[logo]: https://raw.githubusercontent.com/tryton-vanmeer/LibreTrivia/master/app/src/main/web_hi_res_512.png
+[logo]: https://raw.githubusercontent.com/tryton-vanmeer/LibreTrivia/master/app/src/main/ic_launcher-web.png
 [fdroid]: https://f-droid.org/wiki/images/0/06/F-Droid-button_get-it-on.png
 [screenshot1]: https://raw.githubusercontent.com/tryton-vanmeer/LibreTrivia/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png "Screenshot 1"
 [screenshot2]: https://raw.githubusercontent.com/tryton-vanmeer/LibreTrivia/master/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png "Screenshot 2"
