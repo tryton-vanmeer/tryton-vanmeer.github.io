@@ -19,7 +19,7 @@ Some other interests include
 <br>
 
 Here is a link to my
-[Resume](https://github.com/tryton-vanmeer/Resume/files/1608611/Resume.Tryton.Van.Meer.pdf)
+[Resume](https://github.com/tryton-vanmeer/Resume/releases/download/v2018.02.06/Resume.Tryton.Van.Meer.pdf)
 
 It is written in
 <span class="latex-fancy">L<span>a</span>T<span>e</span>X</span>,
