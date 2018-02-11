@@ -24,3 +24,10 @@ Here is a link to my
 It is written in
 <span class="latex-fancy">L<span>a</span>T<span>e</span>X</span>,
 and the source can be found [here](https://github.com/tryton-vanmeer/Resume).
+
+<br>
+<br>
+<br>
+
+Except where otherwise noted, content on this site is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license
