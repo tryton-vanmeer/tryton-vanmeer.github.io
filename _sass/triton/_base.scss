@@ -69,3 +69,14 @@ nav, footer {
         }
     }
 }
+
+table {
+    background-color: $base03;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 8px;
+}
+
+tr > td {
+    padding-left: 25px;
+    padding-right: 25px;
+}
