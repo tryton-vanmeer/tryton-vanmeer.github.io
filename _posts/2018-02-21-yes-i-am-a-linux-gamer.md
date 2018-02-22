@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Yes, I am a Linux gamer!"
-date: "2018-02-12"
+date: "2018-02-21"
 ---
 
 Linux is my platform of choice for not only daily computing, but also gaming.
