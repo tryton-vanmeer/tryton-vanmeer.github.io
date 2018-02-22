@@ -16,19 +16,19 @@ There are currently 416 games in my Steam library. 242 of those are on Linux; th
 58%.
 
 Steam currently has 19,380 games with 2654 of those being Linux, or 14%. That might not seem like a lot,
-but contrast that to the fact that out of the 100 top Steam games by player count, 44% of them are Linux.
+but contrast that to the fact that out of the 100 top Steam games by player count, 44% of them are Linux compatible.
 
 ## The PC vs Console Debate
 
 Just like I'm a proponent of Linux over Windows, I'm a proponent of PC gaming over consoles.
 
-One belief that PC gamers hold is that the number of exclusives you have doesn't
-necessarily make you're platform better (especially when console gamers try to make
-the false claim that they have more exclusives than PC).
+Just like a Windows gamer firmly believes that PC gaming is the objectively better choice
+despite the fact they can't play the latest console exclusives; I firmly believe Linux is the
+objectively better choice, even if I can't play the latest Windows exclusives.
 
-Just like a Windows gamer still firmly believes that PC gaming is objectively better choice,
-even if they can't play the latest console exclusive; I still firmly believe Linux is the
-objectively better choice, even if I can't play the latest Windows exclusive.
+One belief that PC gamers hold is that the number of exclusive games you have doesn't
+necessarily make your platform better (especially when console gamers try to make
+the false claim that they have more exclusives than PC).
 
 I think that Windows gamers tend to forget about this in the context of gaming on Linux.
 Of course, there's nothing wrong with using Windows to play a select few games. Just like there's
@@ -36,8 +36,8 @@ nothing wrong with a PC gamer owning and playing on a console. I myself own a 3D
 
 ## Linux vs Consoles --- The Numbers
 
-As a fun side discussion, let's deviate from 'Linux vs Windows' or 'PC vs Console'
-and focus on 'Linux vs Console'
+Let's deviate from 'Linux vs Windows' or 'PC vs Console' and focus
+on 'Linux vs Console'.
 
 Below is a table of the consoles from 7<sup>th</sup> and 8<sup>th</sup> generation with their respective number of exclusives and total number of games.
 
@@ -52,10 +52,11 @@ Below is a table of the consoles from 7<sup>th</sup> and 8<sup>th</sup> generati
 
 The consoles above have a combined Total of 1185 Exclusives.
 Comparing that to the above figure of 2654, Linux has more games than the consoles have exclusives combined.
-Then if we pit Linux against each console individually, Linux has more games.
+Then if we take how many games each of those consoles have individually,
+Linux more games than each.
 
-Having more games doesn't make Linux automatically better, but it certainly shows
-that Linux isn't lacking games either.
+Having more games doesn't automatically make Linux better, but it certainly
+cancels out the argument that "Linux has no games".
 
 ## Emulation
 
