@@ -1,16 +1,15 @@
 #post-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     list-style: none;
     font-size: 1.5em;
 
-    li {
-        background-color: $base03;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        width: 80%;
-        padding: 8px;
-        margin: 8px;
+    li + hr {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: $base03;
+    }
+
+    hr:last-child {
+        display: none;
     }
 
     span {
