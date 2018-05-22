@@ -1,29 +1,18 @@
 #post-list {
     list-style: none;
-    font-size: 1.5em;
+    text-align: center;
 
-    li + hr {
-        margin-top: 25px;
-        margin-bottom: 25px;
-        color: $base03;
-    }
-
-    hr:last-child {
-        display: none;
+    li {
+        padding-bottom: 32px;
     }
 
     span {
-        font-weight: bold;
+        font-weight: 300;
         display: block;
-
-        &::before {
-            content: "┌ ";
-        }
     }
 
-    a.post-url::before {
-        color: $primary-color-text;
-        content: "└> ";
+    a.post-url {
+        font-size: 2em;
     }
 }
 
