@@ -34,13 +34,13 @@ nav {
         display: none;
     }
 
-    #menu-icon.slide-out {
+    #menu-icon.slide-in {
         span:nth-child(2) {
             display: none;
         }
     }
 
-    #menu-icon.slide-in {
+    #menu-icon.slide-out {
         span:nth-child(1) {
             display: none;
         }
