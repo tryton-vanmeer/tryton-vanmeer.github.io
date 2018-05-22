@@ -7,7 +7,6 @@ layout: default
         <li>
             <span>{{ post.date | date: "%b %-d, %Y" }}</span>
             <a class="post-url" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            {{ post.excerpt }}
         </li>
         <hr>
     {% endfor %}
