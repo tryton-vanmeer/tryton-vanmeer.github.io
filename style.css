@@ -15,12 +15,16 @@
     text-decoration: underline;
 }
 
-.blog-post xmp {
+.blog-post * {
+    font-family: sans;
+}
+
+.blog-post #source {
     display: none;
 }
 
-.blog-post a {
-    margin-left: 100px;
+.blog-post #render {
+    margin-bottom: 50px;
 }
 
 /* Hide strapdownjs header */
