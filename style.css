@@ -1,0 +1,16 @@
+* {
+    font-family: monospace;
+    font-size: 12px;
+    width: 400px;
+}
+
+a {
+    /* color: blue; */
+}
+
+/* Media Query for mobile devices */
+@media (min-width: 320px) and (max-width: 480px) {
+    * {
+        width: 300px;
+    }
+}
