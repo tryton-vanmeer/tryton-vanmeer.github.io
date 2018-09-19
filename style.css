@@ -1,7 +1,31 @@
 * {
     font-family: monospace;
+}
+
+.home * {
     font-size: 12px;
     width: 400px;
+}
+
+.blog-index a {
+    text-decoration: none;
+}
+
+.blog-index a:hover {
+    text-decoration: underline;
+}
+
+.blog-post xmp {
+    display: none;
+}
+
+.blog-post a {
+    margin-left: 100px;
+}
+
+/* Hide strapdownjs header */
+.navbar {
+    display: none;
 }
 
 a {
@@ -12,5 +36,9 @@ a {
 @media (min-width: 320px) and (max-width: 480px) {
     * {
         width: 300px;
+    }
+
+    .blog-post a {
+        margin-left: 0;
     }
 }
