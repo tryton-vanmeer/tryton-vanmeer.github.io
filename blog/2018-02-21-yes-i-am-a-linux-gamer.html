@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../style.css">
     </head>
     <body class="blog-post">
-        <xmp>
+        <xmp id="source">
 # Yes, I am a Linux gamer
 ### 2018-02-21
 ---
@@ -80,7 +80,15 @@ and will continue to grow and improve. One thing for certain is that Linux
 is a competent platform to game on, and I will continue having fun doing so.
         </xmp>
 
+        <div id="render"></div>
+
         <a href="../blog"><<< Back to Index</a>
     </body>
-    <script src="http://strapdownjs.com/v/0.2/strapdown.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.2/markdown-it.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        var md = window.markdownit({typographer: true});
+        var source = document.getElementById('source').innerText;
+        var result = md.render(source);
+        document.getElementById('render').innerHTML = result;
+    </script>
 </html>
