@@ -15,6 +15,10 @@
     text-decoration: underline;
 }
 
+.blog-index hr {
+    margin-bottom: 50px;
+}
+
 .blog-post * {
     font-family: sans;
 }
