@@ -6,11 +6,13 @@
         <link rel="stylesheet" href="../style.css">
     </head>
     <body class="blog-post">
-        <xmp id="source">
-# Yes, I am a Linux gamer
-### 2018-02-21
----
+        <div class="header">
+            <h1>Yes, I am a Linux gamer!</h1>
+            <h1>2018-02-21</h1>
+            <hr>
+        </div>
 
+        <xmp id="source">
 Linux is my platform of choice for not only daily computing, but also gaming.
 And I am happy to say I enjoy it quite a lot.
 
@@ -86,7 +88,7 @@ is a competent platform to game on, and I will continue having fun doing so.
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.2/markdown-it.min.js" charset="utf-8"></script>
     <script type="text/javascript">
-        var md = window.markdownit({typographer: true});
+        var md = window.markdownit({html: true, typographer: true});
         var source = document.getElementById('source').innerText;
         var result = md.render(source);
         document.getElementById('render').innerHTML = result;
