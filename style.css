@@ -23,6 +23,12 @@
     font-family: sans;
 }
 
+.blog-post .header {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
 .blog-post #source {
     display: none;
 }
