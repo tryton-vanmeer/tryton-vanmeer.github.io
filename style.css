@@ -1,5 +1,26 @@
+:root {
+    --color-base0: #2E3440;
+    --color-base1: #3B4252;
+    --color-base2: #434C5E;
+    --color-base3: #4C566A;
+    --color-base4: #D8DEE9;
+    --color-base5: #E5E9F0;
+    --color-base6: #ECEFF4;
+    --color-base7: #8FBCBB;
+    --color-base8: #88C0D0;
+    --color-base9: #81A1C1;
+    --color-base10: #5E81AC;
+    --color-base11: #BF616A;
+    --color-base12: #D08770;
+    --color-base13: #EBCB8B;
+    --color-base14: #A3BE8C;
+    --color-base15: #B48EAD;
+}
+
 * {
     font-family: monospace;
+    background-color: var(--color-base0);
+    color: var(--color-base4);
 }
 
 .home * {
@@ -38,6 +59,10 @@
 
 .blog-post #render {
     margin-bottom: 50px;
+}
+
+a {
+    color: var(--color-base9);
 }
 
 /* Media Query for mobile devices */
