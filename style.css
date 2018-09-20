@@ -7,6 +7,11 @@
     width: 400px;
 }
 
+.blog-index, .blog-post {
+    margin: 0 auto;
+    width: 80%;
+}
+
 .blog-index a {
     text-decoration: none;
 }
@@ -25,8 +30,6 @@
 
 .blog-post .header {
     text-align: center;
-    margin: 0 auto;
-    width: 80%;
 }
 
 .blog-post #source {
@@ -37,22 +40,14 @@
     margin-bottom: 50px;
 }
 
-/* Hide strapdownjs header */
-.navbar {
-    display: none;
-}
-
-a {
-    /* color: blue; */
-}
-
 /* Media Query for mobile devices */
 @media (min-width: 320px) and (max-width: 480px) {
     * {
         width: 300px;
     }
 
-    .blog-post a {
-        margin-left: 0;
+    .blog-index, .blog-post {
+        margin: 8px 8px 8px 8px;
+        width: 300px;
     }
 }
