@@ -11,6 +11,22 @@
     margin-left: 1rem;
 }
 
+.hero-project .fab:hover,
+.hero-project .fas:hover
+{
+    color: #282a36;
+}
+
+.hero-project i
+{
+    color: #f8f8f2;
+}
+
+.hero-project .fa-firefox
+{
+    color: #ffb86c;
+}
+
 .hero-project .container
 {
     display: flex;
@@ -37,20 +53,7 @@
 
 #protondb
 {
-    background-image: url("https://addons.cdn.mozilla.net/user-media/previews/full/225/225898.png");
-    background-repeat: no-repeat;
-    background-position: right;
     background-color: #6272a4;
-}
-
-#protondb .fa-firefox
-{
-    color: #ffb86c;
-}
-
-#protondb .fa-github
-{
-    color: #f8f8f2;
 }
 
 #protondb h2 a
@@ -59,8 +62,7 @@
     font-weight: bold;
 }
 
-#protondb .hero-body
+#dungeonjournal
 {
-    padding-top: 11rem;
-    padding-bottom: 11rem;
+    background-color: #ff5555;
 }
