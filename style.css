@@ -40,15 +40,8 @@
 #home a
 {
     display: inline-block;
-    text-align: center;
     font-size: 4rem;
     margin-right: 2rem;
-}
-
-#home span
-{
-    font-size: 1rem;
-    display: block;
 }
 
 #protondb
