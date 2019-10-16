@@ -1,0 +1,66 @@
+.hero h1,
+.hero h2
+{
+    color: #f8f8f2;
+}
+
+.hero-project i
+{
+    font-size: 4rem;
+    float: right;
+    margin-left: 1rem;
+}
+
+.hero-project .container
+{
+    display: flex;
+}
+
+#home
+{
+    background-color: #282a36;
+}
+
+#home a
+{
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+#home span
+{
+    font-size: 1rem;
+    display: block;
+}
+
+#protondb
+{
+    background-image: url("https://addons.cdn.mozilla.net/user-media/previews/full/225/225898.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #6272a4;
+}
+
+#protondb .fa-firefox
+{
+    color: #ffb86c;
+}
+
+#protondb .fa-github
+{
+    color: #f8f8f2;
+}
+
+#protondb h2 a
+{
+    color: #ff5555;
+    font-weight: bold;
+}
+
+#protondb .hero-body
+{
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+}
