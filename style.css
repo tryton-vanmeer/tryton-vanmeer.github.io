@@ -6,6 +6,7 @@
 
 .hero-project i
 {
+    color: #f8f8f2;
     font-size: 4rem;
     float: right;
     margin-left: 1rem;
@@ -15,11 +16,6 @@
 .hero-project .fas:hover
 {
     color: #282a36;
-}
-
-.hero-project i
-{
-    color: #f8f8f2;
 }
 
 .hero-project .fa-firefox
