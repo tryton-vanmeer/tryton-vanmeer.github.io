@@ -23,7 +23,22 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        padding: 6px;
+
+        &:hover {
+            color: #121212;
+            background-color: #EDEDED;
+        }
+    }
+
     h1 {
-        display: inline-block;
+        a {
+            text-decoration: none;
+        }
     }
 }
