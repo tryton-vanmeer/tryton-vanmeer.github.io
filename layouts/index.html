@@ -1,5 +1,15 @@
 {{ define "main" }}
 
-<h1>Index</h1>
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+
+{{ range $paginator.Pages }}
+<div class="post">
+    <h2 class="post-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <span>{{ .Date.Format "2006-01-02" }}</span>
+    </h2>
+    <p>{{ .Description}}</p>
+</div>
+{{ end }}
 
 {{ end }}
