@@ -25,20 +25,21 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    width: 80%;
-    margin: 0 auto;
 }
 
 main {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
     flex: 1;
 }
-
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
 
     a {
         padding: 6px;
@@ -57,13 +58,11 @@ header {
 }
 
 footer {
-    padding-bottom: 18px;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 .post {
-    width: 50%;
-    margin: 0 auto;
-
     .post-title {
         display: flex;
         justify-content: space-between;
