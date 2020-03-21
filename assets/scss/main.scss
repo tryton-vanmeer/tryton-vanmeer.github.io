@@ -62,6 +62,25 @@ footer {
     padding-bottom: 25px;
 }
 
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    thead {
+        td, th {
+            border-width: 0 0 2px;
+        }
+    }
+
+    td, th {
+        border-style: solid;
+        border-width: 0 0 1px;
+        padding: 0.5em 0.75em;
+    }
+}
+
 .post {
     .post-title {
         display: flex;
