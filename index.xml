@@ -22,5 +22,24 @@ Steam I might not be able to play all the latest AAA games, but I still have mor
 There are currently 416 games in my Steam library.</description>
     </item>
     
+    <item>
+      <title>About</title>
+      <link>https://trytonvanmeer.dev/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/about/</guid>
+      <description>Programmer Who Loves Linux and Computer Hardware Projects Dotfiles Github
+Configs for Linux systems.
+ProtonDB for Steam Github Firefox Add-Ons
+Firefox extension that shows ratings from protondb.com on Steam
+Dungeon Journal Github Flathub
+GTK application for managing 5e characters. Written in Vala.
+Hiritsu Github AUR
+CLI tool for getting aspect ratio of files. Written in Rust (Formally in Python).
+PKGBUILDS Github
+PKGBUILDs for Arch Linux
+Hardware Desktop - Caffeine PC          CPU AMD Ryzen 5 2600   CPU Cooler AMD Wraith Max   Motherboard MSI B350 TOMAHAWK   Memory G.</description>
+    </item>
+    
   </channel>
 </rss>
