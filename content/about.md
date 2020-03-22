@@ -31,20 +31,22 @@ PKGBUILDs for Arch Linux
 
 # Hardware
 
-| Desktop - Caffeine PC |                                   |
-|:---------------------:|:---------------------------------:|
-| CPU                   | AMD Ryzen 5 2600                  |
-| CPU Cooler            | AMD Wraith Max                    |
-| Motherboard           | MSI B350 TOMAHAWK                 |
-| Memory                | G.Skill Trident Z RGB (2x8GB)     |
-| Storage               | Western Digital Black 3TB         |
-| Storage               | ADATA Ultimate 256GB              |
-| GPU                   | Sapphire Radeon RX 5700 XT NITRO+ |
-| Case                  | Corsair 100R                      |
-| PSU                   | Corsair RMx 750W                  |
-| Mouse                 | Logitech G703 LIGHTSPEED          |
-| Keyboard              | Massdrop x MiTo Laser ALT         |
-| Microphone            | Audio-Technica AT2020USB+         |
+## Desktop - Caffeine PC
+
+|             |                                   |
+|:-----------:|:---------------------------------:|
+| CPU         | AMD Ryzen 5 2600                  |
+| CPU Cooler  | AMD Wraith Max                    |
+| Motherboard | MSI B350 TOMAHAWK                 |
+| Memory      | G.Skill Trident Z RGB (2x8GB)     |
+| Storage     | Western Digital Black 3TB         |
+| Storage     | ADATA Ultimate 256GB              |
+| GPU         | Sapphire Radeon RX 5700 XT NITRO+ |
+| Case        | Corsair 100R                      |
+| PSU         | Corsair RMx 750W                  |
+| Mouse       | Logitech G703 LIGHTSPEED          |
+| Keyboard    | Massdrop x MiTo Laser ALT         |
+| Microphone  | Audio-Technica AT2020USB+         |
 
 # Software
 
