@@ -16,7 +16,7 @@ Configs for Linux systems.
 ## ProtonDB for Steam
 [Github](https://github.com/tryton-vanmeer/ProtonDB-for-Steam) [Firefox Add-Ons](https://addons.mozilla.org/en-CA/firefox/addon/protondb-for-steam/)
 
-Shows ratings from [protondb.com](https://www.protondb.com/) on Steam
+Firefox extension that shows ratings from [protondb.com](https://www.protondb.com/) on Steam
 
 ## Dungeon Journal
 
@@ -24,6 +24,12 @@ Shows ratings from [protondb.com](https://www.protondb.com/) on Steam
 [Flathub](https://flathub.org/apps/details/io.github.trytonvanmeer.DungeonJournal)
 
 GTK application for managing 5e characters. Written in Vala.
+
+## Hiritsu
+
+[Github](https://github.com/tryton-vanmeer/Hiritsu) [AUR](https://aur.archlinux.org/packages/hiritsu/)
+
+CLI tool for getting aspect ratio of files. Written in Rust (Formally in Python).
 
 ## PKGBUILDS
 
