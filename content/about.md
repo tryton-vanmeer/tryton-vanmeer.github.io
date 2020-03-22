@@ -1,25 +1,24 @@
 +++
+title= "Programmer Who Loves Linux and Computer Hardware"
 id = "about"
 +++
 
-# Programmer Who Loves Linux and Computer Hardware
+# Projects
 
-## Projects
-
-### Dotfiles
+## Dotfiles
 
 [Github](https://github.com/tryton-vanmeer/dotfiles)
 
 Configs for Linux systems.
 
-### Dungeon Journal
+## Dungeon Journal
 
 [Github](https://github.com/tryton-vanmeer/DungeonJournal)
 [Flathub](https://flathub.org/apps/details/io.github.trytonvanmeer.DungeonJournal)
 
 GTK application for managing 5e characters. Written in Vala.
 
-## Hardware
+# Hardware
 
 | Desktop - Caffeine PC |                                   |
 |:---------------------:|:---------------------------------:|
@@ -36,7 +35,7 @@ GTK application for managing 5e characters. Written in Vala.
 | Keyboard              | Massdrop x MiTo Laser ALT         |
 | Microphone            | Audio-Technica AT2020USB+         |
 
-## Software
+# Software
 
 |                  |                         |
 |:----------------:|:-----------------------:|
