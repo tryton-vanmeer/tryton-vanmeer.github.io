@@ -1,6 +1,5 @@
 @import "_fonts";
 @import "_colors";
-@import "_homepage";
 
 html, body {
     height: 100%;
@@ -60,5 +59,15 @@ table {
         border-style: solid;
         border-width: 0 0 1px;
         padding: 0.5em 0.75em;
+    }
+}
+
+.post {
+    width: 60%;
+    margin: 0 auto;
+
+    .post-title {
+        display: flex;
+        justify-content: space-between;
     }
 }
