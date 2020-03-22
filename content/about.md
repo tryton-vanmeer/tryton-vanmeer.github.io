@@ -1,7 +1,9 @@
 +++
-title= "Programmer Who Loves Linux and Computer Hardware"
+title= "About"
 id = "about"
 +++
+
+## Programmer Who Loves Linux and Computer Hardware
 
 # Projects
 
