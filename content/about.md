@@ -11,12 +11,23 @@ id = "about"
 
 Configs for Linux systems.
 
+## ProtonDB for Steam
+[Github](https://github.com/tryton-vanmeer/ProtonDB-for-Steam) [Firefox Add-Ons](https://addons.mozilla.org/en-CA/firefox/addon/protondb-for-steam/)
+
+Shows ratings from [protondb.com](https://www.protondb.com/) on Steam
+
 ## Dungeon Journal
 
 [Github](https://github.com/tryton-vanmeer/DungeonJournal)
 [Flathub](https://flathub.org/apps/details/io.github.trytonvanmeer.DungeonJournal)
 
 GTK application for managing 5e characters. Written in Vala.
+
+## PKGBUILDS
+
+[Github](https://github.com/tryton-vanmeer/PKGBUILDS)
+
+PKGBUILDs for Arch Linux
 
 # Hardware
 
