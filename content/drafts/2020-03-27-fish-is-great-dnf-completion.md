@@ -42,7 +42,7 @@ dconf-0.36.0-1.fc32.x86_64      dconf-editor-3.36.0-1.fc32.x86_64
 dconf-devel-0.36.0-1.fc32.i686
 ```
 
-Of course this doesn't break any functionality and is only aesthetic. But as an Arch Linux user it does hurt me on a minimalist level.
+Of course this doesn't break any functionality and is only aesthetic. But as an Arch Linux user it does hurt me on a minimalist level. I don't need to see metadata like the Fedora version or even the version of the package. I especially don't need to see that I'm installing an x86_64 package on my 64bit install of Linux.
 
 So I looked into the fish completion for DNF. And here is the relevent part:
 
@@ -53,3 +53,26 @@ function __dnf_list_available_packages
     end
 end
 ```
+
+The ZSH completion is similar and it makes sense. The SQL query is really fast. But it returns the undesired results above.
+
+As part of looking into a solution I came across the [string](https://fishshell.com/docs/current/cmds/string.html) command. This was another awesome feature of Fish and I realized how useful Fish could be for scripting without having to resort to Python for advanced string manipulation.
+
+Now command can be:
+
+```fish
+sqlite3 /var/cache/dnf/packages.db "SELECT pkg FROM available WHERE pkg LIKE \"$cur%\"" 2>/dev/null | string replace -r ".fc.*" "" | string replace -r "\-[0-9].*" ""
+```
+
+In both cases we use the replace regex subcommand. First to remove the fedora release and architecture of the package. Then everything after the first instance of a dash (-) followed by a digit ([0-9]).
+
+Which results in a more minimal tab completion:
+
+```
+$ dnf install dconf<TAB><TAB>
+dconf  dconf-devel  dconf-editor
+```
+
+This is an issue for packages such as `gnome-2048`, but I'm not to concerned.
+
+I am, however open to suggestions that can overcome this issue and properly separate the version from the package name.
