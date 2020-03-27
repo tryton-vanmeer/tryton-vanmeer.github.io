@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://trytonvanmeer.dev/scss/main.min.54b114e239d0b539b3426aa33a4bf47379840f2001106cce0418c0253da7f032.css" integrity="sha256-VLEU4jnQtTmzQmqjOkv0c3mEDyABEGzOBBjAJT2n8DI=" media="screen">
+        <title>Fish is Awesome! And tweaking the DNF completion.</title>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="https://trytonvanmeer.dev/">Tryton Van Meer</a></h1>
+            
+            <div id="links">
+                <a href="https://github.com/tryton-vanmeer">Github</a>
+                <a href="trytonvanmeer@protonmail.com">Email</a>
+                <a href="https://telegram.me/trytonvanmeer">Telegram</a>
+                <a href="https://trytonvanmeer.dev/Resume/resume.pdf">Resume</a>
+                <a href="https://trytonvanmeer.dev/about">About</a>
+            </div>
+        </header>
+
+        <main id="">
+            
+
+<h1>Fish is Awesome! And tweaking the DNF completion.</h1>
+<p>A while ago I decided to finally switched to ZSH and give it a try. Got it mostly configured to how I wanted it and was satisfied.</p>
+<p>Then a friend mentioned he uses Fish. Well, I&rsquo;m already trying an alternative shell, so why not give Fish a go.</p>
+<p>Fish. Is. Awesome.</p>
+<p>I&rsquo;ve heard about how great Fish and ZSH were but always stuck to just using Bash. I was now thinking to myself, why didn&rsquo;t I try these earlier.</p>
+<p>As great as ZSH was, I really like Fish&rsquo;s out of the box defaults. I love that I could keep all Fish configs in <code>~/.config/fish/</code> and keep <code>$HOME</code> clutter free.</p>
+<p>In the process of trying these new shells I also depreciated my custom bash powered prompt and starting using <a href="https://starship.rs/">Starship</a>. Starship gave me the style I wanted in my prompt, but so much faster.</p>
+<h2 id="dnf-completion">DNF Completion</h2>
+<p>Recently I&rsquo;ve been giving Fedora a try and quite enjoy it. The only real complaint I have had is how package names are displayed in some cases when using DNF.</p>
+<p>For example when searching:</p>
+<pre><code>$ dnf search dconf
+===== Name Exactly Matched: dconf =====
+dconf.x86_64 : A configuration system
+dconf.i686 : A configuration system
+===== Name &amp; Summary Matched: dconf
+dconf-editor.x86_64 : Configuration editor for dconf
+dconf-devel.i686 : Header files and libraries for dconf development
+dconf-devel.x86_64 : Header files and libraries for dconf development
+</code></pre><p>And when tab completing with Fish:</p>
+<pre><code>$ dnf install dconf&lt;TAB&gt;&lt;TAB&gt;
+dconf-0.36.0-1.fc32.i686        dconf-devel-0.36.0-1.fc32.x86_64 
+dconf-0.36.0-1.fc32.x86_64      dconf-editor-3.36.0-1.fc32.x86_64
+dconf-devel-0.36.0-1.fc32.i686
+</code></pre><p>Of course this doesn&rsquo;t break any functionality and is only aesthetic. But as an Arch Linux user it does hurt me on a minimalist level. I don&rsquo;t need to see metadata like the Fedora version or even the version of the package. I especially don&rsquo;t need to see that I&rsquo;m installing an x86_64 package on my 64bit install of Linux.</p>
+<p>So I looked into the fish completion for DNF. And here is the relevent part:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish"><span class="k">function</span> __dnf_list_available_packages
+    <span class="k">if</span> <span class="nb">type</span> -q sqlite3
+        sqlite3 /var/cache/dnf/packages.db <span class="s2">&#34;SELECT pkg FROM available WHERE pkg LIKE \&#34;</span><span class="nv">$cur</span><span class="s2">%\&#34;&#34;</span> 2&gt;/dev/null
+    <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div><p>The ZSH completion is similar and it makes sense. The SQL query is really fast. But it returns the undesired results above.</p>
+<p>As part of looking into a solution I came across the <a href="https://fishshell.com/docs/current/cmds/string.html">string</a> command. This was another awesome feature of Fish and I realized how useful Fish could be for scripting without having to resort to Python for advanced string manipulation.</p>
+<p>Now command can be:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish">sqlite3 /var/cache/dnf/packages.db <span class="s2">&#34;SELECT pkg FROM available WHERE pkg LIKE \&#34;</span><span class="nv">$cur</span><span class="s2">%\&#34;&#34;</span> 2&gt;/dev/null <span class="o">|</span> string replace -r <span class="s2">&#34;.fc.*&#34;</span> <span class="s2">&#34;&#34;</span> <span class="o">|</span> string replace -r <span class="s2">&#34;\-[0-9].*&#34;</span> <span class="s2">&#34;&#34;</span>
+</code></pre></div><p>In both cases we use the replace regex subcommand. First to remove the fedora release and architecture of the package. Then everything after the first instance of a dash (-) followed by a digit ([0-9]).</p>
+<p>Which results in a more minimal tab completion:</p>
+<pre><code>$ dnf install dconf&lt;TAB&gt;&lt;TAB&gt;
+dconf  dconf-devel  dconf-editor
+</code></pre><p>This is an issue for packages such as <code>gnome-2048</code>, but I&rsquo;m not to concerned.</p>
+<p>I am, however open to suggestions that can overcome this issue and properly separate the version from the package name.</p>
+
+
+
+        </main>
+
+        <footer>
+            <span>© 2020 Tryton Van Meer</span>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+        </footer>
+    </body>
+</html>
