@@ -12,7 +12,7 @@ Fish. Is. Awesome.
 
 I've heard about how great Fish and ZSH were but always stuck to just using Bash. I was now thinking to myself, why didn't I try these earlier.
 
-As great as ZSH was, I really like Fish's out of the box defaults. I love that I could keep all Fish configs in `~/.config/fish/` and keep `$HOME` clutter free.
+As great as ZSH was, I really like Fish's out of the box defaults. I love that I can keep all Fish configs in `~/.config/fish/` and keep `$HOME` clutter free.
 
 In the process of trying these new shells I also depreciated my custom bash powered prompt and starting using [Starship](https://starship.rs/). Starship gave me the style I wanted in my prompt, but so much faster.
 
@@ -58,7 +58,7 @@ The ZSH completion is similar and it makes sense. The SQL query is really fast. 
 
 As part of looking into a solution I came across the [string](https://fishshell.com/docs/current/cmds/string.html) command. This was another awesome feature of Fish and I realized how useful Fish could be for scripting without having to resort to Python for advanced string manipulation.
 
-Now command can be:
+Now the command can be:
 
 ```fish
 sqlite3 /var/cache/dnf/packages.db "SELECT pkg FROM available WHERE pkg LIKE \"$cur%\"" 2>/dev/null | string replace -r ".fc.*" "" | string replace -r "\-[0-9].*" ""
