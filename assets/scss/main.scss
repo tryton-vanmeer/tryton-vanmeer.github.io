@@ -68,17 +68,19 @@ table {
 }
 
 code {
-    padding-right: 4px;
-    padding-left: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
 }
 
 pre {
     overflow-x: auto;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 6px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    border-radius: 6px;
 
     code {
         padding: 0;
