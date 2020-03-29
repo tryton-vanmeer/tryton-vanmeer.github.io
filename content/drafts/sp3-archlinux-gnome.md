@@ -4,7 +4,7 @@ date = ""
 description = "I recently acquired a SP3 and here's my experience with using Linux on it."
 +++
 
-Recently, I acquired a Surface Pro 3 for a good deal. I was looking for a small computing device and wanted something I could run desktop Linux on, so an Android tablet or Chromebook were out of the race already.
+Recently, I acquired a Surface Pro 3 for a great deal. I was looking for a small computing device and wanted something I could run desktop Linux on, so an Android tablet or Chromebook were out of the race already.
 
 I settled on the SP3 for a couple reasons:
 + It has x86 hardware so no issues installing Linux.
@@ -14,11 +14,11 @@ I settled on the SP3 for a couple reasons:
 
 So far it has been completely usable and really handy as my companion device when playing D&D.
 
-These are notes and tweaks based on running Arch Linux on the SP3 with GNOME as the desktop environment.
+These are some notes and tweaks based on running Arch Linux on the SP3 with GNOME as the desktop environment.
 
 ### Display
 
-I handy feature since GNOME 3.36 (albeit experimental and only in Wayland) is fractional scaling.
+A handy feature since GNOME 3.36 (albeit experimental and only in Wayland) is fractional scaling.
 
 It can easily be enabled with the following command:
 
@@ -53,3 +53,5 @@ I set two enviroment variables for Firefox:
 Firefox's touch support is still finicky, so for most of my browsing I use GNOME Web.
 
 GNOME Web still has a way to go as a browser, but there's a lot to like about it. Especially the touch gestures.
+
+### Stylus
