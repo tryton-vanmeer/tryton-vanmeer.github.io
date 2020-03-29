@@ -16,7 +16,7 @@ So far it has been completely usable and really handy as my companion device whe
 
 These are some notes and tweaks based on running Arch Linux on the SP3 with GNOME as the desktop environment.
 
-### Display
+## Display
 
 A handy feature since GNOME 3.36 (albeit experimental and only in Wayland) is fractional scaling.
 
@@ -28,13 +28,13 @@ gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffe
 
 For the 2160x1440 screen on the SP3, I personally find a 125% scaling really nice.
 
-### Bluetooth
+## Bluetooth
 
 If you want bluetooth available on boot, enable it, since it may not be already.
 
 ```systemctl enable --now bluetooth`
 
-### Autorotation
+## Autorotation
 
 Only a single package needs to be installed to enable screen rotation when the surface is rotated.
 
@@ -44,7 +44,7 @@ GNOME will now display a button for (un)locking screen rotation.
 
 ![SP3 Screen Rotate Lock](/images/Screenshot-SP3-Screen-Rotate-Lock.png)
 
-### Touchscreen
+## Touchscreen
 
 GNOME on Wayland works really well with a touchscreen. And the GNOME apps handle touch input wonderfully.
 
@@ -56,4 +56,4 @@ Firefox's touch support is still finicky, so for most of my browsing I use GNOME
 
 GNOME Web still has a way to go as a browser, but there's a lot to like about it. Especially the touch gestures.
 
-### Stylus
+## Stylus
