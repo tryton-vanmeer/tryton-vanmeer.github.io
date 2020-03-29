@@ -35,11 +35,19 @@
   </url>
   
   <url>
+    <loc>https://trytonvanmeer.dev/drafts/hiritsu-rust-port/</loc>
+  </url>
+  
+  <url>
     <loc>https://trytonvanmeer.dev/drafts/sp3-archlinux-gnome/</loc>
   </url>
   
   <url>
     <loc>https://trytonvanmeer.dev/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trytonvanmeer.dev/drafts/why-i-got-into-programming/</loc>
   </url>
   
 </urlset>
