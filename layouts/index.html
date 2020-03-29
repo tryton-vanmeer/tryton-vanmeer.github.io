@@ -3,8 +3,8 @@
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
 
 {{ range $paginator.Pages }}
-<div class="post">
-    <h2 class="post-title">
+<div class="index-post">
+    <h2 class="index-post-title">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
         <span>{{ .Date.Format "2006-01-02" }}</span>
     </h2>
