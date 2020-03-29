@@ -1,5 +1,27 @@
 +++
 title = "Porting Hiritsu to Rust"
 date = ""
-description = "As an example project to learn Rust, I decided to port Hiritsu, a Python script, to Rust."
+description = "As an example project to learn Rust, I decided to port Hiritsu, a Python project of mine, to Rust."
 +++
+
+Hiritsu was a tool I developed to get the resolution and aspect ratio of images. It can also rename an input image to include those attributes in the filename.
+
+An example of this in action:
+
+```
+$ hiritsu wallpaper.jpg
+Width:  1920
+Height: 1080
+Ratio:  16:9
+
+$ hiritsu --rename wallpaper.jpg
+wallpaper (1920x1080) [16:9].jpg
+```
+
+The Python version can be found [here](https://github.com/tryton-vanmeer/Hiritsu/blob/python/hiritsu), and the Rust port [here](https://github.com/tryton-vanmeer/Hiritsu/blob/master/src/main.rs)
+
+## Benchmarking
+
+For this benchmark I used this [wallpaper](https://wallhaven.cc/w/dgzj9o) from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the `time` command.
+
+The Python version ran in 0.040s while the Rust version ran in 0.001s. 
