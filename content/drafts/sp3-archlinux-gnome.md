@@ -22,7 +22,9 @@ A handy feature since GNOME 3.36 (albeit experimental and only in Wayland) is fr
 
 It can easily be enabled with the following command:
 
-`gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"`
+```fish
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+```
 
 For the 2160x1440 screen on the SP3, I personally find a 125% scaling really nice.
 
