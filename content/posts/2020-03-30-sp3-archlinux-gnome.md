@@ -1,6 +1,6 @@
 +++
 title = "Surface Pro 3 on Arch Linux with GNOME"
-date = ""
+date = "2020-03-30"
 description = "I recently acquired a SP3 and here's my experience with using Linux on it."
 +++
 
