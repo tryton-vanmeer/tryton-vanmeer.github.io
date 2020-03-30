@@ -28,10 +28,10 @@
 <h1 class="post-title">Porting Hiritsu to Rust</h1>
 
 
-<h3 class="heading-draft">--- Draft ---</h3>
+<h3 class="post-date">--- 2020-03-30 ---</h3>
 
 
-<p>Hiritsu was a tool I developed to get the resolution and aspect ratio of images. It can also rename an input image to include those attributes in the filename.</p>
+<p>Hiritsu is a tool I developed to get the resolution and aspect ratio of images. It can also be used to rename an input image to include those attributes in the filename.</p>
 <p>An example of this in action:</p>
 <pre><code>$ hiritsu wallpaper.jpg
 Width:  1920
@@ -43,11 +43,11 @@ wallpaper (1920x1080) [16:9].jpg
 </code></pre><p>The Python version can be found <a href="https://github.com/tryton-vanmeer/Hiritsu/blob/python/hiritsu">here</a>, and the Rust port <a href="https://github.com/tryton-vanmeer/Hiritsu/blob/master/src/main.rs">here</a></p>
 <h2 id="benchmarking">Benchmarking</h2>
 <p>For this benchmark I used this <a href="https://wallhaven.cc/w/dgzj9o">wallpaper</a> from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the <code>time</code> command.</p>
-<p>The Python version ran in 0.040s while the Rust version ran in 0.001s. Still less than a second each, but faster nonetheless.</p>
-<p>And if I&rsquo;m paying really close attenction, I can see the Rust output slightly faster.</p>
+<p>The Python version ran in 0.040s while the Rust version ran in 0.001s.</p>
+<p>And if I&rsquo;m paying really close attention, I can see the Rust output is slightly faster.</p>
 <p>Now, obviously a simple script like this won&rsquo;t show the true speed benifits of using Rust.</p>
 <h2 id="rust-in-the-future">Rust in the Future</h2>
-<p>The language took some time to wrap (pun unintended) my head around some of the new concepts like unwrapping, matching results, and the way Rust does error handling, but the more I played with Rust, the more I liked it.</p>
+<p>The language took some time to wrap my head around (pun unintended) some of the new concepts like unwrapping, matching results, and the way Rust does error handling, but the more I played with Rust, the more I liked it.</p>
 <p>It&rsquo;s sastifying to use in the same way C is, but has the comforts of a modern language like the Cargo package manager. The compile errors are clear and helpful, and editors like VSCode have great support for the language.</p>
 <p>Of course, Python remains one of my favourite languages, but I look forward to writing more Rust in the future.</p>
 
