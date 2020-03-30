@@ -57,3 +57,7 @@ Firefox's touch support is still finicky, so for most of my browsing I use GNOME
 GNOME Web still has a way to go as a browser, but there's a lot to like about it. Especially the touch gestures.
 
 ## Stylus
+
+While I'm no artists, I have a surface pen and it works with no issue.
+
+I've played around with [MyPaint](http://mypaint.org/) and the pen works as expected, specifically erasing when flipped around.
