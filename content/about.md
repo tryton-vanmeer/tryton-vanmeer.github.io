@@ -62,7 +62,7 @@ PKGBUILDs for Arch Linux
 |:----------------:|:-----------------------:|
 | Operating System   | Arch Linux            |
 | Desktop Enviroment | GNOME                 |
-| Editor             | VSCode, Gedit, Nano   |
+| Text Editor        | VSCode, Gedit, Nano   |
 | Terminal           | Tilix, GNOME Terminal |
 | Shell              | Fish, Bash            |
 | Font               | JetBrains Mono        |
