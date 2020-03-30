@@ -128,4 +128,21 @@ ul {
     }
 }
 
+#contact {
+
+    padding-top: 12px;
+    text-align: center;
+
+    a {
+        padding: 6px;
+        margin-left: -6px;
+        margin-right: -6px;
+
+        &:hover {
+            color: $color-background;
+            background-color: $color-foreground;
+        }
+    }
+}
+
 @import "_media";
