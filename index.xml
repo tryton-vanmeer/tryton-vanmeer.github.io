@@ -6,10 +6,21 @@
     <description>Recent content on Tryton Van Meer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Surface Pro 3 on Arch Linux with GNOME</title>
+      <link>https://trytonvanmeer.dev/posts/2020-03-30-sp3-archlinux-gnome/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/posts/2020-03-30-sp3-archlinux-gnome/</guid>
+      <description>Recently, I acquired a Surface Pro 3 for a great deal. I was looking for a small computing device and wanted something I could run desktop Linux on, so an Android tablet or Chromebook were out of the race already.
+I settled on the SP3 for a couple reasons:
+ It has x86 hardware so no issues installing Linux. The SP3, while quite old at this point (released in 2014), has out of the box Linux support.</description>
+    </item>
     
     <item>
       <title>Fish is Awesome! And tweaking the DNF completion.</title>
@@ -75,17 +86,6 @@ Toot with me on Mastodon.</description>
 An example of this in action:
 $ hiritsu wallpaper.jpg Width: 1920 Height: 1080 Ratio: 16:9 $ hiritsu --rename wallpaper.jpg wallpaper (1920x1080) [16:9].jpg The Python version can be found here, and the Rust port here
 Benchmarking For this benchmark I used this wallpaper from Wallhaven.</description>
-    </item>
-    
-    <item>
-      <title>Surface Pro 3 on Arch Linux with GNOME</title>
-      <link>https://trytonvanmeer.dev/drafts/sp3-archlinux-gnome/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://trytonvanmeer.dev/drafts/sp3-archlinux-gnome/</guid>
-      <description>Recently, I acquired a Surface Pro 3 for a great deal. I was looking for a small computing device and wanted something I could run desktop Linux on, so an Android tablet or Chromebook were out of the race already.
-I settled on the SP3 for a couple reasons:
- It has x86 hardware so no issues installing Linux. The SP3, while quite old at this point (released in 2014), has out of the box Linux support.</description>
     </item>
     
     <item>
