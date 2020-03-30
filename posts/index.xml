@@ -13,10 +13,10 @@
     
     <item>
       <title>Porting Hiritsu to Rust</title>
-      <link>https://trytonvanmeer.dev/posts/hiritsu-rust-port/</link>
+      <link>https://trytonvanmeer.dev/posts/2020-03-30-hiritsu-rust-port/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://trytonvanmeer.dev/posts/hiritsu-rust-port/</guid>
+      <guid>https://trytonvanmeer.dev/posts/2020-03-30-hiritsu-rust-port/</guid>
       <description>Hiritsu is a tool I developed to get the resolution and aspect ratio of images. It can also be used to rename an input image to include those attributes in the filename.
 An example of this in action:
 $ hiritsu wallpaper.jpg Width: 1920 Height: 1080 Ratio: 16:9 $ hiritsu --rename wallpaper.jpg wallpaper (1920x1080) [16:9].jpg The Python version can be found here, and the Rust port here
