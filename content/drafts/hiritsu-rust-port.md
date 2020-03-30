@@ -24,4 +24,8 @@ The Python version can be found [here](https://github.com/tryton-vanmeer/Hiritsu
 
 For this benchmark I used this [wallpaper](https://wallhaven.cc/w/dgzj9o) from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the `time` command.
 
-The Python version ran in 0.040s while the Rust version ran in 0.001s. 
+The Python version ran in 0.040s while the Rust version ran in 0.001s. Still less than a second each, but faster nonetheless.
+
+And if I'm paying really close attenction, I can see the Rust output slightly faster.
+
+Now, obviously a simple script like this won't show the true speed benifits of using Rust.
