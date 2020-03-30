@@ -1,8 +1,7 @@
 +++
 title = "Porting Hiritsu to Rust"
-date = ""
+date = "2020-03-30"
 description = "As an example project to learn Rust, I decided to port Hiritsu, a Python project of mine, to Rust."
-draft = true
 +++
 
 Hiritsu is a tool I developed to get the resolution and aspect ratio of images. It can also be used to rename an input image to include those attributes in the filename.
