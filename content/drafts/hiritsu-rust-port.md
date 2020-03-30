@@ -29,3 +29,11 @@ The Python version ran in 0.040s while the Rust version ran in 0.001s. Still les
 And if I'm paying really close attenction, I can see the Rust output slightly faster.
 
 Now, obviously a simple script like this won't show the true speed benifits of using Rust.
+
+## Rust in the Future
+
+The language took some time to wrap (pun unintended) my head around some of the new concepts like unwrapping, matching results, and the way Rust does error handling, but the more I played with Rust, the more I liked it. 
+
+It's sastifying to use in the same way C is, but has the comforts of a modern language like the Cargo package manager. The compile errors are clear and helpful, and editors like VSCode have great support for the language.
+
+Of course, Python remains one of my favourite languages, but I look forward to writing more Rust in the future.
