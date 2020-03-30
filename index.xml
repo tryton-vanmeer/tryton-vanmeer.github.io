@@ -78,23 +78,14 @@ Toot with me on Mastodon.</description>
     
     <item>
       <title>Porting Hiritsu to Rust</title>
-      <link>https://trytonvanmeer.dev/drafts/hiritsu-rust-port/</link>
+      <link>https://trytonvanmeer.dev/posts/hiritsu-rust-port/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://trytonvanmeer.dev/drafts/hiritsu-rust-port/</guid>
+      <guid>https://trytonvanmeer.dev/posts/hiritsu-rust-port/</guid>
       <description>Hiritsu was a tool I developed to get the resolution and aspect ratio of images. It can also rename an input image to include those attributes in the filename.
 An example of this in action:
 $ hiritsu wallpaper.jpg Width: 1920 Height: 1080 Ratio: 16:9 $ hiritsu --rename wallpaper.jpg wallpaper (1920x1080) [16:9].jpg The Python version can be found here, and the Rust port here
 Benchmarking For this benchmark I used this wallpaper from Wallhaven.</description>
-    </item>
-    
-    <item>
-      <title>Why I Got Into Programming</title>
-      <link>https://trytonvanmeer.dev/drafts/why-i-got-into-programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://trytonvanmeer.dev/drafts/why-i-got-into-programming/</guid>
-      <description></description>
     </item>
     
   </channel>
