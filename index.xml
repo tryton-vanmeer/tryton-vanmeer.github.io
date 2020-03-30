@@ -54,6 +54,18 @@ Hardware Desktop - Caffeine PC          CPU AMD Ryzen 5 2600   CPU Cooler AMD Wr
     </item>
     
     <item>
+      <title>Contact</title>
+      <link>https://trytonvanmeer.dev/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/contact/</guid>
+      <description>Email me.
+Send me a message on Telegram.
+Game with me on Steam.
+Toot with me on Mastodon.</description>
+    </item>
+    
+    <item>
       <title>Porting Hiritsu to Rust</title>
       <link>https://trytonvanmeer.dev/drafts/hiritsu-rust-port/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
