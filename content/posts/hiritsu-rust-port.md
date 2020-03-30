@@ -5,7 +5,7 @@ description = "As an example project to learn Rust, I decided to port Hiritsu, a
 draft = true
 +++
 
-Hiritsu was a tool I developed to get the resolution and aspect ratio of images. It can also rename an input image to include those attributes in the filename.
+Hiritsu is a tool I developed to get the resolution and aspect ratio of images. It can also be used to rename an input image to include those attributes in the filename.
 
 An example of this in action:
 
@@ -25,15 +25,15 @@ The Python version can be found [here](https://github.com/tryton-vanmeer/Hiritsu
 
 For this benchmark I used this [wallpaper](https://wallhaven.cc/w/dgzj9o) from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the `time` command.
 
-The Python version ran in 0.040s while the Rust version ran in 0.001s. Still less than a second each, but faster nonetheless.
+The Python version ran in 0.040s while the Rust version ran in 0.001s.
 
-And if I'm paying really close attenction, I can see the Rust output slightly faster.
+And if I'm paying really close attention, I can see the Rust output is slightly faster.
 
 Now, obviously a simple script like this won't show the true speed benifits of using Rust.
 
 ## Rust in the Future
 
-The language took some time to wrap (pun unintended) my head around some of the new concepts like unwrapping, matching results, and the way Rust does error handling, but the more I played with Rust, the more I liked it. 
+The language took some time to wrap my head around (pun unintended) some of the new concepts like unwrapping, matching results, and the way Rust does error handling, but the more I played with Rust, the more I liked it. 
 
 It's sastifying to use in the same way C is, but has the comforts of a modern language like the Cargo package manager. The compile errors are clear and helpful, and editors like VSCode have great support for the language.
 
