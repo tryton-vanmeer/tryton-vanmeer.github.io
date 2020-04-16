@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://trytonvanmeer.dev/scss/main.min.5fa3fe6d5501d557d3eb75ff0ae88a7bee71d3553e52b89f429b5b7aaaa1752f.css" integrity="sha256-X6P&#43;bVUB1VfT63X/CuiKe&#43;5x01U&#43;UrifQptbeqqhdS8=" media="screen">
+        <title>Custom Arch Linux Image</title>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="https://trytonvanmeer.dev/">Tryton Van Meer</a></h1>
+
+            <nav role="navigation">
+                <ul>
+                    <li><a href="https://github.com/tryton-vanmeer">Github</a></li>
+                    <li><a href="https://trytonvanmeer.dev/Resume/resume.pdf">Resume</a></li>
+                    <li><a href="https://trytonvanmeer.dev/about">About</a></li>
+                    <li><a href="https://trytonvanmeer.dev/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="">
+            
+
+<h1 class="post-title">Custom Arch Linux Image</h1>
+
+
+<h3 class="heading-draft">--- Draft ---</h3>
+
+
+<p>One of the tools I like to keep on my toolbelt is a USB drive with some kind of live Linux system.</p>
+<p>This can be used to show someone Linux, troubleshooting peoples devices, or just <code>arch-chroot</code>'ing into my desktop to fix something.</p>
+<p>Since Arch Linux is my OS of choice, it would be ideal to have an Arch USB. But, this obviously means not having a Desktop Environment to work from.</p>
+<p>I could use a Fedora Workstation live USB, but it would be nice to have my own tweaks on top. So I decided to give customizing <a href="https://wiki.archlinux.org/index.php/Archiso">Archiso</a> a try.</p>
+<p>Following the instructions on the Archiso wiki page, after installing the <code>archiso</code> package, you can copy the <code>/usr/share/archiso/configs/releng</code> folder to get a base to work from.</p>
+<p>I&rsquo;m going to go over the various tweaks I made.</p>
+<h2 id="buildsh">build.sh</h2>
+<p>The releng profile has a <code>build.sh</code> script that will build you an <code>*.iso</code>.</p>
+<p>I modified the script to create a loopback image with an EFI System Partition and copy the nessacary files to that. This removes the dependecy of syslinux/isolinux and makes the image simplier.</p>
+<p>This results in a <code>*.img</code> file instead of an <span class="inline-svg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-disc"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+</span> ISO, and it won&rsquo;t boot on legacy BIOS systems. But that&rsquo;s not an issue for me.</p>
+<p>I also cleaned up the script, making sure it passed <a href="https://github.com/koalaman/shellcheck">ShellCheck</a>.</p>
+<h2 id="netboot">Netboot</h2>
+<p>Upon booting, you can press the <code>Space</code> key to trigger the boot menu and choose <a href="https://netboot.xyz/">NETBOOT.XYZ</a>.</p>
+<p>As long as their is a network connection, this one boot USB can be used to try out other Distros and Desktop Environments.</p>
+<h2 id="packages">Packages</h2>
+<p>By editing <code>packages.x86_64</code>, you can change what packages are installed on the live system image.</p>
+<p>I stripped plenty of packages I don&rsquo;t need; things like utilites for connecting to various VPNs or dial-up networks.</p>
+<p>I added the GNOME Desktop with some basics:</p>
+<ul>
+<li>File Roller</li>
+<li>GNOME Calculator</li>
+<li>GNOME Screenshot</li>
+<li>GNOME System Monitor</li>
+<li>GNOME Terminal</li>
+<li>Nautilus</li>
+<li>Gedit</li>
+<li>Evince</li>
+</ul>
+<p>GNOME Disk Utility and GParted are included for disk managment.</p>
+<p>Some CLI tools are included:</p>
+<ul>
+<li><a href="https://github.com/smxi/inxi">inxi</a> &mdash; System information tool.</li>
+<li><a href="https://github.com/starship/starship">starship</a> &mdash; Shell prompt.</li>
+<li><a href="https://github.com/fish-shell/fish-shell">fish</a> &mdash; The user-friendly command line shell.</li>
+<li><a href="https://github.com/sharkdp/bat">bat</a> &mdash; A cat(1) clone with wings.</li>
+</ul>
+<h2 id="root-filesystem">Root Filesystem</h2>
+<p>Various tweaks are made in the usual way of editing system files. The <code>airootfs</code> folder acts as an overlay and you can make these customizations here.</p>
+<p>To quote the Arch Wiki page for Archiso:</p>
+<blockquote>
+<p>Any administrative task that you would do while following the installation guide (or after installation) can be scripted by editing <code>airootfs/root/customize_airootfs.sh</code>, except for package installation. The script is written from the perspective of the running live system, i.e. in the script the path / refers to the root of the running live system.</p>
+</blockquote>
+<p>In <code>customize_airootfs.sh</code>, I do things like adding the live user, enabling systemd units, and sed&rsquo;ing configs.</p>
+<h2 id="firefox">Firefox</h2>
+<p>For Firefox tweaks, I created two files.</p>
+<p><code>airootfs/usr/lib/firefox/defaults/pref/local-settings.js</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">pref</span><span class="p">(</span><span class="s2">&#34;general.config.obscure_value&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="nx">pref</span><span class="p">(</span><span class="s2">&#34;general.config.filename&#34;</span><span class="p">,</span> <span class="s2">&#34;mozilla.cfg&#34;</span><span class="p">);</span>
+</code></pre></div><p>And then the actual configuration <code>airootfs/usr/lib/firefox/mozilla.cfg</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">//
+</span><span class="c1">// ...my settings...
+</span><span class="c1">// For example, setting dark mode
+</span><span class="c1"></span><span class="nx">pref</span><span class="p">(</span><span class="s2">&#34;extensions.activeThemeID&#34;</span><span class="p">,</span> <span class="s2">&#34;firefox-compact-dark@mozilla.org&#34;</span><span class="p">);</span>
+</code></pre></div><p>The first line must be exactly <code>//</code>. The syntax of the file is similar to <code>user.js</code>.</p>
+<p>I&rsquo;ve also included the uBlock Origin extension by default.</p>
+<h5 id="arch-wiki-page-for-reference-httpswikiarchlinuxorgindexphpfirefoxconfiguration">Arch Wiki page for reference <a href="https://wiki.archlinux.org/index.php/Firefox#Configuration">https://wiki.archlinux.org/index.php/Firefox#Configuration</a>.</h5>
+<h2 id="dconf">Dconf</h2>
+<p>Similar to Firefox, two files are created.</p>
+<p>The user profile <code>airootfs/etc/dconf/profile/user</code>:</p>
+<pre><code>user-db:user
+system-db:local
+</code></pre><p>And the keyfile for the local database <code>airootfs/etc/dconf/db/local.d/00-defaults</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[org/gnome/desktop/interface]</span>
+<span class="na">gtk-theme</span><span class="o">=</span><span class="s">&#34;Adwaita-dark&#34;</span>
+</code></pre></div><p>You can use <code>dconf-editor</code> to find the keys you want to include in this file.</p>
+<p>I also run <code>dconf update</code> in <code>airootfs/root/customize_airootfs.sh</code> to update the system databases.</p>
+<h5 id="gnome-docs-for-reference-httpshelpgnomeorgadminsystem-admin-guidestabledconf-custom-defaultshtml">GNOME docs for reference <a href="https://help.gnome.org/admin/system-admin-guide/stable/dconf-custom-defaults.html">https://help.gnome.org/admin/system-admin-guide/stable/dconf-custom-defaults.html</a>.</h5>
+<h2 id="dotfiles">Dotfiles</h2>
+<p>In <code>airootfs/etc/skel</code>, I&rsquo;ve included the files to be placed into the live users home upon creating. These include the configs for Fish and the starship prompt, .desktop files to hide some applications in the menu, and binaries in <code>~/.local/bin/</code> for <code>inxi</code> and <code>starship</code> since they aren&rsquo;t in the Arch repos.</p>
+<h2 id="misc">Misc</h2>
+<p>I couple other minor tweaks are things like configuring GDM to autologin.</p>
+<p>Everything is a dark theme by default, and I&rsquo;m using the <a href="https://draculatheme.com/">Dracula</a> theme throughout the system.</p>
+<p>And, the locale is set to <code>en_CA.UTF-8</code>, with the timezone set to <code>/usr/share/zoneinfo/EST5EDT</code>.</p>
+<h2 id="boot-usb-with-data-partition">Boot USB with Data Partition</h2>
+<p>I plan to use this with a 64GB USB drive. Of course, this is much bigger than the ~2GB image.</p>
+<p>Instead of writing the <code>*.img</code> to the USB drive, I partition the drive like this:</p>
+<ul>
+<li>A 2GB FAT32 parition</li>
+<li>An EXT4 parition that uses 100% of the space left</li>
+</ul>
+<p>And then I mount the <code>*.img</code> and copy the files to the ESP.</p>
+<p>With this, I have my bootable Arch USB with space for shortlived files for transfering, or copy files off a device I&rsquo;m booted into.</p>
+<p>I look forward to putting this USB drive to use and will be tweaking my custom image as I come across any new additons I wish to make.</p>
+<p>The source can be found <a href="https://github.com/tryton-vanmeer/archlinux">here</a> if you want more detail.</p>
+
+
+
+        </main>
+
+        <footer>
+            <span>© 2020 Tryton Van Meer</span>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+            <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">Source</a>
+        </footer>
+    </body>
+</html>

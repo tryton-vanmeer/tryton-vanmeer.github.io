@@ -57,5 +57,16 @@ Steam I might not be able to play all the latest AAA games, but I still have mor
 There are currently 416 games in my Steam library.</description>
     </item>
     
+    <item>
+      <title>Custom Arch Linux Image</title>
+      <link>https://trytonvanmeer.dev/posts/custom-arch-linux-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/posts/custom-arch-linux-image/</guid>
+      <description>One of the tools I like to keep on my toolbelt is a USB drive with some kind of live Linux system.
+This can be used to show someone Linux, troubleshooting peoples devices, or just arch-chroot&#39;ing into my desktop to fix something.
+Since Arch Linux is my OS of choice, it would be ideal to have an Arch USB. But, this obviously means not having a Desktop Environment to work from.</description>
+    </item>
+    
   </channel>
 </rss>
