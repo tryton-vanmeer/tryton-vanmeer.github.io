@@ -6,10 +6,19 @@
     <description>Recent content on Tryton Van Meer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Custom Arch Linux Image</title>
+      <link>https://trytonvanmeer.dev/posts/2020-04-17-custom-arch-linux-image/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/posts/2020-04-17-custom-arch-linux-image/</guid>
+      <description>One of the tools I like to keep on my toolbelt is a USB drive with some kind of live Linux system. This can be used to show someone Linux, troubleshooting peoples devices, or just arch-chroot&#39;ing into my desktop to fix something. Since Arch Linux is my OS of choice, it would be ideal to have an Arch USB. But, this obviously means not having a Desktop Environment to work from.</description>
+    </item>
     
     <item>
       <title>Porting Hiritsu to Rust</title>
@@ -86,17 +95,6 @@ Hardware Desktop - Caffeine PC          CPU AMD Ryzen 5 2600   CPU Cooler AMD Wr
 Send me a message on Telegram.
 Game with me on Steam.
 Toot with me on Mastodon.</description>
-    </item>
-    
-    <item>
-      <title>Custom Arch Linux Image</title>
-      <link>https://trytonvanmeer.dev/posts/custom-arch-linux-image/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://trytonvanmeer.dev/posts/custom-arch-linux-image/</guid>
-      <description>One of the tools I like to keep on my toolbelt is a USB drive with some kind of live Linux system.
-This can be used to show someone Linux, troubleshooting peoples devices, or just arch-chroot&#39;ing into my desktop to fix something.
-Since Arch Linux is my OS of choice, it would be ideal to have an Arch USB. But, this obviously means not having a Desktop Environment to work from.</description>
     </item>
     
   </channel>
