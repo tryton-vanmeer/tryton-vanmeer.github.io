@@ -1,8 +1,7 @@
 +++
 title = "Custom Arch Linux Image"
-date = ""
-description = ""
-draft = true
+date = "2020-04-17"
+description = "Creating my own Arch Live image with the GNOME desktop and more."
 +++
 
 One of the tools I like to keep on my toolbelt is a USB drive with some kind of live Linux system. This can be used to show someone Linux, troubleshooting peoples devices, or just `arch-chroot`'ing into my desktop to fix something. Since Arch Linux is my OS of choice, it would be ideal to have an Arch USB. But, this obviously means not having a Desktop Environment to work from. I could use a Fedora Workstation live USB, but it would be nice to have my own tweaks on top. So I decided to give customizing [Archiso](https://wiki.archlinux.org/index.php/Archiso) a try.
