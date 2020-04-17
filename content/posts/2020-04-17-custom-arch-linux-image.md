@@ -10,7 +10,7 @@ Following the instructions on the Archiso wiki page, after installing the `archi
 
 ## build.sh
 
-The releng profile has a `build.sh` script that will build you an `*.iso`. I modified the script to create a loopback image with an EFI System Partition and copy the nessacary files to that. This removes the dependecy of syslinux/isolinux and makes the image simplier. This results in a `*.img` file instead of an {{< icon disc >}} ISO, and it won't boot on legacy BIOS systems. But that's not an issue for me.
+The releng profile has a `build.sh` script that will build you an `*.iso`. I modified the script to create a loopback image with an EFI System Partition and copy the nessacary files to that. This removes the dependecy of syslinux/isolinux and makes the image simplier. This results in a `*.img` file instead of an ISO, and it won't boot on legacy BIOS systems. But that's not an issue for me.
 
 I also cleaned up the script, making sure it passed [ShellCheck](https://github.com/koalaman/shellcheck).
 
