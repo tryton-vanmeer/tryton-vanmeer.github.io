@@ -4,19 +4,15 @@
 @import "_icons";
 
 html, body {
-    height: 100%;
     margin: 0 auto;
 }
 
 body {
-    display: flex;
     width: 80%;
-    flex-direction: column;
 }
 
 main {
-    padding-bottom: 25px;
-    flex: 1;
+    min-height: calc(100vh - 180px);
 }
 
 header {
@@ -51,7 +47,8 @@ header {
 
 footer {
     text-align: center;
-    padding-bottom: 25px;
+    height: 50px;
+    padding-top: 25px;
 }
 
 table {
