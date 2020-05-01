@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="https://trytonvanmeer.dev/scss/main.min.a19b1ce815db90311b1d72520de4baf2f72338434e6c1f361c5af127a3ba24c9.css" integrity="sha256-oZsc6BXbkDEbHXJSDeS68vcjOENObB82HFrxJ6O6JMk=" media="screen">
+        <link rel="stylesheet" href="https://trytonvanmeer.dev/scss/main.min.9809320e2f6a7ed8c85da3229668635dd6e94ae75902c2e5f79c4c4718404a36.css" integrity="sha256-mAkyDi9qftjIXaMilmhjXdbpSudZAsLl95xMRxhASjY=" media="screen">
         <title>Porting Hiritsu to Rust</title>
     </head>
 
@@ -42,7 +42,7 @@ $ hiritsu --rename wallpaper.jpg
 wallpaper (1920x1080) [16:9].jpg
 </code></pre><p>The Python version can be found <a href="https://github.com/tryton-vanmeer/Hiritsu/blob/python/hiritsu">here</a>, and the Rust port <a href="https://github.com/tryton-vanmeer/Hiritsu/blob/master/src/main.rs">here</a></p>
 <h2 id="benchmarking">Benchmarking</h2>
-<p>For this benchmark I used this <a href="https://wallhaven.cc/w/dgzj9o">wallpaper</a> from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the <code>time</code> command.</p>
+<p>For this benchmark I used this <a href="https://wallhaven.cc/w/dgzj9o">wallpaper</a> from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the <strong>time</strong> command.</p>
 <p>The Python version ran in 0.040s while the Rust version ran in 0.001s.</p>
 <p>And if I&rsquo;m paying really close attention, I can see the Rust output is slightly faster.</p>
 <p>Now, obviously a simple script like this won&rsquo;t show the true speed benifits of using Rust.</p>

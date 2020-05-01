@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="https://trytonvanmeer.dev/scss/main.min.a19b1ce815db90311b1d72520de4baf2f72338434e6c1f361c5af127a3ba24c9.css" integrity="sha256-oZsc6BXbkDEbHXJSDeS68vcjOENObB82HFrxJ6O6JMk=" media="screen">
+        <link rel="stylesheet" href="https://trytonvanmeer.dev/scss/main.min.9809320e2f6a7ed8c85da3229668635dd6e94ae75902c2e5f79c4c4718404a36.css" integrity="sha256-mAkyDi9qftjIXaMilmhjXdbpSudZAsLl95xMRxhASjY=" media="screen">
         <title>Surface Pro 3 on Arch Linux with GNOME</title>
     </head>
 
@@ -51,11 +51,11 @@
 </code></pre></div><p>For the 2160x1440 screen on the SP3, I personally find a 125% scaling really nice.</p>
 <h2 id="bluetooth">Bluetooth</h2>
 <p>If you want bluetooth available on boot, enable it, since it may not be already.</p>
-<p>```systemctl enable &ndash;now bluetooth`</p>
-<h2 id="autorotation">Autorotation</h2>
+<pre><code>systemctl enable --now bluetooth
+</code></pre><h2 id="autorotation">Autorotation</h2>
 <p>Only a single package needs to be installed to enable screen rotation when the surface is rotated.</p>
-<p><code>pacman -S iio-sensor-proxy</code></p>
-<p>GNOME will now display a button for (un)locking screen rotation.</p>
+<pre><code>pacman -S iio-sensor-proxy
+</code></pre><p>GNOME will now display a button for (un)locking screen rotation.</p>
 <p><img src="/images/Screenshot-SP3-Screen-Rotate-Lock.png" alt="SP3 Screen Rotate Lock"></p>
 <h2 id="touchscreen">Touchscreen</h2>
 <p>GNOME on Wayland works really well with a touchscreen. And the GNOME apps handle touch input wonderfully.</p>
