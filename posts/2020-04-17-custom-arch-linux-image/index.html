@@ -34,10 +34,10 @@
 <p>One of the tools I like to keep on my toolbelt is a USB drive with some kind of live Linux system. This can be used to show someone Linux, troubleshooting peoples devices, or just <code>arch-chroot</code>'ing into my desktop to fix something. Since Arch Linux is my OS of choice, it would be ideal to have an Arch USB. But, this obviously means not having a Desktop Environment to work from. I could use a Fedora Workstation live USB, but it would be nice to have my own tweaks on top. So I decided to give customizing <a href="https://wiki.archlinux.org/index.php/Archiso">Archiso</a> a try.</p>
 <p>Following the instructions on the Archiso wiki page, after installing the <code>archiso</code> package, you can copy the <code>/usr/share/archiso/configs/releng</code> folder to get a base to work from. I&rsquo;m going to go over the various tweaks I made.</p>
 <h2 id="buildsh">build.sh</h2>
-<p>The releng profile has a <code>build.sh</code> script that will build you an <code>*.iso</code>. I modified the script to create a loopback image with an EFI System Partition and copy the nessacary files to that. This removes the dependecy of syslinux/isolinux and makes the image simplier. This results in a <code>*.img</code> file instead of an ISO, and it won&rsquo;t boot on legacy BIOS systems. But that&rsquo;s not an issue for me.</p>
+<p>The releng profile has a <code>build.sh</code> script that will build you an iso file. I modified the script to create a loopback image with an EFI System Partition and copy the nessacary files to that. This removes the dependecy of syslinux/isolinux and makes the image simplier. This results in a img file instead of an ISO, and it won&rsquo;t boot on legacy BIOS systems. But that&rsquo;s not an issue for me.</p>
 <p>I also cleaned up the script, making sure it passed <a href="https://github.com/koalaman/shellcheck">ShellCheck</a>.</p>
 <h2 id="netboot">Netboot</h2>
-<p>Upon booting, you can press the <code>Space</code> key to trigger the boot menu and choose <a href="https://netboot.xyz/">NETBOOT.XYZ</a>. As long as their is a network connection, this one boot USB can be used to try out other Distros and Desktop Environments.</p>
+<p>Upon booting, you can press the <code>Space</code> key to trigger the boot menu and choose <a href="https://netboot.xyz/">NETBOOT.XYZ</a>. As long as there is a network connection, this one boot USB can be used to try out other Distros and Desktop Environments.</p>
 <h2 id="packages">Packages</h2>
 <p>By editing <code>packages.x86_64</code>, you can change what packages are installed on the live system image. I stripped plenty of packages I don&rsquo;t need; things like utilites for connecting to various VPNs or dial-up networks.</p>
 <p>I added the GNOME Desktop with some basics:</p>
@@ -92,15 +92,15 @@ system-db:local
 <h2 id="dotfiles">Dotfiles</h2>
 <p>In <code>airootfs/etc/skel</code>, I&rsquo;ve included the files to be placed into the live users home upon creating. These include the configs for Fish and the starship prompt, .desktop files to hide some applications in the menu, and binaries in <code>~/.local/bin/</code> for <code>inxi</code> and <code>starship</code> since they aren&rsquo;t in the Arch repos.</p>
 <h2 id="misc">Misc</h2>
-<p>I couple other minor tweaks are things like configuring GDM to autologin. Everything is a dark theme by default, and I&rsquo;m using the <a href="https://draculatheme.com/">Dracula</a> theme throughout the system. And, the locale is set to <code>en_CA.UTF-8</code>, with the timezone set to <code>/usr/share/zoneinfo/EST5EDT</code>.</p>
+<p>A couple other minor tweaks are things like configuring GDM to autologin. Everything is a dark theme by default, and I&rsquo;m using the <a href="https://draculatheme.com/">Dracula</a> theme throughout the system. And, the locale is set to <code>en_CA.UTF-8</code>, with the timezone set to <code>/usr/share/zoneinfo/EST5EDT</code>.</p>
 <h2 id="boot-usb-with-data-partition">Boot USB with Data Partition</h2>
 <p>I plan to use this with a 64GB USB drive. Of course, this is much bigger than the ~2GB image.</p>
-<p>Instead of writing the <code>*.img</code> to the USB drive, I partition the drive like this:</p>
+<p>Instead of writing the img file to the USB drive, I partition the drive like this:</p>
 <ul>
 <li>A 2GB FAT32 parition</li>
 <li>An EXT4 parition that uses 100% of the space left</li>
 </ul>
-<p>And then I mount the <code>*.img</code> and copy the files to the ESP. With this, I have my bootable Arch USB with space for shortlived files for transfering, or copy files off a device I&rsquo;m booted into.</p>
+<p>And then I mount the img file and copy the files to the ESP. With this, I have my bootable Arch USB with space for shortlived files for transfering, or copy files off a device I&rsquo;m booted into.</p>
 <p>I look forward to putting this USB drive to use and will be tweaking my custom image as I come across any new additons I wish to make.</p>
 <p>The source can be found <a href="https://github.com/tryton-vanmeer/archlinux">here</a> if you want more detail.</p>
 
