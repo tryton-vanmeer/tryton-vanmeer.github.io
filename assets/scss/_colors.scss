@@ -33,3 +33,23 @@ code {
 {
     color: #ff5555;
 }
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: $color-foreground;
+        color: $color-background;
+    }
+
+    a {
+        color: $color-background;
+    }
+
+    header {
+        a {
+            &:hover {
+                color: $color-foreground;
+                background-color: $color-background;
+            }
+        }
+    }
+}
