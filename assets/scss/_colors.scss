@@ -10,6 +10,15 @@ a {
     color: $color-foreground;
 }
 
+header {
+    a {
+        &:hover {
+            color: $color-background;
+            background-color: $color-foreground;
+        }
+    }
+}
+
 pre {
     background-color: #282A36;
     color: #F8F8F2;

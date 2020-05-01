@@ -31,11 +31,6 @@ header {
 
     a {
         padding: 6px;
-
-        &:hover {
-            color: $color-background;
-            background-color: $color-foreground;
-        }
     }
 
     h1 {
