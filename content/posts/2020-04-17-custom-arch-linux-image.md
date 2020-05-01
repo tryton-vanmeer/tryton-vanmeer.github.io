@@ -10,13 +10,13 @@ Following the instructions on the Archiso wiki page, after installing the `archi
 
 ## build.sh
 
-The releng profile has a `build.sh` script that will build you an `*.iso`. I modified the script to create a loopback image with an EFI System Partition and copy the nessacary files to that. This removes the dependecy of syslinux/isolinux and makes the image simplier. This results in a `*.img` file instead of an ISO, and it won't boot on legacy BIOS systems. But that's not an issue for me.
+The releng profile has a `build.sh` script that will build you an iso file. I modified the script to create a loopback image with an EFI System Partition and copy the nessacary files to that. This removes the dependecy of syslinux/isolinux and makes the image simplier. This results in a img file instead of an ISO, and it won't boot on legacy BIOS systems. But that's not an issue for me.
 
 I also cleaned up the script, making sure it passed [ShellCheck](https://github.com/koalaman/shellcheck).
 
 ## Netboot
 
-Upon booting, you can press the `Space` key to trigger the boot menu and choose [NETBOOT.XYZ](https://netboot.xyz/). As long as their is a network connection, this one boot USB can be used to try out other Distros and Desktop Environments.
+Upon booting, you can press the `Space` key to trigger the boot menu and choose [NETBOOT.XYZ](https://netboot.xyz/). As long as there is a network connection, this one boot USB can be used to try out other Distros and Desktop Environments.
 
 ## Packages
 By editing `packages.x86_64`, you can change what packages are installed on the live system image. I stripped plenty of packages I don't need; things like utilites for connecting to various VPNs or dial-up networks.
@@ -105,18 +105,18 @@ In `airootfs/etc/skel`, I've included the files to be placed into the live users
 
 ## Misc
 
-I couple other minor tweaks are things like configuring GDM to autologin. Everything is a dark theme by default, and I'm using the [Dracula](https://draculatheme.com/) theme throughout the system. And, the locale is set to `en_CA.UTF-8`, with the timezone set to `/usr/share/zoneinfo/EST5EDT`.
+A couple other minor tweaks are things like configuring GDM to autologin. Everything is a dark theme by default, and I'm using the [Dracula](https://draculatheme.com/) theme throughout the system. And, the locale is set to `en_CA.UTF-8`, with the timezone set to `/usr/share/zoneinfo/EST5EDT`.
 
 ## Boot USB with Data Partition
 
 I plan to use this with a 64GB USB drive. Of course, this is much bigger than the ~2GB image.
 
-Instead of writing the `*.img` to the USB drive, I partition the drive like this:
+Instead of writing the img file to the USB drive, I partition the drive like this:
 
 + A 2GB FAT32 parition
 + An EXT4 parition that uses 100% of the space left
 
-And then I mount the `*.img` and copy the files to the ESP. With this, I have my bootable Arch USB with space for shortlived files for transfering, or copy files off a device I'm booted into.
+And then I mount the img file and copy the files to the ESP. With this, I have my bootable Arch USB with space for shortlived files for transfering, or copy files off a device I'm booted into.
 
 I look forward to putting this USB drive to use and will be tweaking my custom image as I come across any new additons I wish to make.
 
