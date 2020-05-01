@@ -32,13 +32,17 @@ For the 2160x1440 screen on the SP3, I personally find a 125% scaling really nic
 
 If you want bluetooth available on boot, enable it, since it may not be already.
 
-```systemctl enable --now bluetooth`
+```
+systemctl enable --now bluetooth
+```
 
 ## Autorotation
 
 Only a single package needs to be installed to enable screen rotation when the surface is rotated.
 
-`pacman -S iio-sensor-proxy`
+```
+pacman -S iio-sensor-proxy
+```
 
 GNOME will now display a button for (un)locking screen rotation.
 

@@ -22,7 +22,7 @@ The Python version can be found [here](https://github.com/tryton-vanmeer/Hiritsu
 
 ## Benchmarking
 
-For this benchmark I used this [wallpaper](https://wallhaven.cc/w/dgzj9o) from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the `time` command.
+For this benchmark I used this [wallpaper](https://wallhaven.cc/w/dgzj9o) from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the **time** command.
 
 The Python version ran in 0.040s while the Rust version ran in 0.001s.
 
@@ -32,7 +32,7 @@ Now, obviously a simple script like this won't show the true speed benifits of u
 
 ## Rust in the Future
 
-The language took some time to wrap my head around (pun unintended) some of the new concepts like unwrapping, matching results, and the way Rust does error handling, but the more I played with Rust, the more I liked it. 
+The language took some time to wrap my head around (pun unintended) some of the new concepts like unwrapping, matching results, and the way Rust does error handling, but the more I played with Rust, the more I liked it.
 
 It's sastifying to use in the same way C is, but has the comforts of a modern language like the Cargo package manager. The compile errors are clear and helpful, and editors like VSCode have great support for the language.
 
