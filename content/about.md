@@ -3,8 +3,7 @@ title= "About"
 id = "about"
 +++
 
-## Programmer Who Loves Linux and Computer Hardware
-
+## Programmer who loves Linux and all things computers.
 # Projects
 
 ## Dotfiles
