@@ -29,7 +29,7 @@ GTK application for managing 5e characters. Written in Vala.
 
 [Github](https://github.com/tryton-vanmeer/Hiritsu) [AUR](https://aur.archlinux.org/packages/hiritsu/)
 
-CLI tool for getting aspect ratio of files. Written in Rust (Formally in Python).
+CLI tool for getting aspect ratio of files. Written in Rust (Formerly in Python).
 
 ## PKGBUILDS
 
