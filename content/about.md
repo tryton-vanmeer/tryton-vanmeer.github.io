@@ -11,7 +11,7 @@ id = "about"
 
 [Github](https://github.com/tryton-vanmeer/dotfiles)
 
-Configs for Linux systems.
+Dotfiles and system configuration managed by Ansible.
 
 ## ProtonDB for Steam
 [Github](https://github.com/tryton-vanmeer/ProtonDB-for-Steam) [Firefox Add-Ons](https://addons.mozilla.org/en-CA/firefox/addon/protondb-for-steam/)
