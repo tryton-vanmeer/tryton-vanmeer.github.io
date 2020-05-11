@@ -76,12 +76,12 @@ There are currently 416 games in my Steam library.</description>
 Dotfiles and system configuration managed by Ansible.
 ProtonDB for Steam Github Firefox Add-Ons
 Firefox extension that shows ratings from protondb.com on Steam
-Dungeon Journal Github Flathub
-GTK application for managing 5e characters. Written in Vala.
 Custom Arch Linux Image Github
 Custom Arch Linux Image with GNOME desktop and personal tweaks.
-Hiritsu Github AUR
-CLI tool for getting aspect ratio of files.</description>
+Dungeon Journal Github Flathub
+GTK application for managing 5e characters. Written in Vala.
+LinuxHub Github
+React/TypeScript frontend with Python API backend, using libosinfo.</description>
     </item>
     
     <item>
