@@ -30,6 +30,12 @@ Custom Arch Linux Image with GNOME desktop and personal tweaks.
 
 GTK application for managing 5e characters. Written in Vala.
 
+## LinuxHub
+
+[Github](https://github.com/tryton-vanmeer/LinuxHub)
+
+React/TypeScript frontend with Python API backend, using libosinfo.
+
 ## Hiritsu
 
 [Github](https://github.com/tryton-vanmeer/Hiritsu) [AUR](https://aur.archlinux.org/packages/hiritsu/)
