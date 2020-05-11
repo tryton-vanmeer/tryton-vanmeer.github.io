@@ -18,17 +18,17 @@ Dotfiles and system configuration managed by Ansible.
 
 Firefox extension that shows ratings from [protondb.com](https://www.protondb.com/) on Steam
 
+## Custom Arch Linux Image
+[Github](https://github.com/tryton-vanmeer/archlinux)
+
+Custom Arch Linux Image with GNOME desktop and personal tweaks.
+
 ## Dungeon Journal
 
 [Github](https://github.com/tryton-vanmeer/DungeonJournal)
 [Flathub](https://flathub.org/apps/details/io.github.trytonvanmeer.DungeonJournal)
 
 GTK application for managing 5e characters. Written in Vala.
-
-## Custom Arch Linux Image
-[Github](https://github.com/tryton-vanmeer/archlinux)
-
-Custom Arch Linux Image with GNOME desktop and personal tweaks.
 
 ## Hiritsu
 
