@@ -12,7 +12,15 @@ a {
 
 header {
     a {
+        span {
+            color: #FF5555;
+        }
+
         &:hover {
+            span {
+                color: #00AAAA
+            }
+
             color: $color-background;
             background-color: $color-foreground;
         }
