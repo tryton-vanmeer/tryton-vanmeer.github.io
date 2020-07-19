@@ -9,7 +9,7 @@
         <title>{{ .Title }}</title>
     </head>
 
-    <body>
+    <body class="d-flex flex-column vh-100">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ .Site.BaseURL }}">
@@ -46,6 +46,14 @@
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
             <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">Source</a>
         </footer>  */}}
+
+        <footer class="footer mt-auto mx-auto py-3 bg-dark">
+            <div class="container">
+                <span class="text-muted">© 2020 Tryton Van Meer</span>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+                <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">Source</a>
+            </div>
+        </footer>
 
         {{ $scripts := resources.Get "js/bootstrap.min.js" }}
         <script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
