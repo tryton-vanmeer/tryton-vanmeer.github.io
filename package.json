@@ -4,5 +4,8 @@
   "description": "Personal Homepage and Blog",
   "repository": "git@github.com:tryton-vanmeer/tryton-vanmeer.github.io.git",
   "author": "Tryton Van Meer <trytonvanmeer@protonmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1"
+  }
 }
