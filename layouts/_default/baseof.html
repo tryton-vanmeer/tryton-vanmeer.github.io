@@ -32,5 +32,8 @@
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
             <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">Source</a>
         </footer>  */}}
+
+        {{ $scripts := resources.Get "js/bootstrap.min.js" }}
+        <script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
     </body>
 </html>
