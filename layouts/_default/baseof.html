@@ -10,18 +10,32 @@
     </head>
 
     <body>
-        {{/*  <header>
-            <h1><a href="{{ .Site.BaseURL }}"><span>𝝺</span> {{ .Site.Title }}</a></h1>
-
-            <nav role="navigation">
-                <ul>
-                    <li><a href="https://github.com/tryton-vanmeer">Github</a></li>
-                    <li><a href="https://trytonvanmeer.dev/Resume/resume.pdf">Resume</a></li>
-                    <li><a href="{{ .Site.BaseURL }}about">About</a></li>
-                    <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>  */}}
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+                    <span>𝝺</span> {{ .Site.Title }}
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/tryton-vanmeer">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://trytonvanmeer.dev/Resume/resume.pdf">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ .Site.BaseURL }}about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ .Site.BaseURL }}contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         {{/*  <main id="{{ .Params.id }}">
             {{ block "main" .}} {{ end }}
