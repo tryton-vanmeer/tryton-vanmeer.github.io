@@ -1,1 +1,13 @@
-@import "../../node_modules/bootstrap/scss/bootstrap"
+// Colours
+@import "../../node_modules/nord/src/sass/nord.scss";
+
+$dark: $nord0;
+$light: $nord8;
+
+$secondary: $nord1;
+
+$body-bg: $dark;
+$body-color: $light;
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
