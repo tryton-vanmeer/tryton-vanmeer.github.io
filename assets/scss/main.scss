@@ -9,3 +9,10 @@ $navbar-dark-color: $light;
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Navbar
+.navbar-brand {
+    span {
+        color: #ff5555;
+    }
+}
