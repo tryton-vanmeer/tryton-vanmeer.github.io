@@ -24,3 +24,14 @@ $font-family-monospace: "JetBrains Mono";
         color: #ff5555;
     }
 }
+
+// Code Block
+.highlight {
+    .chroma {
+        padding: 12px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $dark;
+        border-radius: 6px;
+    }
+}
