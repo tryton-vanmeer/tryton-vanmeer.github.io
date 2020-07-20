@@ -15,6 +15,9 @@ $font-family-monospace: "JetBrains Mono";
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+//Syntax
+@import "./_syntax";
+
 // Navbar
 .navbar-brand {
     span {
