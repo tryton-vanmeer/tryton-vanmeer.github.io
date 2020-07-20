@@ -29,8 +29,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ .Site.BaseURL }}about">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ .Site.BaseURL }}contact">Contact</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-contact" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown-contact">
+                                <li><a href="mailto:hello@trytonvanmeer.dev">Email</a></li>
+                                <li><a href="https://telegram.me/trytonvanmeer">Telegram</a></li>
+                                <li><a href="https://steamcommunity.com/id/tryton-vanmeer/">Steam</a></li>
+                                <li><a href="https://linuxrocks.online/web/accounts/3072">Mastodon</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
