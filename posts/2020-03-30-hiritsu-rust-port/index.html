@@ -5,26 +5,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#121212">
         
-        <link rel="stylesheet" href="https://trytonvanmeer.dev/scss/main.min.11b0398f8806e557e6f53b03aec2d433ab652469f9e817ec81c966ba71096515.css" integrity="sha256-EbA5j4gG5Vfm9TsDrsLUM6tlJGn56BfsgclmunEJZRU=" media="screen">
+        <link rel="stylesheet" href="https://trytonvanmeer.dev/scss/main.min.a3ff363c4b30de5f223175e03a2f90def32b4c6b719b1321a2ed60cb1f0ef5d6.css" integrity="sha256-o/82PEsw3l8iMXXgOi&#43;Q3vMrTGtxmxMhou1gyx8O9dY=" media="screen">
         <title>Porting Hiritsu to Rust</title>
     </head>
 
-    <body>
-        <header>
-            <h1><a href="https://trytonvanmeer.dev/"><span>𝝺</span> Tryton Van Meer</a></h1>
+    <body class="d-flex flex-column vh-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="https://trytonvanmeer.dev/">
+                    <h1><span>𝝺</span> Tryton Van Meer</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/tryton-vanmeer">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://trytonvanmeer.dev/Resume/resume.pdf">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://trytonvanmeer.dev/about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-contact" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown-contact">
+                                <li><a href="mailto:hello@trytonvanmeer.dev">Email</a></li>
+                                <li><a href="https://telegram.me/trytonvanmeer">Telegram</a></li>
+                                <li><a href="https://steamcommunity.com/id/tryton-vanmeer/">Steam</a></li>
+                                <li><a href="https://linuxrocks.online/web/accounts/3072">Mastodon</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-            <nav role="navigation">
-                <ul>
-                    <li><a href="https://github.com/tryton-vanmeer">Github</a></li>
-                    <li><a href="https://trytonvanmeer.dev/Resume/resume.pdf">Resume</a></li>
-                    <li><a href="https://trytonvanmeer.dev/about">About</a></li>
-                    <li><a href="https://trytonvanmeer.dev/contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main id="">
-            
+        <main class="flex-shrink-0" id="">
+            <div class="container">
+                
 
 <h1 class="post-title">Porting Hiritsu to Rust</h1>
 
@@ -54,12 +77,18 @@ wallpaper (1920x1080) [16:9].jpg
 
 
 
+            </div>
         </main>
 
-        <footer>
-            <span>© 2020 Tryton Van Meer</span>
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-            <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">Source</a>
+        <footer class="footer mt-auto mx-auto py-3 bg-dark">
+            <div class="container">
+                <span>© 2020 Tryton Van Meer</span>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+                <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">Source</a>
+            </div>
         </footer>
+
+        
+        <script src="https://trytonvanmeer.dev/js/bootstrap.min.js" integrity=""></script>
     </body>
 </html>
