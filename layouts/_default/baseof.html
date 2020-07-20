@@ -9,28 +9,57 @@
         <title>{{ .Title }}</title>
     </head>
 
-    <body>
-        <header>
-            <h1><a href="{{ .Site.BaseURL }}"><span>𝝺</span> {{ .Site.Title }}</a></h1>
+    <body class="d-flex flex-column vh-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+                    <h1><span>𝝺</span> {{ .Site.Title }}</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/tryton-vanmeer">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://trytonvanmeer.dev/Resume/resume.pdf">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ .Site.BaseURL }}about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-contact" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown-contact">
+                                <li><a href="mailto:hello@trytonvanmeer.dev">Email</a></li>
+                                <li><a href="https://telegram.me/trytonvanmeer">Telegram</a></li>
+                                <li><a href="https://steamcommunity.com/id/tryton-vanmeer/">Steam</a></li>
+                                <li><a href="https://linuxrocks.online/web/accounts/3072">Mastodon</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-            <nav role="navigation">
-                <ul>
-                    <li><a href="https://github.com/tryton-vanmeer">Github</a></li>
-                    <li><a href="https://trytonvanmeer.dev/Resume/resume.pdf">Resume</a></li>
-                    <li><a href="{{ .Site.BaseURL }}about">About</a></li>
-                    <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main id="{{ .Params.id }}">
-            {{ block "main" .}} {{ end }}
+        <main class="flex-shrink-0" id="{{ .Params.id }}">
+            <div class="container">
+                {{ block "main" .}} {{ end }}
+            </div>
         </main>
 
-        <footer>
-            <span>© 2020 Tryton Van Meer</span>
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-            <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">Source</a>
+        <footer class="footer mt-auto mx-auto py-3 bg-dark">
+            <div class="container">
+                <span>© 2020 Tryton Van Meer</span>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+                <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">Source</a>
+            </div>
         </footer>
+
+        {{ $scripts := resources.Get "js/bootstrap.min.js" }}
+        <script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
     </body>
 </html>

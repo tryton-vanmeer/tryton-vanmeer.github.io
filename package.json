@@ -1,0 +1,12 @@
+{
+  "name": "tryton-vanmeer.github.io",
+  "version": "Aoi",
+  "description": "Personal Homepage and Blog",
+  "repository": "git@github.com:tryton-vanmeer/tryton-vanmeer.github.io.git",
+  "author": "Tryton Van Meer <trytonvanmeer@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^5.0.0-alpha1",
+    "typeface-jetbrains-mono": "^2.0.0"
+  }
+}
