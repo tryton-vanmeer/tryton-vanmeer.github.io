@@ -7,6 +7,9 @@ $body-color: $light;
 $primary: $light;
 $navbar-dark-color: $light;
 
+// Fonts
+@import "./_fonts";
+
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
