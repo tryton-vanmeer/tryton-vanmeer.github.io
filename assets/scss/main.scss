@@ -9,6 +9,8 @@ $navbar-dark-color: $light;
 
 // Fonts
 @import "./_fonts";
+$font-family-sans-serif: "JetBrains Mono";
+$font-family-monospace: "JetBrains Mono";
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
