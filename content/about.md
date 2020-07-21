@@ -3,50 +3,9 @@ title= "About"
 id = "about"
 +++
 
-## Programmer who loves Linux and all things computers.
+# About
 
-# Projects
-
-## Dotfiles
-
-[Github](https://github.com/tryton-vanmeer/dotfiles)
-
-Dotfiles and system configuration managed by Ansible.
-
-## ProtonDB for Steam
-[Github](https://github.com/tryton-vanmeer/ProtonDB-for-Steam) [Firefox Add-Ons](https://addons.mozilla.org/en-CA/firefox/addon/protondb-for-steam/)
-
-Firefox extension that shows ratings from [protondb.com](https://www.protondb.com/) on Steam
-
-## Custom Arch Linux Image
-[Github](https://github.com/tryton-vanmeer/archlinux)
-
-Custom Arch Linux Image with GNOME desktop and personal tweaks.
-
-## Dungeon Journal
-
-[Github](https://github.com/tryton-vanmeer/DungeonJournal)
-[Flathub](https://flathub.org/apps/details/io.github.trytonvanmeer.DungeonJournal)
-
-GTK application for managing 5e characters. Written in Vala.
-
-## LinuxHub
-
-[Github](https://github.com/tryton-vanmeer/LinuxHub)
-
-React/TypeScript frontend with Python API backend, using libosinfo.
-
-## Hiritsu
-
-[Github](https://github.com/tryton-vanmeer/Hiritsu) [AUR](https://aur.archlinux.org/packages/hiritsu/)
-
-CLI tool for getting aspect ratio of files. Written in Rust (Formerly in Python).
-
-## PKGBUILDS
-
-[Github](https://github.com/tryton-vanmeer/PKGBUILDS)
-
-PKGBUILDs for Arch Linux
+Programmer who loves Linux and all things computers.
 
 # Hardware
 
