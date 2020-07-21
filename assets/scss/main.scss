@@ -1,6 +1,7 @@
 // Colours
 $dark: #121212;
 $light: #EDEDED;
+$red: #ff5555;
 
 $body-bg: $dark;
 $body-color: $light;
@@ -21,7 +22,7 @@ $font-family-monospace: "JetBrains Mono";
 // Navbar
 .navbar-brand {
     span {
-        color: #ff5555;
+        color: $red;
     }
 }
 
@@ -39,4 +40,8 @@ $font-family-monospace: "JetBrains Mono";
 // Posts
 .post-title, .post-date {
     text-align: center;
+}
+
+.post-date.draft {
+    color: $red;
 }
