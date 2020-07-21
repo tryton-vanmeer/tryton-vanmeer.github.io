@@ -4,8 +4,7 @@
 
 {{ range $paginator.Pages }}
 
-{{if .Draft }}
-{{ else }}
+{{ if not .Draft }}
 <div>
     <h2>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
