@@ -1,0 +1,5 @@
+baseURL: "https://trytonvanmeer.dev/"
+languageCode: "en-us"
+title: "Tryton Van Meer"
+buildDrafts: true
+pygmentsUseClasses: true
