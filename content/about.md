@@ -52,8 +52,9 @@ PKGBUILDs for Arch Linux
 
 ## Desktop - Caffeine PC
 
+{{< bootstrap/table >}}
 |             |                                   |
-|:-----------:|:---------------------------------:|
+|-------------|-----------------------------------|
 | CPU         | AMD Ryzen 5 2600                  |
 | CPU Cooler  | AMD Wraith Max                    |
 | Motherboard | MSI B350 TOMAHAWK                 |
@@ -66,11 +67,13 @@ PKGBUILDs for Arch Linux
 | Mouse       | Logitech G703 LIGHTSPEED          |
 | Keyboard    | Massdrop x MiTo Laser ALT         |
 | Microphone  | Audio-Technica AT2020USB+         |
+{{< /bootstrap/table >}}
 
 # Software
 
+{{< bootstrap/table >}}
 |                  |                         |
-|:----------------:|:-----------------------:|
+|------------------|-------------------------|
 | Operating System   | Arch Linux            |
 | Desktop Enviroment | GNOME                 |
 | Text Editor        | VSCode, Gedit, Nano   |
@@ -78,3 +81,4 @@ PKGBUILDs for Arch Linux
 | Shell              | Fish, Bash            |
 | Font               | JetBrains Mono        |
 | Color Scheme       | Dracula               |
+{{< /bootstrap/table >}}
