@@ -72,16 +72,8 @@ There are currently 416 games in my Steam library.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://trytonvanmeer.dev/about/</guid>
-      <description>Programmer who loves Linux and all things computers. Projects Dotfiles Github
-Dotfiles and system configuration managed by Ansible.
-ProtonDB for Steam Github Firefox Add-Ons
-Firefox extension that shows ratings from protondb.com on Steam
-Custom Arch Linux Image Github
-Custom Arch Linux Image with GNOME desktop and personal tweaks.
-Dungeon Journal Github Flathub
-GTK application for managing 5e characters. Written in Vala.
-LinuxHub Github
-React/TypeScript frontend with Python API backend, using libosinfo.</description>
+      <description>About Programmer who loves Linux and all things computers.
+Hardware Desktop - Caffeine PC         CPU AMD Ryzen 5 2600   CPU Cooler AMD Wraith Max   Motherboard MSI B350 TOMAHAWK   Memory G.Skill Trident Z RGB (2x8GB)   Storage Western Digital Black 3TB   Storage ADATA Ultimate 256GB   GPU Sapphire Radeon RX 5700 XT NITRO+   Case Corsair 100R   PSU Corsair RMx 750W   Mouse Logitech G703 LIGHTSPEED   Keyboard Massdrop x MiTo Laser ALT   Microphone Audio-Technica AT2020USB+    Software         Operating System Arch Linux   Desktop Enviroment GNOME   Text Editor VSCode, Gedit, Nano   Terminal Tilix, GNOME Terminal   Shell Fish, Bash   Font JetBrains Mono   Color Scheme Dracula    </description>
     </item>
     
   </channel>
