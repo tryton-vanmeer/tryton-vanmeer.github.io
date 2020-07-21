@@ -21,10 +21,10 @@
                 <div class="collapse navbar-collapse" id="navbar-content">
                     <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/tryton-vanmeer">Github</a>
+                            <a class="nav-link" href="{{ .Site.Params.github }}">Github</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://trytonvanmeer.dev/Resume/resume.pdf">Resume</a>
+                            <a class="nav-link" href="{{ .Site.Params.resume }}">Resume</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ .Site.BaseURL }}about">About</a>
@@ -34,10 +34,10 @@
                                 Contact
                             </a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown-contact">
-                                <li><a href="mailto:hello@trytonvanmeer.dev">Email</a></li>
-                                <li><a href="https://telegram.me/trytonvanmeer">Telegram</a></li>
-                                <li><a href="https://steamcommunity.com/id/tryton-vanmeer/">Steam</a></li>
-                                <li><a href="https://linuxrocks.online/web/accounts/3072">Mastodon</a></li>
+                                <li><a href="{{ .Site.Params.email }}">Email</a></li>
+                                <li><a href="{{ .Site.Params.telegram }}">Telegram</a></li>
+                                <li><a href="{{ .Site.Params.steam }}">Steam</a></li>
+                                <li><a href="{{ .Site.Params.mastodon }}">Mastodon</a></li>
                             </ul>
                         </li>
                     </ul>
