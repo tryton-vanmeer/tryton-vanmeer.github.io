@@ -48,7 +48,7 @@
 
         <main class="flex-shrink-0" id="{{ .Params.id }}">
             <div class="container">
-                {{ block "main" .}} {{ end }}
+                {{ block "main" . }} {{ end }}
             </div>
         </main>
 
@@ -62,7 +62,7 @@
             </div>
         </footer>
 
-        {{ $scripts := resources.Get "js/bootstrap.min.js" }}
+        {{ $scripts := resources.Get "js/bootstrap.min.js" | fingerprint }}
         <script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
     </body>
 </html>
