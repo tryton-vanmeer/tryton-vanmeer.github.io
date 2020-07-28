@@ -8,10 +8,10 @@
 <div>
     <h2>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
-        <div class="d-lg-none"></div>
-        <span>{{ .Date.Format "2006-01-02" }}</span>
     </h2>
-    <p>{{ .Description}}</p>
+    <h4>
+        {{ .Date.Format "2006-01-02" }}
+    </h4>
 </div>
 {{ end }}
 
