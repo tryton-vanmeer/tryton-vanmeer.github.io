@@ -19,6 +19,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
+yarn install
 hugo
 
 echo "Updating gh-pages branch"
