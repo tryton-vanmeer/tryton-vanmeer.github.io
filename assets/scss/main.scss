@@ -26,6 +26,12 @@ $font-family-monospace: "JetBrains Mono";
     }
 }
 
+.navbar-nav {
+    li:before {
+        content: none;
+    }
+}
+
 // Code Block
 .highlight {
     .chroma {
@@ -49,4 +55,14 @@ $font-family-monospace: "JetBrains Mono";
 
 .post-date.draft {
     color: $red;
+}
+
+// Lists
+ul {
+    padding-left: 1.25rem;
+    list-style-type: none;
+
+    li:before {
+        content: "- ";
+    }
 }
