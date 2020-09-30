@@ -6,11 +6,7 @@
     <description>Recent content on Tryton Van Meer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Custom Arch Linux Image</title>
       <link>https://trytonvanmeer.dev/posts/2020-04-17-custom-arch-linux-image/</link>
@@ -18,6 +14,17 @@
       
       <guid>https://trytonvanmeer.dev/posts/2020-04-17-custom-arch-linux-image/</guid>
       <description>One of the tools I like to keep on my toolbelt is a USB drive with some kind of live Linux system. This can be used to show someone Linux, troubleshooting peoples devices, or just arch-chroot&amp;rsquo;ing into my desktop to fix something. Since Arch Linux is my OS of choice, it would be ideal to have an Arch USB. But, this obviously means not having a Desktop Environment to work from.</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux with GNOME on the Surface Pro 3</title>
+      <link>https://trytonvanmeer.dev/posts/2020-03-30-sp3-archlinux-gnome/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/posts/2020-03-30-sp3-archlinux-gnome/</guid>
+      <description>Recently, I acquired a Surface Pro 3 for a great deal. I was looking for a small computing device and wanted something I could run desktop Linux on, so an Android tablet or Chromebook were out of the race already.
+I settled on the SP3 for a couple reasons:
+ It has x86 hardware so no issues installing Linux. The SP3, while quite old at this point (released in 2014), has out of the box Linux support.</description>
     </item>
     
     <item>
@@ -30,17 +37,6 @@
 An example of this in action:
 $ hiritsu wallpaper.jpg Width: 1920 Height: 1080 Ratio: 16:9 $ hiritsu --rename wallpaper.jpg wallpaper (1920x1080) [16:9].jpg The Python version can be found here, and the Rust port here
 Benchmarking For this benchmark I used this wallpaper from Wallhaven.</description>
-    </item>
-    
-    <item>
-      <title>Surface Pro 3 on Arch Linux with GNOME</title>
-      <link>https://trytonvanmeer.dev/posts/2020-03-30-sp3-archlinux-gnome/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://trytonvanmeer.dev/posts/2020-03-30-sp3-archlinux-gnome/</guid>
-      <description>Recently, I acquired a Surface Pro 3 for a great deal. I was looking for a small computing device and wanted something I could run desktop Linux on, so an Android tablet or Chromebook were out of the race already.
-I settled on the SP3 for a couple reasons:
- It has x86 hardware so no issues installing Linux. The SP3, while quite old at this point (released in 2014), has out of the box Linux support.</description>
     </item>
     
     <item>
