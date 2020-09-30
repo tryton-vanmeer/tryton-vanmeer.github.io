@@ -1,5 +1,5 @@
 +++
-title = "Surface Pro 3 on Arch Linux with GNOME"
+title = "Arch Linux with GNOME on the Surface Pro 3"
 date = "2020-03-30"
 description = "I recently acquired a SP3 and here's my experience with using Linux on it."
 +++
