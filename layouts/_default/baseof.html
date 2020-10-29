@@ -62,7 +62,5 @@
             </div>
         </footer>
 
-        {{ $scripts := resources.Get "js/bootstrap.min.js" | fingerprint }}
-        <script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
     </body>
 </html>
