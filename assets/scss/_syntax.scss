@@ -58,3 +58,12 @@
 /* GenericOutput */ .chroma .go { color: #44475a }
 /* GenericSubheading */ .chroma .gu { font-weight: bold }
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }
+
+.highlight {
+    .chroma {
+        padding: 12px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 6px;
+    }
+}
