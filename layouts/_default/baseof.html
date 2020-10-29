@@ -10,7 +10,31 @@
         <title>{{ .Title }}</title>
     </head>
 
-    <body class="d-flex flex-column vh-100">
+    <body>
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="{{ .Site.BaseURL }}">
+                    <h1 class="title">
+                        <span class="text-red">𝝺</span> {{ .Site.Title }}
+                    </h1>
+                </a>
+
+                <a id="navbar-burger" class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbar-menu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+                </div>
+            </div>
+        </nav>
 
         <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -63,5 +87,7 @@
             </div>
         </footer> -->
 
+        {{ $scripts := resources.Get "js/main.js" | fingerprint }}
+        <script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
     </body>
 </html>
