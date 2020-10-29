@@ -1,24 +1,8 @@
-@import "./_fonts";
-@import "./_syntax";
-@import "./_colors";
+@import "fonts";
+@import "colors";
+
 @import "../../node_modules/bulma/bulma";
 
-// Elements
-body
-{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-main
-{
-    flex: 1;
-}
-
-ul {
-    padding-left: 1.5rem;
-    list-style-type: disc;
-}
-
-@import "./posts";
+@import "elements";
+@import "syntax";
+@import "posts";
