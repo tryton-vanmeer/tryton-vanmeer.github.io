@@ -41,7 +41,6 @@ on 'Linux vs Console'.
 
 Below is a table of the consoles from 7<sup>th</sup> and 8<sup>th</sup> generation with their respective number of exclusives and total number of games.
 
-{{< bootstrap/table >}}
 |  Console | Exclusives | Total |
 |----------|------------|-------|
 |    PS3   |     317    |  1438 |
@@ -50,7 +49,6 @@ Below is a table of the consoles from 7<sup>th</sup> and 8<sup>th</sup> generati
 |    PS4   |     127    |  1721 |
 | Xbox One |     30     |  747  |
 |   Wii U  |     253    |  747  |
-{{< /bootstrap/table >}}
 
 The consoles above have a combined Total of 1185 Exclusives.
 Comparing that to the above figure of 2654, Linux has more games than the consoles have exclusives combined.
