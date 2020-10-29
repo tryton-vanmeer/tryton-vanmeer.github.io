@@ -1,13 +1,27 @@
 {{ define "main" }}
 
-<h1 class="post-title">{{ .Title }}</h1>
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                {{ .Title }}
+            </h1>
 
-{{ if .Draft }}
-<h3 class="post-date draft">--- Draft ---</h3>
-{{ else }}
-<h3 class="post-date">--- {{ .Date.Format "2006-01-02" }} ---</h3>
-{{ end }}
+            {{ if .Draft }}
+                <h2 class="subtitle">
+                    Draft
+                </h2>
+            {{ else }}
+                <h2 class="subtitle">
+                    {{ .Date.Format "2006-01-02" }}
+                </h2>
+            {{ end }}
+        </div>
+    </div>
+</section>
 
-{{ .Content }}
+<div class="container post-content">
+    {{ .Content }}
+</div>
 
 {{ end }}
