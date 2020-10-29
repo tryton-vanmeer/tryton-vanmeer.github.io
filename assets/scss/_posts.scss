@@ -35,3 +35,29 @@
         margin-bottom: 1rem;
     }
 }
+
+@media only screen and (max-width: 600px)
+{
+    .post
+    {
+        .title
+        {
+            font-size: 1.25rem;
+
+            span
+            {
+                display: block;
+            }
+        }
+
+        .title + p
+        {
+            margin-left: 0;
+
+            span
+            {
+                display: none;
+            }
+        }
+    }
+}
