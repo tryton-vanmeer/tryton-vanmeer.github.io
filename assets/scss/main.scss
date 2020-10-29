@@ -1,8 +1,8 @@
-// Bulma
-@import "../../node_modules/bulma/bulma";
-
 @import "./_fonts";
+
 @import "./_syntax";
+
+@import "../../node_modules/bulma/bulma";
 
 // Elements
 body
@@ -10,7 +10,6 @@ body
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: "JetBrains Mono", monospace;
 }
 
 main
