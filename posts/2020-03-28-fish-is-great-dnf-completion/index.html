@@ -6,57 +6,63 @@
         <meta name="theme-color" content="#121212">
         
         
-        <link rel="stylesheet" href="https://trytonvanmeer.dev/style.f3ddff0cb26cd22e05c0b7081223aca8e45d04eb4745386df48735478fe435d0.css" integrity="sha256-893/DLJs0i4FwLcIEiOsqORdBOtHRTht9Ic1R4/kNdA=" media="screen">
+        <link rel="stylesheet" href="https://trytonvanmeer.dev/style.0ce683bd7c5b2182f64fb44ee20c24f7a30fd31027d796bf4a1af4998dc64206.css" integrity="sha256-DOaDvXxbIYL2T7RO4gwk96MP0xAn15a/Shr0mY3GQgY=" media="screen">
         <title>Fish is Awesome! And tweaking the DNF completion.</title>
     </head>
 
-    <body class="d-flex flex-column vh-100">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="https://trytonvanmeer.dev/">
-                    <h1><span>𝝺</span> Tryton Van Meer</h1>
+    <body>
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://trytonvanmeer.dev/">
+                    <h1 class="title">
+                        <span class="text-red">𝝺</span> Tryton Van Meer
+                    </h1>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-content">
-                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/tryton-vanmeer">Github</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://trytonvanmeer.dev/Resume/resume.pdf">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://trytonvanmeer.dev/about">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-contact" role="button" data-toggle="dropdown" aria-expanded="false">
-                                Contact
-                            </a>
-                            <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown-contact">
-                                <li><a href="mailto:hello@trytonvanmeer.dev">Email</a></li>
-                                <li><a href="https://telegram.me/trytonvanmeer">Telegram</a></li>
-                                <li><a href="https://steamcommunity.com/id/tryton-vanmeer">Steam</a></li>
-                                <li><a href="https://linuxrocks.online/web/accounts/3072">Mastodon</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+
+                <a id="navbar-burger" class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbar-menu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="https://github.com/tryton-vanmeer">
+                        GitHub
+                    </a>
+                    <a class="navbar-item" href="https://trytonvanmeer.dev/Resume/resume.pdf">
+                        Resume
+                    </a>
+                    <a class="navbar-item" href="mailto:hello@trytonvanmeer.dev">
+                        Email
+                    </a>
                 </div>
             </div>
         </nav>
 
-        <main class="flex-shrink-0" id="">
-            <div class="container">
-                
+        <main>
+            
 
-<h1 class="post-title">Fish is Awesome! And tweaking the DNF completion.</h1>
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Fish is Awesome! And tweaking the DNF completion.
+            </h1>
 
+            
+                <h2 class="subtitle">
+                    2020-03-27
+                </h2>
+            
+        </div>
+    </div>
+</section>
 
-<h3 class="post-date">--- 2020-03-27 ---</h3>
-
-
-<p>A while ago I decided to finally switched to ZSH and give it a try. Got it mostly configured to how I wanted it and was satisfied.</p>
+<div class="container post-content">
+    <p>A while ago I decided to finally switched to ZSH and give it a try. Got it mostly configured to how I wanted it and was satisfied.</p>
 <p>Then a friend mentioned he uses Fish. Well, I&rsquo;m already trying an alternative shell, so why not give Fish a go.</p>
 <p>Fish. Is. Awesome.</p>
 <p>I&rsquo;ve heard about how great Fish and ZSH were but always stuck to just using Bash. I was now thinking to myself, why didn&rsquo;t I try these earlier.</p>
@@ -96,22 +102,17 @@ dconf  dconf-devel  dconf-editor
 </code></pre><p>This is an issue for packages such as <strong>gnome-2048</strong>, but I&rsquo;m not to concerned.</p>
 <p>I am, however open to suggestions that can overcome this issue and properly separate the version from the package name.</p>
 
+</div>
 
 
-            </div>
         </main>
 
-        <footer class="footer mt-auto mx-auto py-3 bg-dark">
-            <div class="container text-center">
-                <span>© 2020 Tryton Van Meer</span>
-                <div class="d-sm-none"></div>
-                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-                <div class="d-sm-none"></div>
-                <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">Source</a>
-            </div>
+        <footer class="content has-text-centered">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">© 2020 Tryton Van Meer</a>
+            <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">[Source]</a>
         </footer>
 
         
-        <script src="https://trytonvanmeer.dev/js/bootstrap.min.bbe43f79021ee8fe705382bc99a8a124e42486a05b7fb2b534debc1b04e9373d.js" integrity="sha256-u&#43;Q/eQIe6P5wU4K8maihJOQkhqBbf7K1NN68GwTpNz0="></script>
+        <script src="https://trytonvanmeer.dev/js/main.6c967887b527202528ab689871511b03e71fe2466ae76b55103f1101ee75cb7b.js" integrity="sha256-bJZ4h7UnICUoq2iYcVEbA&#43;cf4kZq52tVED8RAe51y3s="></script>
     </body>
 </html>
