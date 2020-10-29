@@ -1,12 +1,4 @@
 // Colours
-$dark: #121212;
-$light: #EDEDED;
-$red: #ff5555;
-
-$body-bg: $dark;
-$body-color: $light;
-$primary: $light;
-$navbar-dark-color: $light;
 
 // Fonts
 @import "./_fonts";
@@ -16,37 +8,15 @@ $font-family-monospace: "JetBrains Mono";
 //Syntax
 @import "./_syntax";
 
-// Navbar
-.navbar-brand {
-    span {
-        color: $red;
-    }
-}
-
-.navbar-nav {
-    li:before {
-        content: none;
-    }
-}
-
 // Code Block
 .highlight {
     .chroma {
         padding: 12px;
         border-width: 1px;
         border-style: solid;
-        border-color: $dark;
+        // border-color: $dark;
         border-radius: 6px;
     }
-}
-
-// Posts
-.post-title, .post-date {
-    text-align: center;
-}
-
-.post-date.draft {
-    color: $red;
 }
 
 // Lists
