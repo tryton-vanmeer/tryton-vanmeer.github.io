@@ -4,11 +4,3 @@ languageCode: "en-us"
 title: "Tryton Van Meer"
 buildDrafts: true
 pygmentsUseClasses: true
-
-params:
-  github: "https://github.com/tryton-vanmeer"
-  resume: "https://trytonvanmeer.dev/Resume/resume.pdf"
-  email: "mailto:hello@trytonvanmeer.dev"
-  telegram: "https://telegram.me/trytonvanmeer"
-  steam: "https://steamcommunity.com/id/tryton-vanmeer"
-  mastodon: "https://linuxrocks.online/web/accounts/3072"
