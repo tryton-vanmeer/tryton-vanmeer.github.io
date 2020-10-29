@@ -1,13 +1,8 @@
 // Bulma
 @import url("https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css");
 
-// Colors
 @import "./_colors";
-
-// Fonts
 @import "./_fonts";
-
-// Syntax
 @import "./_syntax";
 
 // Elements
@@ -33,22 +28,4 @@ ul {
     }
 }
 
-.post
-{
-    margin-bottom: 1em;
-
-    .title
-    {
-        margin-bottom: 0;
-    }
-
-    .title + p
-    {
-        margin-left: 1.5em;
-
-        span
-        {
-            font-size: 2em;
-        }
-    }
-}
+@import "./posts";
