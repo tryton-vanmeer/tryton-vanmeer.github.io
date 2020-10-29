@@ -21,6 +21,18 @@
     }
 }
 
+body
+{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main
+{
+    flex: 1;
+}
+
 // Lists
 ul {
     padding-left: 1.25rem;
