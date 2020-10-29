@@ -32,3 +32,23 @@ ul {
         content: "- ";
     }
 }
+
+.post
+{
+    margin-bottom: 1em;
+
+    .title
+    {
+        margin-bottom: 0;
+    }
+
+    .title + p
+    {
+        margin-left: 1.5em;
+
+        span
+        {
+            font-size: 2em;
+        }
+    }
+}

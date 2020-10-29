@@ -1,19 +1,23 @@
 {{ define "main" }}
 
-{{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+<div class="container">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
 
-{{ range $paginator.Pages }}
-
-{{ if not .Draft }}
-<div class="index-post text-center text-md-left">
-    <h3 class="font-weight-bold">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h3>
-    <h4><span>{{ .Date.Format "2006-01-02" }}</span></h4>
-    <p class="mb-0">{{ .Description }}</p>
+    {{ range $paginator.Pages }}
+        {{ if not .Draft }}
+            <div class="post">
+                <h1 class="title">
+                    <span>
+                        {{ .Date.Format "2006-01-02" }}
+                    </span>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h1>
+                <p>
+                    <span>↳</span> {{ .Description }}
+                </p>
+            </div>
+        {{ end }}
+    {{ end }}
 </div>
-<div class="mt-3" aria-hidden="true"></div>
-{{ end }}
 
-{{ end }}
 {{ end }}
