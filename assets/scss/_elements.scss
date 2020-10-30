@@ -14,17 +14,3 @@ ul {
     padding-left: 1.5rem;
     list-style-type: disc;
 }
-
-@media only screen and (max-width: 600px)
-{
-    .title
-    {
-        font-size: 1.5rem;
-    }
-
-    .container
-    {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-}
