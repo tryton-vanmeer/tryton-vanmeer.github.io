@@ -14,3 +14,12 @@ ul {
     padding-left: 1.5rem;
     list-style-type: disc;
 }
+
+@media only screen and (max-width: 1023px)
+{
+    .container.mobile-fluid
+    {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}

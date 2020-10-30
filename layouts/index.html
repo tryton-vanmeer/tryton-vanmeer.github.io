@@ -10,7 +10,7 @@
     </div>
 </section>
 
-<div class="container mt-4">
+<div class="container mobile-fluid mt-4">
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
 
     {{ range $paginator.Pages }}
