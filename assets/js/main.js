@@ -11,7 +11,18 @@ function setup_nav_menu()
     });
 }
 
+function setup_tables()
+{
+    Array.prototype.forEach.call(document.getElementsByTagName("table"),
+    (table) => {
+        table.classList.toggle("table");
+        table.classList.toggle("is-fullwidth");
+        table.classList.toggle("is-bordered");
+    });
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
     setup_nav_menu();
+    setup_tables();
 });
