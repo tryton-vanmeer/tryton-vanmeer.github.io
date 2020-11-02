@@ -62,5 +62,14 @@ Steam I might not be able to play all the latest AAA games, but I still have mor
 There are currently 416 games in my Steam library.</description>
     </item>
     
+    <item>
+      <title>Running Services on Login with systemd</title>
+      <link>https://trytonvanmeer.dev/posts/running-services-on-login-with-systemd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/posts/running-services-on-login-with-systemd/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
