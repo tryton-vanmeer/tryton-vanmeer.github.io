@@ -15,15 +15,14 @@ rm -rf .git/worktrees/public/
 echo "Checking out gh-pages branch into public"
 git worktree add -B master public origin/master
 
-echo "Removing existing files"
-rm -rf public/*
-
 echo "Generating site"
 yarn install
 hugo
 
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to master (deploy.sh)"
+cd public && \
+git add --all && \
+git commit -m "Site updated: $(date +'%Y-%m-%d %H:%M:%S')" --allow-empty
 
 echo "Pushing to GitHub"
 git push origin master
