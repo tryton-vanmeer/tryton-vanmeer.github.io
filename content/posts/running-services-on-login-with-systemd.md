@@ -5,7 +5,7 @@ draft = true
 description = ""
 +++
 
-systemd is great for managing system services, so why not extend it's capabilities to running things on login. Doing this allows you to take advantage of systemd's features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.
+systemd is great for managing system services, so why not extend its capabilities to running things on login. Doing this allows you to take advantage of systemd's features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.
 
 I'm just running oneshot commands, so my unit files are simple.
 
