@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.css",
-	"sourceRoot": "/home/tryton-vanmeer/Code/tryton-vanmeer.github.io",
+	"sourceRoot": "/home/runner/work/tryton-vanmeer.github.io/tryton-vanmeer.github.io",
 	"sources": [
 		"assets/scss/main.scss",
 		"assets/scss/_fonts.scss",

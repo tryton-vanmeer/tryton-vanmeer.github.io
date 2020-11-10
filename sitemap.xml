@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/2020-04-17-custom-arch-linux-image/</loc>
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+    <loc>https://trytonvanmeer.dev/posts/</loc>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/</loc>
-    <lastmod>2020-04-17T00:00:00+00:00</lastmod>
+    <loc>https://trytonvanmeer.dev/posts/2020-11-10-running-services-on-login-with-systemd/</loc>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://trytonvanmeer.dev/</loc>
+    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trytonvanmeer.dev/posts/2020-04-17-custom-arch-linux-image/</loc>
     <lastmod>2020-04-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,15 +43,7 @@
   </url>
   
   <url>
-    <loc>https://trytonvanmeer.dev/about/</loc>
-  </url>
-  
-  <url>
     <loc>https://trytonvanmeer.dev/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://trytonvanmeer.dev/posts/running-services-on-login-with-systemd/</loc>
   </url>
   
   <url>

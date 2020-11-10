@@ -53,8 +53,8 @@
             </h1>
 
             
-                <h2 class="subtitle text-red">
-                    Draft
+                <h2 class="subtitle">
+                    2020-11-10
                 </h2>
             
         </div>
@@ -62,7 +62,21 @@
 </section>
 
 <div class="container mobile-fluid post-content mt-4">
-    
+    <p>systemd is great for managing system services, so why not extend its capabilities to running things on login. Doing this allows you to take advantage of systemd&rsquo;s features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.</p>
+<p>My unit files are simple since I&rsquo;m running oneshot commands.</p>
+<p>Your user units are placed in <strong>~/.config/systemd/user</strong> and are activated with <strong>systemctl &ndash;user enable &lt;service&gt;</strong>.</p>
+<p>The important part of my unit files is the <strong>graphical-session.target</strong>. This is because I want the command to run when the desktop is ready, and not just as soon as I login.</p>
+<p>A template of my unit file is as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-systemd" data-lang="systemd"><span class="k">[Unit]</span>
+<span class="na">Description</span><span class="o">=</span><span class="s">A &#39;systemd --user&#39; unit that does something on login.</span>
+<span class="na">After</span><span class="o">=</span><span class="s">graphical-session.target</span>
+
+<span class="k">[Service]</span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/program</span>
+
+<span class="k">[Install]</span>
+<span class="na">WantedBy</span><span class="o">=</span><span class="s">graphical-session.target</span>
+</code></pre></div>
 </div>
 
 
