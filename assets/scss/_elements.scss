@@ -10,6 +10,14 @@ main
     flex: 1;
 }
 
+footer
+{
+    margin-top: 1.5rem;
+    background-color: $primary;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
 ul {
     padding-left: 1.5rem;
     list-style-type: disc;
