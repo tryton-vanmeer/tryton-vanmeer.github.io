@@ -7,11 +7,11 @@ description = ""
 
 systemd is great for managing system services, so why not extend its capabilities to running things on login. Doing this allows you to take advantage of systemd's features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.
 
-I'm just running oneshot commands, so my unit files are simple.
+My unit files are simple since I'm running oneshot commands.
 
-They are placed in **~/.config/systemd/user** and are activated with **systemctl --user enable \<service\>**.
+Your user units are placed in **~/.config/systemd/user** and are activated with **systemctl --user enable \<service\>**.
 
-The important part of my unit files is the **graphical-session.target**, since I want them to start, not just when I login, but when the desktop is ready.
+The important part of my unit files is the **graphical-session.target**. This is because I want the command to run when the desktop is ready, and not just as soon as I login.
 
 A template of my unit file is as follows:
 
