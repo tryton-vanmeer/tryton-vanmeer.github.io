@@ -1,8 +1,7 @@
 +++
 title = "Running Services on Login with systemd"
-date = ""
-draft = true
-description = ""
+date = "2020-11-10"
+description = "systemd is great for managing system services, so why not extend its capabilities to running things on login."
 +++
 
 systemd is great for managing system services, so why not extend its capabilities to running things on login. Doing this allows you to take advantage of systemd's features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.
