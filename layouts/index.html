@@ -14,19 +14,17 @@
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
 
     {{ range $paginator.Pages }}
-        {{ if not .Draft }}
-            <div class="post">
-                <span>
-                    {{ .Date.Format "2006-01-02" }}
-                </span>
-                <h2 class="subtitle">
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </h2>
-                <p>
-                    <span>↳</span> {{ .Description }}
-                </p>
-            </div>
-        {{ end }}
+        <div class="post">
+            <span>
+                {{ .Date.Format "2006-01-02" }}
+            </span>
+            <h2 class="subtitle">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+            <p>
+                <span>↳</span> {{ .Description }}
+            </p>
+        </div>
     {{ end }}
 </div>
 
