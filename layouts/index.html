@@ -11,6 +11,21 @@
 </section>
 
 <div class="container mobile-fluid mt-4">
+
+    {{ range (where .Site.RegularPages "Type" "drafts") }}
+        <div class="post">
+            <span class="text-red">
+                Draft
+            </span>
+            <h2 class="subtitle">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+            <p>
+                <span>↳</span> {{ .Description }}
+            </p>
+        </div>
+    {{ end }}
+
     {{ range (where .Site.RegularPages "Type" "posts") }}
         <div class="post">
             <span>
