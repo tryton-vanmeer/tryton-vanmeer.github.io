@@ -11,9 +11,7 @@
 </section>
 
 <div class="container mobile-fluid mt-4">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
-
-    {{ range $paginator.Pages }}
+    {{ range (where .Site.RegularPages "Type" "posts") }}
         <div class="post">
             <span>
                 {{ .Date.Format "2006-01-02" }}
