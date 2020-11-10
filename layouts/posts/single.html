@@ -6,16 +6,9 @@
             <h1 class="title is-size-4-mobile">
                 {{ .Title }}
             </h1>
-
-            {{ if .Draft }}
-                <h2 class="subtitle text-red">
-                    Draft
-                </h2>
-            {{ else }}
-                <h2 class="subtitle">
-                    {{ .Date.Format "2006-01-02" }}
-                </h2>
-            {{ end }}
+            <h2 class="subtitle">
+                {{ .Date.Format "2006-01-02" }}
+            </h2>
         </div>
     </div>
 </section>
