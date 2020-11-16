@@ -22,7 +22,7 @@ The Python version can be found [here](https://github.com/tryton-vanmeer/Hiritsu
 
 ## Benchmarking
 
-For this benchmark I used this [wallpaper](https://wallhaven.cc/w/dgzj9o) from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the **time** command.
+For this benchmark I used this [wallpaper](https://wallhaven.cc/w/dgzj9o) from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the `time` command.
 
 The Python version ran in 0.040s while the Rust version ran in 0.001s.
 

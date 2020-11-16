@@ -8,9 +8,9 @@ systemd is great for managing system services, so why not extend its capabilitie
 
 My unit files are simple since I'm running oneshot commands.
 
-Your user units are placed in **~/.config/systemd/user** and are activated with **systemctl --user enable \<service\>**.
+Your user units are placed in `~/.config/systemd/user` and are activated with `systemctl --user enable <service>`.
 
-The important part of my unit files is the **graphical-session.target**. This is because I want the command to run when the desktop is ready, and not just as soon as I login.
+The important part of my unit files is the `graphical-session.target`. This is because I want the command to run when the desktop is ready, and not just as soon as I login.
 
 A template of my unit file is as follows:
 

@@ -12,7 +12,7 @@ Fish. Is. Awesome.
 
 I've heard about how great Fish and ZSH were but always stuck to just using Bash. I was now thinking to myself, why didn't I try these earlier.
 
-As great as ZSH was, I really like Fish's out of the box defaults. I love that I can keep all Fish configs in **~/.config/fish/** and keep **$HOME** clutter free.
+As great as ZSH was, I really like Fish's out of the box defaults. I love that I can keep all Fish configs in `~/.config/fish/` and keep `$HOME` clutter free.
 
 In the process of trying these new shells I also depreciated my custom bash powered prompt and starting using [Starship](https://starship.rs/). Starship gave me the style I wanted in my prompt, but so much faster.
 
@@ -73,6 +73,6 @@ $ dnf install dconf<TAB><TAB>
 dconf  dconf-devel  dconf-editor
 ```
 
-This is an issue for packages such as **gnome-2048**, but I'm not to concerned.
+This is an issue for packages such as `gnome-2048`, but I'm not to concerned.
 
 I am, however open to suggestions that can overcome this issue and properly separate the version from the package name.
