@@ -81,7 +81,7 @@ Similar to Firefox, two files are created.
 
 The user profile `airootfs/etc/dconf/profile/user`:
 
-```
+```txt
 user-db:user
 system-db:local
 ```

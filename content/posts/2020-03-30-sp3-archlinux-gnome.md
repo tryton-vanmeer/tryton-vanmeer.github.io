@@ -32,7 +32,7 @@ For the 2160x1440 screen on the SP3, I personally find a 125% scaling really nic
 
 If you want bluetooth available on boot, enable it, since it may not be already.
 
-```
+```shell
 systemctl enable --now bluetooth
 ```
 
@@ -40,7 +40,7 @@ systemctl enable --now bluetooth
 
 Only a single package needs to be installed to enable screen rotation when the surface is rotated.
 
-```
+```shell
 pacman -S iio-sensor-proxy
 ```
 

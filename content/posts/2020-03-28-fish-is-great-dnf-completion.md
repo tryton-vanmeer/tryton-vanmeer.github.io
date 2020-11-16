@@ -22,7 +22,7 @@ Recently I've been giving Fedora a try and quite enjoy it. The only real complai
 
 For example when searching:
 
-```
+```shell
 $ dnf search dconf
 ===== Name Exactly Matched: dconf =====
 dconf.x86_64 : A configuration system
@@ -35,7 +35,7 @@ dconf-devel.x86_64 : Header files and libraries for dconf development
 
 And when tab completing with Fish:
 
-```
+```shell
 $ dnf install dconf<TAB><TAB>
 dconf-0.36.0-1.fc32.i686        dconf-devel-0.36.0-1.fc32.x86_64
 dconf-0.36.0-1.fc32.x86_64      dconf-editor-3.36.0-1.fc32.x86_64
@@ -68,7 +68,7 @@ In both cases we use the replace regex subcommand. First to remove the fedora re
 
 Which results in a more minimal tab completion:
 
-```
+```shell
 $ dnf install dconf<TAB><TAB>
 dconf  dconf-devel  dconf-editor
 ```

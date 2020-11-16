@@ -8,7 +8,7 @@ Hiritsu is a tool I developed to get the resolution and aspect ratio of images. 
 
 An example of this in action:
 
-```
+```shell
 $ hiritsu wallpaper.jpg
 Width:  1920
 Height: 1080
