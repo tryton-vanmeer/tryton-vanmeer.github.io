@@ -6,7 +6,18 @@
     <description>Recent content on Tryton Van Meer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenRGB</title>
+      <link>https://trytonvanmeer.dev/posts/2020-11-16-openrgb/</link>
+      <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/posts/2020-11-16-openrgb/</guid>
+      <description>OpenRGB is amazing open source software, that supports Windows and Linux, for managaging your computer&amp;rsquo;s RGB lighting. It doesn&amp;rsquo;t depend on the software of manufacturers, and allows you to control the RGB lighting where you might not have before in the case of Linux.
+OpenRGB gives you the ability to save and load profiles. This can be done in the GUI or through the CLI using openrgb --profile filename.orp.
+You can also programmatically configure devices on the CLI.</description>
+    </item>
+    
     <item>
       <title>Running Services on Login with systemd</title>
       <link>https://trytonvanmeer.dev/posts/2020-11-10-running-services-on-login-with-systemd/</link>
@@ -15,7 +26,7 @@
       <guid>https://trytonvanmeer.dev/posts/2020-11-10-running-services-on-login-with-systemd/</guid>
       <description>systemd is great for managing system services, so why not extend its capabilities to running things on login. Doing this allows you to take advantage of systemd&amp;rsquo;s features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.
 My unit files are simple since I&amp;rsquo;m running oneshot commands.
-Your user units are placed in ~/.config/systemd/user and are activated with systemctl &amp;ndash;user enable &amp;lt;service&amp;gt;.
+Your user units are placed in ~/.config/systemd/user and are activated with systemctl --user enable &amp;lt;service&amp;gt;.
 The important part of my unit files is the graphical-session.</description>
     </item>
     

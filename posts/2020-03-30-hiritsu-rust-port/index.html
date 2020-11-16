@@ -6,7 +6,7 @@
         <meta name="theme-color" content="#121212">
         
         
-        <link rel="stylesheet" href="https://trytonvanmeer.dev/style.7051efd811683a344076fd3f047b14241cee36166d7fcda5bad2a7c67c226f1f.css" integrity="sha256-cFHv2BFoOjRAdv0/BHsUJBzuNhZtf82lutKnxnwibx8=" media="screen">
+        <link rel="stylesheet" href="https://trytonvanmeer.dev/style.9477b8139e08d4ac67c1646f12add10b857a2c9f7a7862f379051b0d2e70ee87.css" integrity="sha256-lHe4E54I1KxnwWRvEq3RC4V6LJ96eGLzeQUbDS5w7oc=" media="screen">
         <title>Porting Hiritsu to Rust</title>
     </head>
 
@@ -61,16 +61,16 @@
 <div class="container mobile-fluid post-content mt-4">
     <p>Hiritsu is a tool I developed to get the resolution and aspect ratio of images. It can also be used to rename an input image to include those attributes in the filename.</p>
 <p>An example of this in action:</p>
-<pre><code>$ hiritsu wallpaper.jpg
-Width:  1920
-Height: 1080
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">$ hiritsu wallpaper.jpg
+Width:  <span class="m">1920</span>
+Height: <span class="m">1080</span>
 Ratio:  16:9
 
 $ hiritsu --rename wallpaper.jpg
-wallpaper (1920x1080) [16:9].jpg
-</code></pre><p>The Python version can be found <a href="https://github.com/tryton-vanmeer/Hiritsu/blob/python/hiritsu">here</a>, and the Rust port <a href="https://github.com/tryton-vanmeer/Hiritsu/blob/master/src/main.rs">here</a></p>
+wallpaper <span class="o">(</span>1920x1080<span class="o">)</span> <span class="o">[</span>16:9<span class="o">]</span>.jpg
+</code></pre></div><p>The Python version can be found <a href="https://github.com/tryton-vanmeer/Hiritsu/blob/python/hiritsu">here</a>, and the Rust port <a href="https://github.com/tryton-vanmeer/Hiritsu/blob/master/src/main.rs">here</a></p>
 <h2 id="benchmarking">Benchmarking</h2>
-<p>For this benchmark I used this <a href="https://wallhaven.cc/w/dgzj9o">wallpaper</a> from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the <strong>time</strong> command.</p>
+<p>For this benchmark I used this <a href="https://wallhaven.cc/w/dgzj9o">wallpaper</a> from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the <code>time</code> command.</p>
 <p>The Python version ran in 0.040s while the Rust version ran in 0.001s.</p>
 <p>And if I&rsquo;m paying really close attention, I can see the Rust output is slightly faster.</p>
 <p>Now, obviously a simple script like this won&rsquo;t show the true speed benifits of using Rust.</p>

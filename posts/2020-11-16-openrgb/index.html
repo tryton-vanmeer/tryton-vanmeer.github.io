@@ -7,7 +7,7 @@
         
         
         <link rel="stylesheet" href="https://trytonvanmeer.dev/style.9477b8139e08d4ac67c1646f12add10b857a2c9f7a7862f379051b0d2e70ee87.css" integrity="sha256-lHe4E54I1KxnwWRvEq3RC4V6LJ96eGLzeQUbDS5w7oc=" media="screen">
-        <title>Running Services on Login with systemd</title>
+        <title>OpenRGB</title>
     </head>
 
     <body>
@@ -49,27 +49,27 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title is-size-4-mobile">
-                Running Services on Login with systemd
+                OpenRGB
             </h1>
             <h2 class="subtitle">
-                2020-11-10
+                2020-11-16
             </h2>
         </div>
     </div>
 </section>
 
 <div class="container mobile-fluid post-content mt-4">
-    <p>systemd is great for managing system services, so why not extend its capabilities to running things on login. Doing this allows you to take advantage of systemd&rsquo;s features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.</p>
-<p>My unit files are simple since I&rsquo;m running oneshot commands.</p>
-<p>Your user units are placed in <code>~/.config/systemd/user</code> and are activated with <code>systemctl --user enable &lt;service&gt;</code>.</p>
-<p>The important part of my unit files is the <code>graphical-session.target</code>. This is because I want the command to run when the desktop is ready, and not just as soon as I login.</p>
-<p>A template of my unit file is as follows:</p>
+    <p><a href="https://gitlab.com/CalcProgrammer1/OpenRGB">OpenRGB</a> is amazing open source software, that supports Windows and Linux, for managaging your computer&rsquo;s RGB lighting.
+It doesn&rsquo;t depend on the software of manufacturers, and allows you to control the RGB lighting where you might not have before in the case of Linux.</p>
+<p><img src="/images/Screenshot-OpenRGB.png" alt="OpenRGB Screenshot"></p>
+<p>OpenRGB gives you the ability to save and load profiles. This can be done in the GUI or through the CLI using <code>openrgb --profile filename.orp</code>.</p>
+<p>You can also programmatically configure devices on the CLI. I use this since I just want to set every device to red on startup. I do this as explained in <a href="/posts/2020-11-10-running-services-on-login-with-systemd/">Running Services on Login with systemd</a>. The complete <code>openrgb.service</code> is as follows:</p>
 <div class="highlight"><pre class="chroma"><code class="language-systemd" data-lang="systemd"><span class="k">[Unit]</span>
-<span class="na">Description</span><span class="o">=</span><span class="s">A &#39;systemd --user&#39; unit that does something on login.</span>
+<span class="na">Description</span><span class="o">=</span><span class="s">Load OpenRGB profile</span>
 <span class="na">After</span><span class="o">=</span><span class="s">graphical-session.target</span>
 
 <span class="k">[Service]</span>
-<span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/program</span>
+<span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/openrgb --color &#34;FF0000&#34;</span>
 
 <span class="k">[Install]</span>
 <span class="na">WantedBy</span><span class="o">=</span><span class="s">graphical-session.target</span>

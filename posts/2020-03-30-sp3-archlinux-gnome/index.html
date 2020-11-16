@@ -6,7 +6,7 @@
         <meta name="theme-color" content="#121212">
         
         
-        <link rel="stylesheet" href="https://trytonvanmeer.dev/style.7051efd811683a344076fd3f047b14241cee36166d7fcda5bad2a7c67c226f1f.css" integrity="sha256-cFHv2BFoOjRAdv0/BHsUJBzuNhZtf82lutKnxnwibx8=" media="screen">
+        <link rel="stylesheet" href="https://trytonvanmeer.dev/style.9477b8139e08d4ac67c1646f12add10b857a2c9f7a7862f379051b0d2e70ee87.css" integrity="sha256-lHe4E54I1KxnwWRvEq3RC4V6LJ96eGLzeQUbDS5w7oc=" media="screen">
         <title>Arch Linux with GNOME on the Surface Pro 3</title>
     </head>
 
@@ -79,11 +79,11 @@
 </code></pre></div><p>For the 2160x1440 screen on the SP3, I personally find a 125% scaling really nice.</p>
 <h2 id="bluetooth">Bluetooth</h2>
 <p>If you want bluetooth available on boot, enable it, since it may not be already.</p>
-<pre><code>systemctl enable --now bluetooth
-</code></pre><h2 id="autorotation">Autorotation</h2>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">systemctl <span class="nb">enable</span> --now bluetooth
+</code></pre></div><h2 id="autorotation">Autorotation</h2>
 <p>Only a single package needs to be installed to enable screen rotation when the surface is rotated.</p>
-<pre><code>pacman -S iio-sensor-proxy
-</code></pre><p>GNOME will now display a button for (un)locking screen rotation.</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">pacman -S iio-sensor-proxy
+</code></pre></div><p>GNOME will now display a button for (un)locking screen rotation.</p>
 <p><img src="/images/Screenshot-SP3-Screen-Rotate-Lock.png" alt="SP3 Screen Rotate Lock"></p>
 <h2 id="touchscreen">Touchscreen</h2>
 <p>GNOME on Wayland works really well with a touchscreen. And the GNOME apps handle touch input wonderfully.</p>

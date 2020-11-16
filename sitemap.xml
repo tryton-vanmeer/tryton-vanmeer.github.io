@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/</loc>
-    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+    <loc>https://trytonvanmeer.dev/posts/2020-11-16-openrgb/</loc>
+    <lastmod>2020-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/2020-11-10-running-services-on-login-with-systemd/</loc>
-    <lastmod>2020-11-10T00:00:00+00:00</lastmod>
+    <loc>https://trytonvanmeer.dev/posts/</loc>
+    <lastmod>2020-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://trytonvanmeer.dev/</loc>
+    <lastmod>2020-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trytonvanmeer.dev/posts/2020-11-10-running-services-on-login-with-systemd/</loc>
     <lastmod>2020-11-10T00:00:00+00:00</lastmod>
   </url>
   
