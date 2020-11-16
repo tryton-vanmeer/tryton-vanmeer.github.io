@@ -61,7 +61,8 @@ As part of looking into a solution I came across the [string](https://fishshell.
 Now the command can be:
 
 ```fish
-sqlite3 /var/cache/dnf/packages.db "SELECT pkg FROM available WHERE pkg LIKE \"$cur%\"" 2>/dev/null | string replace -r ".fc.*" "" | string replace -r "\-[0-9].*" ""
+sqlite3 /var/cache/dnf/packages.db "SELECT pkg FROM available WHERE pkg LIKE \"$cur%\"" 2>/dev/null | \
+string replace -r ".fc.*" "" | string replace -r "\-[0-9].*" ""
 ```
 
 In both cases we use the replace regex subcommand. First to remove the fedora release and architecture of the package. Then everything after the first instance of a dash (-) followed by a digit ([0-9]).
