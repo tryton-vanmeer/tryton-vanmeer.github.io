@@ -7,7 +7,7 @@
         
         
         <link rel="stylesheet" href="https://trytonvanmeer.dev/style.86bad15a39f403a80d2dc3e9463c285736c26cbc79d55b44e343f6e0fa71cc32.css" integrity="sha256-hrrRWjn0A6gNLcPpRjwoVzbCbLx51VtE40P24PpxzDI=" media="screen">
-        <title>Adding SSH Keys</title>
+        <title>YubiKey</title>
     </head>
 
     <body>
@@ -49,7 +49,7 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title is-size-4-mobile">
-                Adding SSH Keys
+                YubiKey
             </h1>
 
             
@@ -62,29 +62,29 @@
 </section>
 
 <div class="container mobile-fluid post-content mt-4">
-    <p>Just some notes about provisioning machines with SSH keys.</p>
-<h2 id="copy-with-ssh-copy-id">Copy with ssh-copy-id</h2>
-<p>If you have ssh access to the machine with a password, you can use <code>ssh-copy-id</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ssh-copy-id user@host
-<span class="c1"># or to specify the key</span>
-$ ssh-copy-id -i ~/.ssh/mykey user@host
-</code></pre></div><h2 id="using-git-platforms">Using Git Platforms</h2>
-<p>Both GitHub and GitLab allow you to grab a users public SSH keys.</p>
-<p>You can grab them like so:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl https://github.com/&lt;username&gt;.keys
-$ curl https://gitlab.com/&lt;username&gt;.keys
-
-<span class="c1"># And I would:</span>
-$ curl https://github.com/tryton-vanmeer.keys
-$ curl https://gitlab.com/tryton-vanmeer.keys
-</code></pre></div><p>And to add the keys to a machine you have access to:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl https://github.com/tryton-vanmeer.keys <span class="p">|</span> tee -a ~/.ssh/authorized_keys
-</code></pre></div><p>You would now be able to SSH into that machine using any machine that has SSH access to your Git platforms.</p>
-<h2 id="permissions">Permissions</h2>
-<p>If the SSH folder had to be created for a user, make sure the permissions are correctly set for the folder itself,
-and the authorized_keys file.</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ chmod <span class="m">700</span> ~/.ssh
-$ chmod <span class="m">600</span> ~/.ssh/authorized_keys
+    <p>Notes about setting up a YubiKey on Linux (Arch Linux / Fedora).</p>
+<h2 id="packages">Packages</h2>
+<p>Install the following packages:</p>
+<h3 id="arch-linux">Arch Linux</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo pacman -S pam-u2f yubikey-manager libfido2
+</code></pre></div><blockquote>
+<p>Make sure <code>pcscd.service</code> (PC/SC Smart Card Daemon) is enabled on Arch Linux.</p>
+</blockquote>
+<h3 id="fedora">Fedora</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo dnf install pam-u2f yubikey-manager libfido2 pamu2fcfg
+</code></pre></div><h2 id="pam">PAM</h2>
+<p>Create <code>/etc/u2f_keys</code> and append the output of <code>pamu2fcfg</code> to it.</p>
+<p><code>pamu2fcfg -n</code> will create the same output without a username. This is usefull for appending additional keys.</p>
+<p>Add the line <code>auth sufficient pam_u2f.so authfile=/etc/u2f_keys cue</code> to the top of any PAM config file in <code>/etc/pam.d</code>. Such as <code>sudo</code>, <code>gdm-password</code>, <code>polkit-1</code>.</p>
+<p>This adds the YubiKey as an auth method. Sufficient means that only the key is needed. If the key is removed, password auth will be used as normal.</p>
+<h2 id="ssh">SSH</h2>
+<p>Create an SSH key like normal, but specify the <code>ecdsa-sk</code> key type (sk stands for security key).</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ssh-keygen -t ecdsa-sk
+</code></pre></div><p>Then add the key to the remote machine as usual.</p>
+<h2 id="disable-otp-on-touch">Disable OTP on Touch</h2>
+<p>When the YubiKey is touched, it acts as a keyboard outputing an OPT and sending [ENTER].</p>
+<p>To disable it:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ykman config usb --disable otp
 </code></pre></div>
 </div>
 

@@ -21,6 +21,19 @@ $ curl https://github.com/&amp;lt;username&amp;gt;.keys $ curl https://gitlab.co
     </item>
     
     <item>
+      <title>YubiKey</title>
+      <link>https://trytonvanmeer.dev/posts/yubikey/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/posts/yubikey/</guid>
+      <description>Notes about setting up a YubiKey on Linux (Arch Linux / Fedora).
+Packages Install the following packages:
+Arch Linux $ sudo pacman -S pam-u2f yubikey-manager libfido2  Make sure pcscd.service (PC/SC Smart Card Daemon) is enabled on Arch Linux.
+ Fedora $ sudo dnf install pam-u2f yubikey-manager libfido2 pamu2fcfg PAM Create /etc/u2f_keys and append the output of pamu2fcfg to it.
+pamu2fcfg -n will create the same output without a username. This is usefull for appending additional keys.</description>
+    </item>
+    
+    <item>
       <title>OpenRGB</title>
       <link>https://trytonvanmeer.dev/posts/openrgb/</link>
       <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
