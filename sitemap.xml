@@ -3,47 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/2020-11-16-openrgb/</loc>
-    <lastmod>2020-11-16T00:00:00+00:00</lastmod>
+    <loc>https://trytonvanmeer.dev/posts/adding-ssh-keys/</loc>
+    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://trytonvanmeer.dev/posts/</loc>
-    <lastmod>2020-11-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://trytonvanmeer.dev/</loc>
+    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trytonvanmeer.dev/posts/openrgb/</loc>
     <lastmod>2020-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/2020-11-10-running-services-on-login-with-systemd/</loc>
+    <loc>https://trytonvanmeer.dev/posts/running-services-on-login-with-systemd/</loc>
     <lastmod>2020-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/2020-04-17-custom-arch-linux-image/</loc>
+    <loc>https://trytonvanmeer.dev/posts/custom-arch-linux-image/</loc>
     <lastmod>2020-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/2020-03-30-sp3-archlinux-gnome/</loc>
+    <loc>https://trytonvanmeer.dev/posts/sp3-archlinux-gnome/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/2020-03-30-hiritsu-rust-port/</loc>
+    <loc>https://trytonvanmeer.dev/posts/hiritsu-rust-port/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/2020-03-28-fish-is-great-dnf-completion/</loc>
+    <loc>https://trytonvanmeer.dev/posts/fish-is-great-dnf-completion/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/2018-02-21-yes-i-am-a-linux-gamer/</loc>
+    <loc>https://trytonvanmeer.dev/posts/yes-i-am-a-linux-gamer/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
   </url>
   

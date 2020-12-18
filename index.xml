@@ -6,13 +6,26 @@
     <description>Recent content on Tryton Van Meer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding SSH Keys</title>
+      <link>https://trytonvanmeer.dev/posts/adding-ssh-keys/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/posts/adding-ssh-keys/</guid>
+      <description>Just some notes about provisioning machines with SSH keys.
+Copy with ssh-copy-id If you have ssh access to the machine with a password, you can use ssh-copy-id.
+$ ssh-copy-id user@host # or to specify the key $ ssh-copy-id -i ~/.ssh/mykey user@host Using Git Platforms Both GitHub and GitLab allow you to grab a users public SSH keys.
+You can grab them like so:
+$ curl https://github.com/&amp;lt;username&amp;gt;.keys $ curl https://gitlab.com/&amp;lt;username&amp;gt;.keys # And I would: $ curl https://github.</description>
+    </item>
+    
     <item>
       <title>OpenRGB</title>
-      <link>https://trytonvanmeer.dev/posts/2020-11-16-openrgb/</link>
+      <link>https://trytonvanmeer.dev/posts/openrgb/</link>
       <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://trytonvanmeer.dev/posts/2020-11-16-openrgb/</guid>
+      <guid>https://trytonvanmeer.dev/posts/openrgb/</guid>
       <description>OpenRGB is amazing open source software, that supports Windows and Linux, for managing your computers RGB lighting. It doesn&amp;rsquo;t depend on the software of manufacturers, and allows you to control the RGB lighting where previously you might not have before on Linux.
 OpenRGB gives you the ability to save and load profiles. This can be done in the GUI or through the CLI using openrgb --profile filename.orp.
 You can also programmatically configure devices on the CLI.</description>
@@ -20,10 +33,10 @@ You can also programmatically configure devices on the CLI.</description>
     
     <item>
       <title>Running Services on Login with systemd</title>
-      <link>https://trytonvanmeer.dev/posts/2020-11-10-running-services-on-login-with-systemd/</link>
+      <link>https://trytonvanmeer.dev/posts/running-services-on-login-with-systemd/</link>
       <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://trytonvanmeer.dev/posts/2020-11-10-running-services-on-login-with-systemd/</guid>
+      <guid>https://trytonvanmeer.dev/posts/running-services-on-login-with-systemd/</guid>
       <description>systemd is great for managing system services, so why not extend its capabilities to running things on login. Doing this allows you to take advantage of systemd&amp;rsquo;s features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.
 My unit files are simple since I&amp;rsquo;m running oneshot commands.
 Your user units are placed in ~/.config/systemd/user and are activated with systemctl --user enable &amp;lt;service&amp;gt;.
@@ -32,19 +45,19 @@ The important part of my unit files is the graphical-session.</description>
     
     <item>
       <title>Custom Arch Linux Image</title>
-      <link>https://trytonvanmeer.dev/posts/2020-04-17-custom-arch-linux-image/</link>
+      <link>https://trytonvanmeer.dev/posts/custom-arch-linux-image/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://trytonvanmeer.dev/posts/2020-04-17-custom-arch-linux-image/</guid>
+      <guid>https://trytonvanmeer.dev/posts/custom-arch-linux-image/</guid>
       <description>One of the tools I like to keep on my toolbelt is a USB drive with some kind of live Linux system. This can be used to show someone Linux, troubleshooting peoples devices, or just arch-chroot&amp;rsquo;ing into my desktop to fix something. Since Arch Linux is my OS of choice, it would be ideal to have an Arch USB. But, this obviously means not having a Desktop Environment to work from.</description>
     </item>
     
     <item>
       <title>Arch Linux with GNOME on the Surface Pro 3</title>
-      <link>https://trytonvanmeer.dev/posts/2020-03-30-sp3-archlinux-gnome/</link>
+      <link>https://trytonvanmeer.dev/posts/sp3-archlinux-gnome/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://trytonvanmeer.dev/posts/2020-03-30-sp3-archlinux-gnome/</guid>
+      <guid>https://trytonvanmeer.dev/posts/sp3-archlinux-gnome/</guid>
       <description>Recently, I acquired a Surface Pro 3 for a great deal. I was looking for a small computing device and wanted something I could run desktop Linux on, so an Android tablet or Chromebook were out of the race already.
 I settled on the SP3 for a couple reasons:
  It has x86 hardware so no issues installing Linux. The SP3, while quite old at this point (released in 2014), has out of the box Linux support.</description>
@@ -52,10 +65,10 @@ I settled on the SP3 for a couple reasons:
     
     <item>
       <title>Porting Hiritsu to Rust</title>
-      <link>https://trytonvanmeer.dev/posts/2020-03-30-hiritsu-rust-port/</link>
+      <link>https://trytonvanmeer.dev/posts/hiritsu-rust-port/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://trytonvanmeer.dev/posts/2020-03-30-hiritsu-rust-port/</guid>
+      <guid>https://trytonvanmeer.dev/posts/hiritsu-rust-port/</guid>
       <description>Hiritsu is a tool I developed to get the resolution and aspect ratio of images. It can also be used to rename an input image to include those attributes in the filename.
 An example of this in action:
 $ hiritsu wallpaper.jpg Width: 1920 Height: 1080 Ratio: 16:9 $ hiritsu --rename wallpaper.jpg wallpaper (1920x1080) [16:9].jpg The Python version can be found here, and the Rust port here
@@ -64,10 +77,10 @@ Benchmarking For this benchmark I used this wallpaper from Wallhaven.</descripti
     
     <item>
       <title>Fish is Awesome! And tweaking the DNF completion.</title>
-      <link>https://trytonvanmeer.dev/posts/2020-03-28-fish-is-great-dnf-completion/</link>
+      <link>https://trytonvanmeer.dev/posts/fish-is-great-dnf-completion/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://trytonvanmeer.dev/posts/2020-03-28-fish-is-great-dnf-completion/</guid>
+      <guid>https://trytonvanmeer.dev/posts/fish-is-great-dnf-completion/</guid>
       <description>A while ago I decided to finally switched to ZSH and give it a try. Got it mostly configured to how I wanted it and was satisfied.
 Then a friend mentioned he uses Fish. Well, I&amp;rsquo;m already trying an alternative shell, so why not give Fish a go.
 Fish. Is. Awesome.
@@ -76,10 +89,10 @@ I&amp;rsquo;ve heard about how great Fish and ZSH were but always stuck to just 
     
     <item>
       <title>Yes, I am a Linux gamer!</title>
-      <link>https://trytonvanmeer.dev/posts/2018-02-21-yes-i-am-a-linux-gamer/</link>
+      <link>https://trytonvanmeer.dev/posts/yes-i-am-a-linux-gamer/</link>
       <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://trytonvanmeer.dev/posts/2018-02-21-yes-i-am-a-linux-gamer/</guid>
+      <guid>https://trytonvanmeer.dev/posts/yes-i-am-a-linux-gamer/</guid>
       <description>Linux is my platform of choice for not only daily computing, but also gaming. And I am happy to say I enjoy it quite a lot.
 Steam I might not be able to play all the latest AAA games, but I still have more games to play than I have time. Since I stopped using Windows, I&amp;rsquo;ve also made a point to only buy games that support Linux.
 There are currently 416 games in my Steam library.</description>

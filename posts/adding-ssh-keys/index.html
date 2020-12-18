@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#121212">
+        
+        
+        <link rel="stylesheet" href="https://trytonvanmeer.dev/style.9477b8139e08d4ac67c1646f12add10b857a2c9f7a7862f379051b0d2e70ee87.css" integrity="sha256-lHe4E54I1KxnwWRvEq3RC4V6LJ96eGLzeQUbDS5w7oc=" media="screen">
+        <title>Adding SSH Keys</title>
+    </head>
+
+    <body>
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://trytonvanmeer.dev/">
+                    <h1 class="title">
+                        <span class="text-red">𝝺</span> Tryton Van Meer
+                    </h1>
+                </a>
+
+                <a id="navbar-burger" class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbar-menu" class="navbar-menu has-text-centered">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="https://github.com/tryton-vanmeer">
+                        GitHub
+                    </a>
+                    <a class="navbar-item" href="https://trytonvanmeer.dev/Resume/resume.pdf">
+                        Resume
+                    </a>
+                    <a class="navbar-item" href="mailto:hello@trytonvanmeer.dev">
+                        Email
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            
+
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-size-4-mobile">
+                Adding SSH Keys
+            </h1>
+
+            
+                <h2 class="subtitle">
+                    2020-12-18
+                </h2>
+            
+        </div>
+    </div>
+</section>
+
+<div class="container mobile-fluid post-content mt-4">
+    <p>Just some notes about provisioning machines with SSH keys.</p>
+<h2 id="copy-with-ssh-copy-id">Copy with ssh-copy-id</h2>
+<p>If you have ssh access to the machine with a password, you can use <code>ssh-copy-id</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ssh-copy-id user@host
+<span class="c1"># or to specify the key</span>
+$ ssh-copy-id -i ~/.ssh/mykey user@host
+</code></pre></div><h2 id="using-git-platforms">Using Git Platforms</h2>
+<p>Both GitHub and GitLab allow you to grab a users public SSH keys.</p>
+<p>You can grab them like so:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ curl https://github.com/&lt;username&gt;.keys
+$ curl https://gitlab.com/&lt;username&gt;.keys
+
+<span class="c1"># And I would:</span>
+$ curl https://github.com/tryton-vanmeer.keys
+$ curl https://gitlab.com/tryton-vanmeer.keys
+</code></pre></div><p>And to add the keys to a machine you have access to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl https://github.com/tryton-vanmeer.keys <span class="p">|</span> tee -a ~/.ssh/authorized_keys
+</code></pre></div><p>You would now be able to SSH into that machine using any machine that has SSH access to your Git platforms.</p>
+<h2 id="permissions">Permissions</h2>
+<p>If the SSH folder had to be created for a user, make sure the permissions are correctly set for the folder itself,
+and the authorized_keys file.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ chmod <span class="m">700</span> ~/.ssh
+$ chmod <span class="m">600</span> ~/.ssh/authorized_keys
+</code></pre></div>
+</div>
+
+
+        </main>
+
+        <footer class="has-text-centered">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">© 2020 Tryton Van Meer</a>
+            <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">[Source]</a>
+        </footer>
+
+        
+        <script src="https://trytonvanmeer.dev/js/main.9c8ad513a45a66c7726508cc7589e37f8fb1a58fad9e6d3bcdf9b5a9c76cb839.js" integrity="sha256-nIrVE6RaZsdyZQjMdYnjf4&#43;xpY&#43;tnm07zfm1qcdsuDk="></script>
+    </body>
+</html>
