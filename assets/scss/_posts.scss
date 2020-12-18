@@ -40,4 +40,20 @@
     {
         margin-bottom: 1rem;
     }
+
+    blockquote
+    {
+        @extend .notification;
+        @extend .is-info;
+
+        p
+        {
+            margin-bottom: 0;
+        }
+
+        code
+        {
+            background-color: $code-background;
+        }
+    }
 }
