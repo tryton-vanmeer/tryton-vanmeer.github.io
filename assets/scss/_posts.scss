@@ -44,7 +44,7 @@
     blockquote
     {
         @extend .notification;
-        @extend .is-info;
+        @extend .is-success;
 
         p
         {
