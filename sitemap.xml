@@ -3,17 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://trytonvanmeer.dev/posts/adding-ssh-keys/</loc>
-    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
+    <loc>https://trytonvanmeer.dev/posts/networkmanager-dnsmasq-libvirtd/</loc>
+    <lastmod>2021-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trytonvanmeer.dev/posts/networkmanager-dnsmasq-nginx-localhost/</loc>
+    <lastmod>2021-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trytonvanmeer.dev/posts/networkmanager-dnsmasq/</loc>
+    <lastmod>2021-01-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://trytonvanmeer.dev/posts/</loc>
-    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://trytonvanmeer.dev/</loc>
+    <lastmod>2021-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trytonvanmeer.dev/posts/adding-ssh-keys/</loc>
     <lastmod>2020-12-18T00:00:00+00:00</lastmod>
   </url>
   
