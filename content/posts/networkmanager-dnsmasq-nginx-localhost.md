@@ -51,7 +51,7 @@ DNS.2 = startpage.lh
 
 This alt_names contains all the subdomains you'd like to use and be valid for this cert.
 
-### Creating Root Certification Authority
+### Root Certification Authority
 
 I create a RootCA for signing my cert. This RootCA can later be added to the system so that Firefox automatically trusts the cert without having to accept it manually.
 
@@ -63,7 +63,7 @@ $ sudo openssl genrsa -out /etc/nginx/ssl/rootCA.key 2048
 $ sudo openssl req -x509 -new -nodes -key /etc/nginx/ssl/rootCA.key -sha256 -days 3650 -out /etc/nginx/ssl/rootCA.pem
 ```
 
-### Creating SSL Certificates
+### SSL Certificates
 
 ```bash
 # Create private key and CSR key
@@ -81,7 +81,7 @@ On Arch Linux or Fedora, p11-kit can be used to add the RootCA system-wide.
 $ sudo trust anchor --store /etc/nginx/ssl/rootCA.pem
 ```
 
-## Configuring NGINX
+## NGINX
 
 Create the initial NGINX config.
 
