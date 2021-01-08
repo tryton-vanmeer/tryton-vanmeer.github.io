@@ -1,7 +1,7 @@
 +++
 title = "YubiKey"
 date = "2020-12-18"
-description = "Notes about YubiKey and setting up on Linux"
+description = "Notes about YubiKey and setting up on Linux."
 +++
 
 Notes about setting up a YubiKey on Linux (Arch Linux / Fedora).

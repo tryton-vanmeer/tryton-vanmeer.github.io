@@ -1,7 +1,7 @@
 +++
 title = "NetworkManager's dnsmasq plugin"
 date = "2021-01-08"
-description = "Using the NetworkManager dnsmasq plugin"
+description = "Using the NetworkManager dnsmasq plugin."
 +++
 
 NetworkManager in conjuntion with it's built-in local instance of dnsmasq allows for more advanced DNS configuration and opens up some usefull functionality.
