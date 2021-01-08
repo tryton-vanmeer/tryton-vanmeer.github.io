@@ -46,5 +46,4 @@ Either using the XML editor in virt-manager or `virsh --connect qemu:///system n
     </dhcp>
   </ip>
 </network>
-
 ```
