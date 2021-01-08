@@ -21,7 +21,7 @@ Now when we try to access **hostname**.vm, we'll be forwarded to `192.168.122.1`
 
 When testing with terraform, usign the libvirt provider, I create a terraform specific virtual network. So I have `server=/terraform.vm/10.0.100.1` included in this config file (**hostname**.terraform.vm).
 
-## Configuring libvirt
+## Configuring libvirtd
 
 Now we need to configure libvirt so that it resolves DNS requests with this domain name.
 
