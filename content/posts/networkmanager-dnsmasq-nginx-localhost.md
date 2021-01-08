@@ -2,7 +2,6 @@
 title = "NetworkManager dnsmasq - NGINX + Localhost"
 date = "2021-01-08"
 description = "Using NetworkManager's dnsmasq plugin with NGINX on the localhost."
-draft = true
 +++
 
 This post serves as an overview of my configs for using domains with my local NGINX instance with SSL/HTTPS.
@@ -23,8 +22,9 @@ Accessing **domain**.lh will be forwarded to localhost for NGINX to handle.
 
 I use a self-signed cert so that my localhost pages get a nice **Connection secure** padlock.
 
-### OpenSSL Config
+Create `/etc/nginx/ssl`
 
+### OpenSSL Config
 
 **lh.cnf**
 ```ini
@@ -80,3 +80,111 @@ On Arch Linux or Fedora, p11-kit can be used to add the RootCA system-wide.
 ```bash
 $ sudo trust anchor --store /etc/nginx/ssl/rootCA.pem
 ```
+
+## Configuring NGINX
+
+Create the initial NGINX config.
+
+**/etc/nginx/nginx.conf**
+```nginx
+worker_processes 1;
+
+events
+{
+    worker_connections 1024;
+}
+
+http
+{
+    include mime.types;
+    default_type application/octet-stream;
+
+    sendfile on;
+    keepalive_timeout 65;
+}
+```
+### SSL
+
+Configure NGINX to use SSL and redirect http → https.
+
+```nginx
+http
+{
+    ...
+
+    ssl_certificate ssl/lh.crt;
+    ssl_certificate_key ssl/lh.key;
+
+    server
+    {
+        listen 80;
+        server_name _;
+        return 301 https://$host$request_uri;
+    }
+}
+```
+
+### Proxy Config
+
+Common proxy config to be included.
+
+**/etc/nginx/proxy.conf**
+
+```nginx
+proxy_set_header Host $http_host;
+proxy_set_header X-Real-IP $remote_addr;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header X-Forwarded-Proto $scheme;
+```
+
+### Startpage
+
+I use NGINX to host my Startpage locally at startpage.lh.
+
+```nginx
+http
+{
+    ...
+
+    server
+    {
+        listen 443 ssl;
+        server_name startpage.lh;
+        root /home/tryton-vanmeer/Code/Startpage/;
+    }
+}
+```
+
+### Hugo
+
+I use hugo.lh to access hugo's server while developing hugo websites.
+
+```nginx
+http
+{
+    ...
+
+    server
+    {
+        listen 443 ssl;
+        server_name hugo.lh;
+
+        location /
+        {
+            proxy_pass http://localhost:1313;
+            include proxy.conf;
+        }
+
+        location /livereload
+        {
+            proxy_pass http://localhost:1313;
+            include proxy.conf;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "Upgrade";
+        }
+    }
+}
+```
+
+And I run hugo as such: `hugo serve --baseURL http://hugo.lh --appendPort=false --liveReloadPort=443 --buildDrafts`
