@@ -13,6 +13,8 @@ Appropriately, the first item on the list is my terminal.
 
 # [Fish Shell](https://fishshell.com/)
 
+# [Starship](https://starship.rs/)
+
 # [exa](https://the.exa.website/)
 
 # [pydf](https://github.com/k4rtik/pydf-pypi)
