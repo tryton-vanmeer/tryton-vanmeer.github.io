@@ -5,7 +5,7 @@ description = "A software spotlight of some of my terminal tools."
 draft = true
 +++
 
-Here are some of the terminal tools I use, and funnily some have an ocean theme.
+Here are some of the terminal tools I use, some of which share a certain ocean theme.
 
 # [Tilix](https://gnunn1.github.io/tilix-web/)
 
