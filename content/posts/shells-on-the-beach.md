@@ -17,6 +17,8 @@ Appropriately, the first item on the list is the terminal I use. Like GNOME's Te
 
 # [Starship](https://starship.rs/)
 
+![Starship Screenshot](/images/shells-on-the-beach-screenshot-starship.png#center)
+
 # [exa](https://the.exa.website/)
 
 # [pydf](https://github.com/k4rtik/pydf-pypi)
