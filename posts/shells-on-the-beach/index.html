@@ -7,7 +7,7 @@
         
         
         <link rel="stylesheet" href="https://trytonvanmeer.dev/style.46a17ed49fcd89f637e48a7577df4695e5cd9a05d2594f224404e7c9f42cd4e3.css" integrity="sha256-RqF&#43;1J/NifY35Ip1d99GleXNmgXSWU8iRATnyfQs1OM=" media="screen">
-        <title>Running Services on Login with systemd</title>
+        <title>Shells on the Beach 🦀 🏖️ 🐟</title>
     </head>
 
     <body>
@@ -49,12 +49,14 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title is-size-4-mobile">
-                Running Services on Login with systemd
+                Shells on the Beach 🦀 🏖️ 🐟
             </h1>
 
             
                 <h2 class="subtitle">
-                    2020-11-10
+                    <span class="text-red">
+                        Draft
+                    </span>
                 </h2>
             
         </div>
@@ -62,21 +64,18 @@
 </section>
 
 <div class="container mobile-fluid post-content mt-4">
-    <p>systemd is great for managing system services, so why not extend its capabilities to running things on login. Doing this allows you to take advantage of systemd&rsquo;s features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.</p>
-<p>My unit files are simple since I&rsquo;m running oneshot commands.</p>
-<p>Your user units are placed in <code>~/.config/systemd/user</code> and are activated with <code>systemctl --user enable &lt;service&gt;</code>.</p>
-<p>The important part of my unit files is the <code>graphical-session.target</code>. This is because I want the command to run when the desktop is ready, and not just as soon as I login.</p>
-<p>A template of my unit file is as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-systemd" data-lang="systemd"><span class="k">[Unit]</span>
-<span class="na">Description</span><span class="o">=</span><span class="s">A &#39;systemd --user&#39; unit that does something on login.</span>
-<span class="na">After</span><span class="o">=</span><span class="s">graphical-session.target</span>
+    <p>Here are some of the terminal tools I use, some of which share a certain ocean theme.</p>
+<h1 id="tilixhttpsgnunn1githubiotilix-web"><a href="https://gnunn1.github.io/tilix-web/">Tilix</a></h1>
+<p><img src="/images/shells-on-the-beach-screenshot-tilix.png#center" alt="Tilix Screenshot"></p>
+<p>Appropriately, the first item on the list is the terminal I use. Like GNOME&rsquo;s Terminal, it is GTK-based and uses the VTE library. Tilix had a nice CSD headerbar, in accordance to the GNOME HIG, before GNOME Terminal implemented one. Along with more options for tweaking, Tilix has tiling support built in with vertical and horizontal panes.</p>
+<h1 id="fish-shellhttpsfishshellcom"><a href="https://fishshell.com/">Fish Shell</a></h1>
+<h1 id="starshiphttpsstarshiprs"><a href="https://starship.rs/">Starship</a></h1>
+<p><img src="/images/shells-on-the-beach-screenshot-starship.png#center" alt="Starship Screenshot"></p>
+<h1 id="exahttpstheexawebsite"><a href="https://the.exa.website/">exa</a></h1>
+<h1 id="pydfhttpsgithubcomk4rtikpydf-pypi"><a href="https://github.com/k4rtik/pydf-pypi">pydf</a></h1>
+<h1 id="bathttpsgithubcomsharkdpbat"><a href="https://github.com/sharkdp/bat">Bat</a></h1>
+<h1 id="microhttpsmicro-editorgithubio"><a href="https://micro-editor.github.io/">micro</a></h1>
 
-<span class="k">[Service]</span>
-<span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/program</span>
-
-<span class="k">[Install]</span>
-<span class="na">WantedBy</span><span class="o">=</span><span class="s">graphical-session.target</span>
-</code></pre></div>
 </div>
 
 

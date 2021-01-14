@@ -6,7 +6,17 @@
     <description>Recent content on Tryton Van Meer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shells on the Beach 🦀 🏖️ 🐟</title>
+      <link>https://trytonvanmeer.dev/posts/shells-on-the-beach/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/posts/shells-on-the-beach/</guid>
+      <description>Here are some of the terminal tools I use, some of which share a certain ocean theme.
+Tilix Appropriately, the first item on the list is the terminal I use. Like GNOME&amp;rsquo;s Terminal, it is GTK-based and uses the VTE library. Tilix had a nice CSD headerbar, in accordance to the GNOME HIG, before GNOME Terminal implemented one. Along with more options for tweaking, Tilix has tiling support built in with vertical and horizontal panes.</description>
+    </item>
+    
     <item>
       <title>NetworkManager dnsmasq - libvirtd</title>
       <link>https://trytonvanmeer.dev/posts/networkmanager-dnsmasq-libvirtd/</link>
