@@ -7,7 +7,7 @@ description = "Does your computer have RGB? Time to give this piece of software 
 [OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) is amazing open source software, that supports Windows and Linux, for managing your computers RGB lighting.
 It doesn't depend on the software of manufacturers, and allows you to control the RGB lighting where previously you might not have before on Linux.
 
-![OpenRGB Screenshot](/images/Screenshot-OpenRGB.png)
+![OpenRGB Screenshot](/images/Screenshot-OpenRGB.png#center)
 
 OpenRGB gives you the ability to save and load profiles. This can be done in the GUI or through the CLI using `openrgb --profile filename.orp`.
 
