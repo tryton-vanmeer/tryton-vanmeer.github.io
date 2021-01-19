@@ -9,15 +9,11 @@ Here are some of the terminal tools I use, some of which share a certain ocean t
 
 # [Tilix](https://gnunn1.github.io/tilix-web/)
 
-![Tilix Screenshot](/images/shells-on-the-beach-screenshot-tilix.png#center)
-
 Appropriately, the first item on the list is the terminal I use. Like GNOME's Terminal, it is GTK-based and uses the VTE library. Tilix had a nice CSD headerbar, in accordance to the GNOME HIG, before GNOME Terminal implemented one. Along with more options for tweaking, Tilix has tiling support built in with vertical and horizontal panes.
 
 # [Fish Shell](https://fishshell.com/)
 
 # [Starship](https://starship.rs/)
-
-![Starship Screenshot](/images/shells-on-the-beach-screenshot-starship.png#center)
 
 # [exa](https://the.exa.website/)
 
