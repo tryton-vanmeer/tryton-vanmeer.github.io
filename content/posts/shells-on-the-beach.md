@@ -106,6 +106,8 @@ There you have it, many of the CLI tools I use. Most of which are replacements f
 
 Did you figure out what the ocean theme was? The **Fish** shell, is an obvious one, but many of the tools like `starship`, `exa`, and `bat` are written in Rust.
 
+# Installing
+
 | Arch Linux        | Fedora     | Ubuntu  |
 |:-----------------:|:----------:|:-------:|
 | `community/tilix` | `tilix`    | `tilix` |
