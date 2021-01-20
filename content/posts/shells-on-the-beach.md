@@ -11,7 +11,7 @@ Here are some of the terminal tools I use, some of which share a certain ocean t
 
 Appropriately, the first item on the list is the terminal I use. Like GNOME's Terminal, it is GTK-based and uses the VTE library. Tilix had a nice CSD headerbar, in accordance to the GNOME HIG, before GNOME Terminal implemented one. Along with more options for tweaking, Tilix has tiling support built in with vertical and horizontal panes.
 
-![](/images/Shells-on-the-Beach-Tilix.png#center)
+![Tilix Screenshot](/images/Shells-on-the-Beach-Tilix.png#center)
 
 # [Fish Shell](https://fishshell.com/)
 
@@ -70,7 +70,7 @@ Long before Fish I played with building my own shell prompt for Bash, both in Ba
 
 Eventually I found the Starship project. It was really fast, has modular configuration, and the out-of-the-box design was exaclty what I liked: simple text without background colors and a newline between prompt and user input.
 
-![](/images/Shells-on-the-Beach-Starship.png#border#center)
+![Starship Screenshot](/images/Shells-on-the-Beach-Starship.png#border#center)
 
 # [exa](https://the.exa.website/)
 
