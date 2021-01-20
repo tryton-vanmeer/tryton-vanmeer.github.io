@@ -74,7 +74,7 @@ Eventually I found the Starship project. It was really fast, has modular configu
 
 # [exa](https://the.exa.website/)
 
-**exa** is a modern replacement for **ls**. **exa** has out-of-the-box support for distinguishing file types with colour and it has other neat features like GIT support and icons, which I use in my **la** alias (table ouput using `--long` option).
+**exa** is a modern replacement for **ls**. **exa** has out-of-the-box support for distinguishing file types with colour and it has other neat features like Git support and icons, which I use in my **la** alias (table ouput using `--long` option).
 
 ![exa Screenshot](/images/Shells-on-the-Beach-exa.png#border#center)
 
