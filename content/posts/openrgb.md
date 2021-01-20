@@ -24,3 +24,9 @@ ExecStart=/usr/bin/openrgb --color "FF0000"
 [Install]
 WantedBy=graphical-session.target
 ```
+
+# Installing
+
+| Arch Linux    | Fedora | Ubuntu |
+|:-------------:|:------:|:------:|
+| `aur/openrgb` | **NA** | **NA** |
