@@ -80,6 +80,15 @@ Eventually I found the Starship project. It was really fast, has modular configu
 
 # [pydf](https://github.com/k4rtik/pydf-pypi)
 
+**pydf** is a **df** clone written in Python. I like the output it gives with ascii bar graphs and that certain filesystems are ignored by default (/dev, /run, tmpfs).
+
+An example of the output:
+
+```sh
+Filesystem      Size Used Avail Use%                                         Mounted on
+/dev/nvme0n1p2  100G 60G    40G 60.0 [#######################..............] /
+```
+
 # [Bat](https://github.com/sharkdp/bat)
 
 # [micro](https://micro-editor.github.io/)
