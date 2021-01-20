@@ -64,6 +64,12 @@ complete -f -c podrun -n "__fish_seen_subcommand_from archlinux" -a "$archlinux"
 
 # [Starship](https://starship.rs/)
 
+Long before Fish I played with building my own shell prompt for Bash, both in Bash itself and Python. It was something fun to build, and I liked the idea of modular powerline-type prompts, but prefered the simple look of just text, without the coloured background connecting blocks.
+
+Eventually I found the Starship project. It was really fast, has modular configuration, and the out-of-the-box design was exaclty what I liked: simple text without background colors and a newline between prompt and user input.
+
+![](/images/Shells-on-the-Beach-Starship.png#border)
+
 # [exa](https://the.exa.website/)
 
 # [pydf](https://github.com/k4rtik/pydf-pypi)
