@@ -74,13 +74,13 @@ Eventually I found the Starship project. It was really fast, has modular configu
 
 # [exa](https://the.exa.website/)
 
-**exa** is a modern replacement for **ls**. **exa** has out-of-the-box support for distinguishing file types with colour and it has other neat features like Git support and icons, which I use in my **la** alias (table ouput using `--long` option).
+`exa` is a modern replacement for `ls`. `exa` has out-of-the-box support for distinguishing file types with colour and it has other neat features like Git support and icons, which I use in my `la` alias (table ouput using `--long` option).
 
 ![exa Screenshot](/images/Shells-on-the-Beach-exa.png#border#center)
 
 # [pydf](https://github.com/k4rtik/pydf-pypi)
 
-**pydf** is a **df** clone written in Python. I like the output it gives with ascii bar graphs and that certain filesystems are ignored by default (/dev, /run, tmpfs).
+`pydf` is a `df` clone written in Python. I like the output it gives with ascii bar graphs and that certain filesystems are ignored by default (/dev, /run, tmpfs).
 
 An example of the output:
 
@@ -91,4 +91,10 @@ Filesystem      Size Used Avail Use%                                         Mou
 
 # [Bat](https://github.com/sharkdp/bat)
 
+I use `bat` as a replacment for `less` to provide syntaxt highlighting to files, and its Git support is nice.
+
+![Bat Screenshot](/images/Shells-on-the-Beach-Bat.png#border#center)
+
 # [micro](https://micro-editor.github.io/)
+
+As a long term user of `nano` for simple file edits in the terminal, `micro` is that and more. `micro` has intuitive shortcuts, like **CTRL+S** for saving. Syntax highlighting seems better than `nano` in my experience, and has more supported languages out-of-the-box. One of my favourite featues is that when saving a root-owned file, `micro` prompts you to save using `sudo`. This means never having to run `micro` as root, which is just more secure overall.
