@@ -74,6 +74,8 @@ Eventually I found the Starship project. It was really fast, has modular configu
 
 # [exa](https://the.exa.website/)
 
+**exa** is a modern replacement for **ls**. **exa** has out-of-the-box support for distinguishing file types with colour and it has other neat features like GIT support and icons, which I use in my **la** alias (table ouput using `--long` option).
+
 # [pydf](https://github.com/k4rtik/pydf-pypi)
 
 # [Bat](https://github.com/sharkdp/bat)
