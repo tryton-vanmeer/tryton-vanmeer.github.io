@@ -29,10 +29,17 @@ code
     border-radius: 3px;
 }
 
-img[src$="#center"]
+img[src*="#center"]
 {
     display: block;
     margin: 0 auto;
+}
+
+img[src*="#border"]
+{
+    border-style: solid;
+    border-color: $primary;
+    padding: 1.25rem 1.5rem;
 }
 
 @media only screen and (max-width: 1023px)
