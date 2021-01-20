@@ -6,7 +6,7 @@
         <meta name="theme-color" content="#121212">
         
         
-        <link rel="stylesheet" href="https://trytonvanmeer.dev/style.46a17ed49fcd89f637e48a7577df4695e5cd9a05d2594f224404e7c9f42cd4e3.css" integrity="sha256-RqF&#43;1J/NifY35Ip1d99GleXNmgXSWU8iRATnyfQs1OM=" media="screen">
+        <link rel="stylesheet" href="https://trytonvanmeer.dev/style.82e07eda2fb3a4c099d926903cd03277827973c193d07bf841ba76d8bc7d5df0.css" integrity="sha256-guB&#43;2i&#43;zpMCZ2SaQPNAyd4J5c8GT0Hv4Qbp22Lx9XfA=" media="screen">
         <title>Shells on the Beach 🦀 🏖️ 🐟</title>
     </head>
 
@@ -66,11 +66,47 @@
 <div class="container mobile-fluid post-content mt-4">
     <p>Here are some of the terminal tools I use, some of which share a certain ocean theme.</p>
 <h1 id="tilixhttpsgnunn1githubiotilix-web"><a href="https://gnunn1.github.io/tilix-web/">Tilix</a></h1>
-<p><img src="/images/shells-on-the-beach-screenshot-tilix.png#center" alt="Tilix Screenshot"></p>
 <p>Appropriately, the first item on the list is the terminal I use. Like GNOME&rsquo;s Terminal, it is GTK-based and uses the VTE library. Tilix had a nice CSD headerbar, in accordance to the GNOME HIG, before GNOME Terminal implemented one. Along with more options for tweaking, Tilix has tiling support built in with vertical and horizontal panes.</p>
+<p><img src="/images/Shells-on-the-Beach-Tilix.png#center" alt=""></p>
 <h1 id="fish-shellhttpsfishshellcom"><a href="https://fishshell.com/">Fish Shell</a></h1>
-<h1 id="starshiphttpsstarshiprs"><a href="https://starship.rs/">Starship</a></h1>
-<p><img src="/images/shells-on-the-beach-screenshot-starship.png#center" alt="Starship Screenshot"></p>
+<p>I was finally trying ZSH and had configured it to my liking. Then I decided to finally try Fish; a lot of the features I just configured ZSH to do were available in Fish out-of-the-box. So Fish has been my shell of choice since then.</p>
+<p>Fish keeps all of it&rsquo;s files in <code>~/.config/fish</code>, with no such file like <code>.bashrc</code> in <code>~</code>. This helps keep <code>~</code> clean of dotfiles which I appreciate. I also love the <code>conf.d</code> and <code>functions</code> folders within <code>~/.config/fish</code> that allow for modularity.</p>
+<p>Fish uses functions instead of aliases (The <a href="https://fishshell.com/docs/current/cmds/alias.html">alias</a> command is a wrapper for the function builtin), and a neat feature of Fish is autoloading functions.</p>
+<blockquote>
+<p>When fish encounters a command, it attempts to autoload a function for that command, by looking for a file with the name of that command in <code>~/.config/fish/functions</code></p>
+</blockquote>
+<p>So, I have a file for each of my functions or &ldquo;aliases&rdquo;.</p>
+<p>A simple example is my <code>cdg</code> function:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish"><span class="k">function</span> cdg -d <span class="s2">&#34;Change directory to root of GIT repo&#34;</span>
+    <span class="k">cd</span> <span class="o">(</span>git rev-parse --show-toplevel<span class="o">)</span>
+<span class="k">end</span>
+</code></pre></div><p>And something more complex, <code>podrun</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish"><span class="k">function</span> podrun -d <span class="s2">&#34;Run container interactively and delete after&#34;</span>
+    <span class="k">if</span> <span class="k">count</span> <span class="nv">$argv</span> <span class="o">&gt;</span> /dev/null
+        <span class="k">if</span> <span class="k">test</span> <span class="nv">$argv</span><span class="o">[</span>2<span class="o">]</span>
+            podman run -it --rm <span class="nv">$argv</span><span class="o">[</span>1<span class="o">]</span>:<span class="nv">$argv</span><span class="o">[</span>2<span class="o">]</span>
+        <span class="k">else</span>
+            podman run -it --rm <span class="nv">$argv</span><span class="o">[</span>1<span class="o">]</span>
+        <span class="k">end</span>
+    <span class="k">else</span>
+        <span class="k">echo</span> <span class="s2">&#34;podrun IMAGE &lt;TAG&gt;&#34;</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div><p>Which also has it&rsquo;s own completion file, <code>~/.config/fish/completions/podrun.fish</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish">se base-devel
+
+<span class="c"># First argument: DISTRO
+</span><span class="c"></span><span class="nb">complete</span> -f -c podrun -n <span class="s2">&#34;not __fish_seen_subcommand_from </span><span class="nv">$images</span><span class="s2">&#34;</span> -a <span class="s2">&#34;</span><span class="nv">$images</span><span class="s2">&#34;</span>
+
+<span class="c"># Optional second argument for distro version.
+</span><span class="c"></span><span class="nb">complete</span> -f -c podrun -n <span class="s2">&#34;__fish_seen_subcommand_from fedora&#34;</span> -a <span class="s2">&#34;</span><span class="nv">$fedora</span><span class="s2">&#34;</span>
+<span class="nb">complete</span> -f -c podrun -n <span class="s2">&#34;__fish_seen_subcommand_from ubuntu&#34;</span> -a <span class="s2">&#34;</span><span class="nv">$ubuntu</span><span class="s2">&#34;</span>
+<span class="nb">complete</span> -f -c podrun -n <span class="s2">&#34;__fish_seen_subcommand_from centos &#34;</span> -a <span class="s2">&#34;</span><span class="nv">$centos</span><span class="s2">&#34;</span>
+<span class="nb">complete</span> -f -c podrun -n <span class="s2">&#34;__fish_seen_subcommand_from archlinux&#34;</span> -a <span class="s2">&#34;</span><span class="nv">$archlinux</span><span class="s2">&#34;</span>
+</code></pre></div><h1 id="starshiphttpsstarshiprs"><a href="https://starship.rs/">Starship</a></h1>
+<p>Long before Fish I played with building my own shell prompt for Bash, both in Bash itself and Python. It was something fun to build, and I liked the idea of modular powerline-type prompts, but prefered the simple look of just text, without the coloured background connecting blocks.</p>
+<p>Eventually I found the Starship project. It was really fast, has modular configuration, and the out-of-the-box design was exaclty what I liked: simple text without background colors and a newline between prompt and user input.</p>
+<p><img src="/images/Shells-on-the-Beach-Starship.png#border#center" alt=""></p>
 <h1 id="exahttpstheexawebsite"><a href="https://the.exa.website/">exa</a></h1>
 <h1 id="pydfhttpsgithubcomk4rtikpydf-pypi"><a href="https://github.com/k4rtik/pydf-pypi">pydf</a></h1>
 <h1 id="bathttpsgithubcomsharkdpbat"><a href="https://github.com/sharkdp/bat">Bat</a></h1>
