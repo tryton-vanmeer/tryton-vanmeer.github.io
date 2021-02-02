@@ -54,9 +54,7 @@
 
             
                 <h2 class="subtitle">
-                    <span class="text-red">
-                        Draft
-                    </span>
+                    2021-01-13
                 </h2>
             
         </div>
@@ -70,7 +68,7 @@
 <p><img src="/images/Shells-on-the-Beach-Tilix.png#center" alt="Tilix Screenshot"></p>
 <h1 id="fish-shellhttpsfishshellcom"><a href="https://fishshell.com/">Fish Shell</a></h1>
 <p>I was finally trying ZSH and had configured it to my liking. Then I decided to finally try Fish; a lot of the features I just configured ZSH to do were available in Fish out-of-the-box. So Fish has been my shell of choice since then.</p>
-<p>Fish keeps all of it&rsquo;s files in <code>~/.config/fish</code>, with no such file like <code>.bashrc</code> in <code>~</code>. This helps keep <code>~</code> clean of dotfiles which I appreciate. I also love the <code>conf.d</code> and <code>functions</code> folders within <code>~/.config/fish</code> that allow for modularity.</p>
+<p>Fish keeps all of its files in <code>~/.config/fish</code>, with no such file like <code>.bashrc</code> in <code>~</code>. This helps keep <code>~</code> clean of dotfiles which I appreciate. I also love the <code>conf.d</code> and <code>functions</code> folders within <code>~/.config/fish</code> that allow for modularity.</p>
 <p>Fish uses functions instead of aliases (The <a href="https://fishshell.com/docs/current/cmds/alias.html">alias</a> command is a wrapper for the function builtin), and a neat feature of Fish is autoloading functions.</p>
 <blockquote>
 <p>When fish encounters a command, it attempts to autoload a function for that command, by looking for a file with the name of that command in <code>~/.config/fish/functions</code></p>
@@ -92,7 +90,7 @@
         <span class="k">echo</span> <span class="s2">&#34;podrun IMAGE &lt;TAG&gt;&#34;</span>
     <span class="k">end</span>
 <span class="k">end</span>
-</code></pre></div><p>Which also has it&rsquo;s own completion file, <code>~/.config/fish/completions/podrun.fish</code>:</p>
+</code></pre></div><p>Which also has its own completion file, <code>~/.config/fish/completions/podrun.fish</code>:</p>
 <div class="highlight"><pre class="chroma"><code class="language-fish" data-lang="fish">se base-devel
 
 <span class="c"># First argument: DISTRO
@@ -104,7 +102,7 @@
 <span class="nb">complete</span> -f -c podrun -n <span class="s2">&#34;__fish_seen_subcommand_from centos &#34;</span> -a <span class="s2">&#34;</span><span class="nv">$centos</span><span class="s2">&#34;</span>
 <span class="nb">complete</span> -f -c podrun -n <span class="s2">&#34;__fish_seen_subcommand_from archlinux&#34;</span> -a <span class="s2">&#34;</span><span class="nv">$archlinux</span><span class="s2">&#34;</span>
 </code></pre></div><h1 id="starshiphttpsstarshiprs"><a href="https://starship.rs/">Starship</a></h1>
-<p>Long before Fish I played with building my own shell prompt for Bash, both in Bash itself and Python. It was something fun to build, and I liked the idea of modular powerline-type prompts, but prefered the simple look of just text, without the coloured background connecting blocks.</p>
+<p>Long before Fish, I played with building my own shell prompt for Bash — both in Bash itself and Python. It was something fun to build, and I liked the idea of modular powerline-type prompts, but prefered the simple look of just text, without the coloured background connecting blocks.</p>
 <p>Eventually I found the Starship project. It was really fast, has modular configuration, and the out-of-the-box design was exaclty what I liked: simple text without background colors and a newline between prompt and user input.</p>
 <p><img src="/images/Shells-on-the-Beach-Starship.png#border#center" alt="Starship Screenshot"></p>
 <h1 id="exahttpstheexawebsite"><a href="https://the.exa.website/">exa</a></h1>
