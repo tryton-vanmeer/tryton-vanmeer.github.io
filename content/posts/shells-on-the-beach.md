@@ -2,7 +2,6 @@
 title = "Shells on the Beach 🦀 🏖️ 🐟"
 date = "2021-01-13"
 description = "A software spotlight of some of my terminal tools."
-draft = true
 +++
 
 Here are some of the terminal tools I use, some of which share a certain ocean theme.
