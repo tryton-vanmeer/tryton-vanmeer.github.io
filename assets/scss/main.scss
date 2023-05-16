@@ -7,6 +7,12 @@ nav {
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
+
+  .navbar-item {
+    &:hover {
+      background-color: inherit;
+    }
+  }
 }
 
 body {
