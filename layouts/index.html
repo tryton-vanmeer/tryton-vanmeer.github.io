@@ -5,7 +5,6 @@
 <a href="{{ .Permalink }}">{{ .Title }}</a>
 {{ .Description }}
 {{ end }}
-{{ end }}
 
 {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" false}}
 {{ .Date.Format "2006-01-02" }}
