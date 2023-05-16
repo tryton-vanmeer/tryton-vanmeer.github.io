@@ -43,6 +43,22 @@
     {{ block "main" . }} {{ end }}
   </main>
 
+  <footer class="footer">
+    <div>
+      <div class="columns">
+        <div class="column is-6">
+          <ul>
+            <li>© Tryton Lux</li>
+            <li>Content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+            <li>Code <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">GPLv3</a></li>
+          </ul>
+        </div>
+        <div class="column is-6 has-text-right">
+          Powered by <a href="https://bulma.io/">Bulma</a>, <a href="https://gohugo.io/">Hugo</a>
+      </div>
+    </div>
+  </footer>
+
   {{ $scripts := resources.Get "js/main.js" | fingerprint }}
   <script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
 </body>
