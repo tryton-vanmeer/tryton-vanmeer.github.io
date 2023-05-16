@@ -1,15 +1,31 @@
 {{ define "main" }}
 
-{{ range where (where .Site.RegularPages "Type" "posts") ".Draft" true}}
-{{ .Date.Format "2006-01-02" }}
-<a href="{{ .Permalink }}">{{ .Title }}</a>
-{{ .Description }}
-{{ end }}
+<section class="section is-flex is-flex-direction-column">
+  <div class="is-align-self-center">
 
-{{ range where (where .Site.RegularPages "Type" "posts") ".Draft" false}}
-{{ .Date.Format "2006-01-02" }}
-<a href="{{ .Permalink }}">{{ .Title }}</a>
-{{ .Description }}
-{{ end }}
+    {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" true}}
+    <div class="index-post">
+      <a class="index-post-title" href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+      <div class="index-post-subtitle">
+        {{ .Date.Format "Jan 2006" }}
+      </div>
+    </div>
+    {{ end }}
+
+    {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" false}}
+    <div class="index-post">
+      <a class="index-post-title" href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+      <div class="index-post-subtitle">
+        {{ .Date.Format "Jan 2006" }}
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
 
 {{ end }}

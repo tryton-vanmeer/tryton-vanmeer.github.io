@@ -2,15 +2,31 @@
 @import "vendor/bulma-prefers-dark";
 
 nav {
-    padding: 1rem 2rem;
+  padding: 1rem 2rem;
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 
-    main {
-        flex: 1;
+  main {
+    flex: 1;
+  }
+}
+
+.index-post {
+  padding-bottom: 0.25rem;
+
+  .index-post-title {
+    color: #dbdbdb;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition-duration: 172ms;
+    transition-property: color;
+
+    &:hover {
+      color: #5ea3e4;
     }
+  }
 }
