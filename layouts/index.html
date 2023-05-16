@@ -1,45 +1,16 @@
 {{ define "main" }}
 
-<section class="hero is-primary">
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title">
-                Blog
-            </h1>
-        </div>
-    </div>
-</section>
+{{ range where (where .Site.RegularPages "Type" "posts") ".Draft" true}}
+{{ .Date.Format "2006-01-02" }}
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ .Description }}
+{{ end }}
+{{ end }}
 
-<div class="container mobile-fluid mt-4">
-
-    {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" true}}
-        <div class="post">
-            <span class="text-red">
-                Draft
-            </span>
-            <h2 class="subtitle">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h2>
-            <p>
-                <span>↳</span> {{ .Description }}
-            </p>
-        </div>
-    {{ end }}
-
-    {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" false}}
-        <div class="post">
-            <span>
-                {{ .Date.Format "2006-01-02" }}
-            </span>
-            <h2 class="subtitle">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </h2>
-            <p>
-                <span>↳</span> {{ .Description }}
-            </p>
-        </div>
-    {{ end }}
-
-</div>
+{{ range where (where .Site.RegularPages "Type" "posts") ".Draft" false}}
+{{ .Date.Format "2006-01-02" }}
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ .Description }}
+{{ end }}
 
 {{ end }}
