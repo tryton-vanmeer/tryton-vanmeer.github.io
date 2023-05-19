@@ -4,9 +4,7 @@ $family-primary: "Roboto", sans-serif;
 @import "vendor/bulma-prefers-dark/bulma-prefers-dark";
 
 nav {
-  padding-top: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 1rem 2rem;
 
   .navbar-item {
     &:hover {
