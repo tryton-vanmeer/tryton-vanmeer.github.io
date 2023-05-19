@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-<section class="section is-flex is-flex-direction-column">
-  <div class="is-align-self-center">
+<section class="section">
+  <div class="container">
 
     {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" true}}
     <div class="index-post">
