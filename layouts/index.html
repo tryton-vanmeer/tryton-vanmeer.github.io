@@ -15,7 +15,7 @@
     {{ end }}
 
     {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" false}}
-    <div>
+    <div class="mb-4">
       <div>
         {{ .Date.Format "Jan 2006" }}
       </div>
