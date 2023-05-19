@@ -11,56 +11,13 @@
 </head>
 
 <body>
-
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="title" href="{{ .Site.BaseURL }}">
-        <span class="is-family-monospace has-text-danger">ƒ</span> {{ .Site.Title }}
-      </a>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navMenu" class="navbar-menu is-shadowless">
-      <div class="navbar-end">
-        <a class="navbar-item" href="https://github.com/tryton-vanmeer">
-          GitHub
-        </a>
-        <a class="navbar-item" href="https://trytonvanmeer.dev/Resume/resume.pdf">
-          Resume
-        </a>
-        <a class="navbar-item" href="mailto:hello@tryton.thelux.family">
-          Email
-        </a>
-      </div>
-    </div>
-  </nav>
+  {{ partial "navbar.html" . }}
 
   <main>
     {{ block "main" . }} {{ end }}
   </main>
 
-  <footer class="footer">
-    <div>
-      <div class="columns">
-        <div class="column is-6 has-text-centered-mobile">
-          <ul>
-            <li>© Tryton Lux</li>
-            <li>Content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
-            <li>Code <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">GPLv3</a></li>
-          </ul>
-        </div>
-        <div class="column is-6 has-text-right has-text-centered-mobile">
-          Powered by <a href="https://bulma.io/">Bulma</a>, <a href="https://gohugo.io/">Hugo</a>
-      </div>
-    </div>
-  </footer>
-
-  {{ $scripts := resources.Get "js/main.js" | fingerprint }}
-  <script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
+  {{ partial "footer.html" . }}
 </body>
 
 </html>
