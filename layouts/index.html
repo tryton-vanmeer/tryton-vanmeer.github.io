@@ -15,7 +15,7 @@
     {{ end }}
 
     {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" false}}
-    <div class="index-post">
+    <div>
       <a class="is-size-4-tablet has-text-weight-bold" href="{{ .Permalink }}">
         {{ .Title }}
       </a>
