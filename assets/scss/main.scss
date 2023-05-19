@@ -27,16 +27,4 @@ body {
 
 .index-post {
   padding-bottom: 0.25rem;
-
-  .index-post-title {
-    color: $white;
-    font-size: 1.25rem;
-    font-weight: bold;
-    transition-duration: 172ms;
-    transition-property: color;
-
-    &:hover {
-      color: $link;
-    }
-  }
 }
