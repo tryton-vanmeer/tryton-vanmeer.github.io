@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+
+    {{ range .Pages }}
+    <div class="mb-4">
+      <div>
+        {{ .Date.Format "Jan 2006" }}
+      </div>
+      <a class="is-size-4-tablet has-text-weight-bold" href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+
+{{ end }}
