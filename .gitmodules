@@ -1,6 +1,6 @@
 [submodule "assets/scss/vendor/bulma"]
-	path = assets/scss/vendor/bulma
+	path = assets/vendor/bulma
 	url = https://github.com/jgthms/bulma.git
 [submodule "assets/scss/vendor/bulma-prefers-dark"]
-	path = assets/scss/vendor/bulma-prefers-dark
+	path = assets/vendor/bulma-prefers-dark
 	url = https://github.com/jloh/bulma-prefers-dark.git
