@@ -1,12 +1,17 @@
 {{ define "main" }}
 
-{{ .Title }}
+{{ $hero_colour := cond .Draft "danger" "primary" }}
 
-{{ if .Draft }}
-Draft
-{{ else }}
-{{ .Date.Format "2006-01-02" }}
-{{ end }}
+<section class="hero is-{{ $hero_colour }} has-text-centered">
+  <div class="hero-body">
+    <p class="title">
+      {{ .Page.Title }}
+    </p>
+    <p class="subtitle">
+      {{ .Date.Format "Jan 1, 2006" }}
+    </p>
+  </div>
+</section>
 
 {{ .Content }}
 
