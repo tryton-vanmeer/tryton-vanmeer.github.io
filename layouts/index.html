@@ -1,3 +1,22 @@
 {{ define "main" }}
 
+<section class="section">
+  <div class="container">
+
+    <h2 class="title">Recent Posts</h2>
+
+    {{ range first 5 (where .Site.RegularPages "Type" "blog") }}
+    <div class="mb-4">
+      <div>
+        {{ .Date.Format "Jan 2006" }}
+      </div>
+      <a class="is-size-4-tablet has-text-weight-bold" href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+
 {{ end }}
