@@ -24,3 +24,13 @@ body {
     flex: 1;
   }
 }
+
+footer {
+  a.icon {
+    color: inherit;
+
+    &:hover {
+      color: $link;
+    }
+  }
+}
