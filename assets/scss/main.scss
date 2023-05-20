@@ -9,8 +9,12 @@ nav {
   padding: 1rem 2rem;
 
   .navbar-item {
-    &:hover {
-      background-color: inherit;
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $link;
+      }
     }
   }
 }
