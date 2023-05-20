@@ -1,31 +1,3 @@
 {{ define "main" }}
 
-<section class="section">
-  <div class="container">
-
-    {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" true}}
-    <div class="index-post">
-      <a class="index-post-title" href="{{ .Permalink }}">
-        {{ .Title }}
-      </a>
-      <div class="index-post-subtitle">
-        {{ .Date.Format "Jan 2006" }}
-      </div>
-    </div>
-    {{ end }}
-
-    {{ range where (where .Site.RegularPages "Type" "posts") ".Draft" false}}
-    <div class="mb-4">
-      <div>
-        {{ .Date.Format "Jan 2006" }}
-      </div>
-      <a class="is-size-4-tablet has-text-weight-bold" href="{{ .Permalink }}">
-        {{ .Title }}
-      </a>
-    </div>
-    {{ end }}
-
-  </div>
-</section>
-
 {{ end }}
