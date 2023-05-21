@@ -13,9 +13,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-node@v1
-      - run: yarn install
-
       - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
