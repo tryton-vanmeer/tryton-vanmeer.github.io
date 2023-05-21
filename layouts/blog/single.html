@@ -1,8 +1,6 @@
 {{ define "main" }}
 
-{{ $hero_colour := cond .Draft "danger" "link" }}
-
-<section class="hero is-{{ $hero_colour }} has-text-centered">
+<section class="hero has-text-centered">
   <div class="hero-body">
     <p class="title">
       {{ .Page.Title }}
