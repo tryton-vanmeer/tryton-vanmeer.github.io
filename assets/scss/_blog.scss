@@ -10,6 +10,10 @@
 
   .highlight {
     margin-bottom: 1rem;
+
+    .chroma {
+      border-radius: $radius;
+    }
   }
 
   a {
