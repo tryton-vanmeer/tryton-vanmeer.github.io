@@ -132,17 +132,17 @@ This [link](# "Hi!") has a title.
 ## Info
 
 {{<note>}}
-This is a note.
+This is an note.
 {{</note>}}
 
 ## Tip
 
 {{<note tip>}}
-This is a note.
+This is a tip.
 {{</note>}}
 
 ## Warning
 
 {{<note warning>}}
-This is a note.
+This is a warning.
 {{</note>}}
