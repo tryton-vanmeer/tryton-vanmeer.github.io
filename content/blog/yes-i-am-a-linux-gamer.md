@@ -7,7 +7,7 @@ description = "Linux is my platform of choice for not only daily computing, but 
 Linux is my platform of choice for not only daily computing, but also gaming.
 And I am happy to say I enjoy it quite a lot.
 
-## Steam
+# Steam
 
 I might not be able to play all the latest AAA games, but I still have more games
 to play than I have time. Since I stopped using Windows, I've also made a point to only buy games that support Linux.
@@ -18,7 +18,7 @@ There are currently 416 games in my Steam library. 242 of those are on Linux; th
 Steam currently has 19,380 games with 2654 of those being Linux, or 14%. That might not seem like a lot,
 but contrast that to the fact that out of the 100 top Steam games by player count, 44% of them are Linux compatible.
 
-## The PC vs Console Debate
+# The PC vs Console Debate
 
 Just like I'm a proponent of Linux over Windows, I'm a proponent of PC gaming over consoles.
 
@@ -34,7 +34,7 @@ I think that Windows gamers tend to forget about this in the context of gaming o
 Of course, there's nothing wrong with using Windows to play a select few games. Just like there's
 nothing wrong with a PC gamer owning and playing on a console. I myself own a 3DS.
 
-## Linux vs Consoles --- The Numbers
+# Linux vs Consoles --- The Numbers
 
 Let's deviate from 'Linux vs Windows' or 'PC vs Console' and focus
 on 'Linux vs Console'.
@@ -62,7 +62,7 @@ Linux more games than each.
 Having more games doesn't automatically make Linux better, but it certainly
 cancels out the argument that "Linux has no games".
 
-## Emulation
+# Emulation
 
 Linux, just like the PC platform as a whole, has access to all kinds of console emulators.
 This opens the door to hundreds, and even thousands, of games to play.
@@ -70,7 +70,7 @@ This opens the door to hundreds, and even thousands, of games to play.
 Whether for nostalgia or experiencing classics that you never got to play growing up,
 emulation lets us breath new life into retro games.
 
-## Conclusion
+# Conclusion
 
 Linux has come a long way in the last few years as a gaming platform
 and will continue to grow and improve. One thing for certain is that Linux

@@ -6,7 +6,7 @@ description = "Using the NetworkManager dnsmasq plugin."
 
 NetworkManager in conjuntion with it's built-in local instance of dnsmasq allows for more advanced DNS configuration and opens up some usefull functionality.
 
-## Enable NetworkManager's dnsmasq Plugin
+# Enable NetworkManager's dnsmasq Plugin
 
 Create a configuration file in `/etc/NetworkManager/conf.d` with the following:
 
@@ -27,7 +27,7 @@ $ cat /etc/resolv.conf
 nameserver 127.0.0.1
 ```
 
-## What to Configure Next
+# What to Configure Next
 
 - [libvirtd](/posts/networkmanager-dnsmasq-libvirtd/)
 - [NGINX + localhost](/posts/networkmanager-dnsmasq-nginx-localhost/)

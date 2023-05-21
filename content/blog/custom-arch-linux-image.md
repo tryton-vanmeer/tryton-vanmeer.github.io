@@ -8,17 +8,17 @@ One of the tools I like to keep on my toolbelt is a USB drive with some kind of 
 
 Following the instructions on the Archiso wiki page, after installing the `archiso` package, you can copy the `/usr/share/archiso/configs/releng` folder to get a base to work from. I'm going to go over the various tweaks I made.
 
-## build.sh
+# build.sh
 
 The releng profile has a `build.sh` script that will build you an iso file. I modified the script to create a loopback image with an EFI System Partition and copy the nessacary files to that. This removes the dependecy of syslinux/isolinux and makes the image simplier. This results in a img file instead of an ISO, and it won't boot on legacy BIOS systems. But that's not an issue for me.
 
 I also cleaned up the script, making sure it passed [ShellCheck](https://github.com/koalaman/shellcheck).
 
-## Netboot
+# Netboot
 
 Upon booting, you can press the **Space** key to trigger the boot menu and choose [NETBOOT.XYZ](https://netboot.xyz/). As long as there is a network connection, this one boot USB can be used to try out other Distros and Desktop Environments.
 
-## Packages
+# Packages
 
 By editing `packages.x86_64`, you can change what packages are installed on the live system image. I stripped plenty of packages I don't need; things like utilites for connecting to various VPNs or dial-up networks.
 
@@ -42,7 +42,7 @@ Some CLI tools are included:
 - [fish](https://github.com/fish-shell/fish-shell) --- The user-friendly command line shell.
 - [bat](https://github.com/sharkdp/bat) --- A cat(1) clone with wings.
 
-## Root Filesystem
+# Root Filesystem
 
 Various tweaks are made in the usual way of editing system files. The `airootfs` folder acts as an overlay and you can make these customizations here.
 
@@ -52,7 +52,7 @@ Any administrative task that you would do while following the installation guide
 
 In `customize_airootfs.sh`, I do things like adding the live user, enabling systemd units, and sed'ing configs.
 
-## Firefox
+# Firefox
 
 For Firefox tweaks, I created two files.
 
@@ -76,7 +76,7 @@ The first line must be exactly "//". The syntax of the file is similar to `user.
 
 ##### Arch Wiki page for reference https://wiki.archlinux.org/index.php/Firefox#Configuration.
 
-## Dconf
+# Dconf
 
 Similar to Firefox, two files are created.
 
@@ -100,15 +100,15 @@ I also run `dconf update` in `airootfs/root/customize_airootfs.sh` to update the
 
 ##### GNOME docs for reference https://help.gnome.org/admin/system-admin-guide/stable/dconf-custom-defaults.html.
 
-## Dotfiles
+# Dotfiles
 
 In `airootfs/etc/skel`, I've included the files to be placed into the live users home upon creating. These include the configs for Fish and the starship prompt, .desktop files to hide some applications in the menu, and binaries in `~/.local/bin/` for `inxi` and `starship` since they aren't in the Arch repos.
 
-## Misc
+# Misc
 
 A couple other minor tweaks are things like configuring GDM to autologin. Everything is a dark theme by default, and I'm using the [Dracula](https://draculatheme.com/) theme throughout the system. And, the locale is set to `en_CA.UTF-8`, with the timezone set to `/usr/share/zoneinfo/EST5EDT`.
 
-## Boot USB with Data Partition
+# Boot USB with Data Partition
 
 I plan to use this with a 64GB USB drive. Of course, this is much bigger than the ~2GB image.
 

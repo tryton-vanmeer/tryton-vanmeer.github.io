@@ -49,7 +49,7 @@ GNOME will now display a button for (un)locking screen rotation.
 
 ![SP3 Screen Rotate Lock](/images/Screenshot-SP3-Screen-Rotate-Lock.png)
 
-## Touchscreen
+# Touchscreen
 
 GNOME on Wayland works really well with a touchscreen. And the GNOME apps handle touch input wonderfully.
 
@@ -62,7 +62,7 @@ Firefox's touch support is still finicky, so for most of my browsing I use GNOME
 
 GNOME Web still has a way to go as a browser, but there's a lot to like about it. Especially the touch gestures.
 
-## Stylus
+# Stylus
 
 While I'm no artists, I have a surface pen and it works with no issue.
 

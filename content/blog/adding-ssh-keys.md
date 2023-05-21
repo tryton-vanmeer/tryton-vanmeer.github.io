@@ -6,7 +6,7 @@ description = "Notes about adding SSH keys (and using Git[Hub|Lab] for easy prov
 
 Just some notes about provisioning machines with SSH keys.
 
-## Copy with ssh-copy-id
+# Copy with ssh-copy-id
 
 If you have ssh access to the machine with a password, you can use `ssh-copy-id`.
 
@@ -16,7 +16,7 @@ $ ssh-copy-id user@host
 $ ssh-copy-id -i ~/.ssh/mykey user@host
 ```
 
-## Using Git Platforms
+# Using Git Platforms
 
 Both GitHub and GitLab allow you to grab a users public SSH keys.
 
@@ -39,7 +39,7 @@ curl https://github.com/tryton-vanmeer.keys | tee -a ~/.ssh/authorized_keys
 
 You would now be able to SSH into that machine using any machine that has SSH access to your Git platforms.
 
-## Permissions
+# Permissions
 
 If the SSH folder had to be created for a user, make sure the permissions are correctly set for the folder itself,
 and the authorized_keys file.

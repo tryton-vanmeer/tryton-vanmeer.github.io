@@ -6,7 +6,7 @@ description = "Using NetworkManager's dnsmasq plugin with NGINX on the localhost
 
 This post serves as an overview of my configs for using domains with my local NGINX instance with SSL/HTTPS.
 
-## Forward DNS requests to localhost
+# Forward DNS requests to localhost
 
 Create a dnsmasq conf:
 
@@ -18,13 +18,13 @@ address=/lh/127.0.0.1
 
 Accessing **domain**.lh will be forwarded to localhost for NGINX to handle.
 
-## Setup a Trusted SSL Certificate
+# Setup a Trusted SSL Certificate
 
 I use a self-signed cert so that my localhost pages get a nice **Connection secure** padlock.
 
 Create `/etc/nginx/ssl`
 
-### OpenSSL Config
+## OpenSSL Config
 
 **lh.cnf**
 
@@ -52,7 +52,7 @@ DNS.2 = startpage.lh
 
 This alt_names contains all the subdomains you'd like to use and be valid for this cert.
 
-### Root Certification Authority
+## Root Certification Authority
 
 I create a RootCA for signing my cert. This RootCA can later be added to the system so that Firefox automatically trusts the cert without having to accept it manually.
 
@@ -64,7 +64,7 @@ $ sudo openssl genrsa -out /etc/nginx/ssl/rootCA.key 2048
 $ sudo openssl req -x509 -new -nodes -key /etc/nginx/ssl/rootCA.key -sha256 -days 3650 -out /etc/nginx/ssl/rootCA.pem
 ```
 
-### SSL Certificates
+## SSL Certificates
 
 ```bash
 # Create private key and CSR key
@@ -74,7 +74,7 @@ $ sudo openssl req -new -sha256 -nodes -newkey rsa:2048 -keyout /etc/nginx/ssl/l
 $ sudo openssl x509 -req -in /etc/nginx/ssl/lh.csr -CA /etc/nginx/ssl/rootCA.pem -CAkey /etc/nginx/ssl/rootCA.key -CAcreateserial -out /etc/nginx/ssl/lh.crt -sha256 -days 3650 -extfile lh.cnf -extensions v3_ca
 ```
 
-### Adding Trusted CA to System
+## Adding Trusted CA to System
 
 On Arch Linux or Fedora, p11-kit can be used to add the RootCA system-wide.
 
@@ -82,7 +82,7 @@ On Arch Linux or Fedora, p11-kit can be used to add the RootCA system-wide.
 $ sudo trust anchor --store /etc/nginx/ssl/rootCA.pem
 ```
 
-## NGINX
+# NGINX
 
 Create the initial NGINX config.
 
@@ -106,7 +106,7 @@ http
 }
 ```
 
-### SSL
+## SSL
 
 Configure NGINX to use SSL and redirect http → https.
 
@@ -127,7 +127,7 @@ http
 }
 ```
 
-### Proxy Config
+## Proxy Config
 
 Common proxy config to be included.
 
@@ -140,7 +140,7 @@ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header X-Forwarded-Proto $scheme;
 ```
 
-### Startpage
+## Startpage
 
 I use NGINX to host my Startpage locally at startpage.lh.
 
@@ -158,7 +158,7 @@ http
 }
 ```
 
-### Hugo
+## Hugo
 
 I use hugo.lh to access hugo's server while developing hugo websites.
 

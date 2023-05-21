@@ -20,7 +20,7 @@ wallpaper (1920x1080) [16:9].jpg
 
 The Python version can be found [here](https://github.com/tryton-vanmeer/Hiritsu/blob/python/hiritsu), and the Rust port [here](https://github.com/tryton-vanmeer/Hiritsu/blob/master/src/main.rs)
 
-## Benchmarking
+# Benchmarking
 
 For this benchmark I used this [wallpaper](https://wallhaven.cc/w/dgzj9o) from Wallhaven.cc. I ran the commands in Bash 5.0.016-1 and used the `time` command.
 
@@ -30,7 +30,7 @@ And if I'm paying really close attention, I can see the Rust output is slightly 
 
 Now, obviously a simple script like this won't show the true speed benifits of using Rust.
 
-## Rust in the Future
+# Rust in the Future
 
 The language took some time to wrap my head around (pun unintended) some of the new concepts like unwrapping, matching results, and the way Rust does error handling, but the more I played with Rust, the more I liked it.
 

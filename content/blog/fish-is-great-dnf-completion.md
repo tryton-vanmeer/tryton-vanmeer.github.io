@@ -16,7 +16,7 @@ As great as ZSH was, I really like Fish's out of the box defaults. I love that I
 
 In the process of trying these new shells I also depreciated my custom bash powered prompt and starting using [Starship](https://starship.rs/). Starship gave me the style I wanted in my prompt, but so much faster.
 
-## DNF Completion
+# DNF Completion
 
 Recently I've been giving Fedora a try and quite enjoy it. The only real complaint I have had is how package names are displayed in some cases when using DNF.
 

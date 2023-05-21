@@ -6,7 +6,7 @@ description = "Using NetworkManager's dnsmasq plugin with libvirtd."
 
 Once configured, you'll be able to talk to libvirtd VM's using their hostname, rather than having to know the IP address.
 
-## Forward DNS requests to libvirt's Domain
+# Forward DNS requests to libvirt's Domain
 
 Libvirt uses it's own built-in dnsmasq instance for serving DHCP and DNS to the VM's in the virtual network.
 
@@ -22,7 +22,7 @@ Now when we try to access **hostname**.vm, we'll be forwarded to `192.168.122.1`
 
 When testing with terraform, usign the libvirt provider, I create a terraform specific virtual network. So I have `server=/terraform.vm/10.0.100.1` included in this config file (**hostname**.terraform.vm).
 
-## Configuring libvirt
+# Configuring libvirt
 
 Now we need to configure libvirt so that it resolves DNS requests with this domain name.
 
