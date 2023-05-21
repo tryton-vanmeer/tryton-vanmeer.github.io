@@ -43,14 +43,14 @@ Below is a table of the consoles from 7<sup>th</sup> and 8<sup>th</sup> generati
 
 {{<table>}}
 
-|  Console   | Exclusives   | Total   |
-|:----------:|:------------:|:-------:|
-|    PS3     |     317      |  1438   |
-|  Xbox 360  |     107      |  1232   |
-|    Wii     |     351      |  1528   |
-|    PS4     |     127      |  1721   |
-|  Xbox One  |      30      |   747   |
-|   Wii U    |     253      |   747   |
+| Console  | Exclusives | Total |
+| :------: | :--------: | :---: |
+|   PS3    |    317     | 1438  |
+| Xbox 360 |    107     | 1232  |
+|   Wii    |    351     | 1528  |
+|   PS4    |    127     | 1721  |
+| Xbox One |     30     |  747  |
+|  Wii U   |    253     |  747  |
 
 {{</table>}}
 

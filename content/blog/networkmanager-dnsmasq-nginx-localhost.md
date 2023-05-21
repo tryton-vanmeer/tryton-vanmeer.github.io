@@ -27,6 +27,7 @@ Create `/etc/nginx/ssl`
 ### OpenSSL Config
 
 **lh.cnf**
+
 ```ini
 [req]
 default_bits = 2048
@@ -86,6 +87,7 @@ $ sudo trust anchor --store /etc/nginx/ssl/rootCA.pem
 Create the initial NGINX config.
 
 **/etc/nginx/nginx.conf**
+
 ```nginx
 worker_processes 1;
 
@@ -103,6 +105,7 @@ http
     keepalive_timeout 65;
 }
 ```
+
 ### SSL
 
 Configure NGINX to use SSL and redirect http → https.

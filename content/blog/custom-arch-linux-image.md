@@ -19,27 +19,28 @@ I also cleaned up the script, making sure it passed [ShellCheck](https://github.
 Upon booting, you can press the **Space** key to trigger the boot menu and choose [NETBOOT.XYZ](https://netboot.xyz/). As long as there is a network connection, this one boot USB can be used to try out other Distros and Desktop Environments.
 
 ## Packages
+
 By editing `packages.x86_64`, you can change what packages are installed on the live system image. I stripped plenty of packages I don't need; things like utilites for connecting to various VPNs or dial-up networks.
 
 I added the GNOME Desktop with some basics:
 
-+ File Roller
-+ GNOME Calculator
-+ GNOME Screenshot
-+ GNOME System Monitor
-+ GNOME Terminal
-+ Nautilus
-+ Gedit
-+ Evince
+- File Roller
+- GNOME Calculator
+- GNOME Screenshot
+- GNOME System Monitor
+- GNOME Terminal
+- Nautilus
+- Gedit
+- Evince
 
 GNOME Disk Utility and GParted are included for disk managment.
 
 Some CLI tools are included:
 
-+ [inxi](https://github.com/smxi/inxi) --- System information tool.
-+ [starship](https://github.com/starship/starship) --- Shell prompt.
-+ [fish](https://github.com/fish-shell/fish-shell) --- The user-friendly command line shell.
-+ [bat](https://github.com/sharkdp/bat) --- A cat(1) clone with wings.
+- [inxi](https://github.com/smxi/inxi) --- System information tool.
+- [starship](https://github.com/starship/starship) --- Shell prompt.
+- [fish](https://github.com/fish-shell/fish-shell) --- The user-friendly command line shell.
+- [bat](https://github.com/sharkdp/bat) --- A cat(1) clone with wings.
 
 ## Root Filesystem
 
@@ -113,8 +114,8 @@ I plan to use this with a 64GB USB drive. Of course, this is much bigger than th
 
 Instead of writing the img file to the USB drive, I partition the drive like this:
 
-+ A 2GB FAT32 parition
-+ An EXT4 parition that uses 100% of the space left
+- A 2GB FAT32 parition
+- An EXT4 parition that uses 100% of the space left
 
 And then I mount the img file and copy the files to the ESP. With this, I have my bootable Arch USB with space for shortlived files for transfering, or copy files off a device I'm booted into.
 

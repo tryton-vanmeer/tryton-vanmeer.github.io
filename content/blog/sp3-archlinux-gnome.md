@@ -7,10 +7,11 @@ description = "I recently acquired a SP3 and here's my experience with using Lin
 Recently, I acquired a Surface Pro 3 for a great deal. I was looking for a small computing device and wanted something I could run desktop Linux on, so an Android tablet or Chromebook were out of the race already.
 
 I settled on the SP3 for a couple reasons:
-+ It has x86 hardware so no issues installing Linux.
-+ The SP3, while quite old at this point (released in 2014), has out of the box Linux support.
-    - Despite being an Arch Linux user, I am still lazy. I wanted everything to work without custom kernels.
-+ I got it used for a really good deal.
+
+- It has x86 hardware so no issues installing Linux.
+- The SP3, while quite old at this point (released in 2014), has out of the box Linux support.
+  - Despite being an Arch Linux user, I am still lazy. I wanted everything to work without custom kernels.
+- I got it used for a really good deal.
 
 So far it has been completely usable and really handy as my companion device when playing D&D.
 
@@ -53,8 +54,9 @@ GNOME will now display a button for (un)locking screen rotation.
 GNOME on Wayland works really well with a touchscreen. And the GNOME apps handle touch input wonderfully.
 
 I set two enviroment variables for Firefox:
-+ MOZ_ENABLE_WAYLAND=1
-+ MOZ_USE_XINPUT2=1
+
+- MOZ_ENABLE_WAYLAND=1
+- MOZ_USE_XINPUT2=1
 
 Firefox's touch support is still finicky, so for most of my browsing I use GNOME Web.
 

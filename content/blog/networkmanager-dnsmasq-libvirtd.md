@@ -13,6 +13,7 @@ Libvirt uses it's own built-in dnsmasq instance for serving DHCP and DNS to the 
 We'll configure NetworkManager's dnsmasq to forward requests to the libvirt instance.
 
 **/etc/NetworkManager/dnsmasq.d/libvirt.conf**
+
 ```ini
 server=/vm/192.168.122.1
 ```
