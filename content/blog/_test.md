@@ -100,3 +100,29 @@ This [link](# "Hi!") has a title.
 # Images
 
 ![Photo by Miguel Á. Padriñán from Pexels](https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=1 "Photo by Miguel Á. Padriñán from Pexels")
+
+# Tables
+
+{{<table>}}
+
+| Tag | Description |
+| --- | ----------- |
+| h1  | Header      |
+| p   | Paragraph   |
+| a   | Anchor      |
+| br  | Line break  |
+
+{{</table>}}
+
+## Centered
+
+{{<table>}}
+
+| Tag | Description |
+| :-: | :---------: |
+| h1  |   Header    |
+|  p  |  Paragraph  |
+|  a  |   Anchor    |
+| br  | Line break  |
+
+{{</table>}}
