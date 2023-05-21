@@ -46,9 +46,9 @@ Some CLI tools are included:
 
 Various tweaks are made in the usual way of editing system files. The `airootfs` folder acts as an overlay and you can make these customizations here.
 
-To quote the Arch Wiki page for Archiso:
-
-> Any administrative task that you would do while following the installation guide (or after installation) can be scripted by editing `airootfs/root/customize_airootfs.sh`, except for package installation. The script is written from the perspective of the running live system, i.e. in the script the path / refers to the root of the running live system.
+{{<note>}}
+Any administrative task that you would do while following the installation guide (or after installation) can be scripted by editing `airootfs/root/customize_airootfs.sh`, except for package installation. The script is written from the perspective of the running live system, i.e. in the script the path / refers to the root of the running live system.
+{{</note>}}
 
 In `customize_airootfs.sh`, I do things like adding the live user, enabling systemd units, and sed'ing configs.
 

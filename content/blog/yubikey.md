@@ -16,7 +16,9 @@ Install the following packages:
 $ sudo pacman -S pam-u2f yubikey-manager libfido2
 ```
 
-> Make sure `pcscd.service` (PC/SC Smart Card Daemon) is enabled on Arch Linux.
+{{<note tip>}}
+Make sure `pcscd.service` (PC/SC Smart Card Daemon) is enabled on Arch Linux.
+{{</note>}}
 
 ### Fedora
 
