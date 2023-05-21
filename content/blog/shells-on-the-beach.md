@@ -98,7 +98,6 @@ I use `bat` as a replacment for `less` to provide syntaxt highlighting to files,
 
 As a long term user of `nano` for simple file edits in the terminal, `micro` is that and more. `micro` has intuitive shortcuts, like **CTRL+S** for saving. Syntax highlighting seems better than `nano` in my experience, and has more supported languages out-of-the-box. One of my favourite featues is that when saving a root-owned file, `micro` prompts you to save using `sudo`. This means never having to run `micro` as root, which is just more secure overall.
 
-
 # Conclusion
 
 There you have it, many of the CLI tools I use. Most of which are replacements for the usual coreutils.
@@ -107,12 +106,16 @@ Did you figure out what the ocean theme was? The **Fish** shell, is an obvious o
 
 # Installing
 
-| Arch Linux        | Fedora     | Ubuntu  |
-|:-----------------:|:----------:|:-------:|
-| `community/tilix` | `tilix`    | `tilix` |
-| `community/fish`  | `fish`     | `fish`  |
-| `aur/starship`    | `starship` | **NA**  |
-| `community/exa`   | `exa`      | `exa`   |
-| `community/pydf`  | `pydf`     | `pydf`  |
-| `community/bat`   | `bat`      | `bat`   |
-| `aur/micro`       | `micro`    | `micro` |
+{{<table>}}
+
+|   Arch Linux    |  Fedora  | Ubuntu |
+| :-------------: | :------: | :----: |
+| community/tilix |  tilix   | tilix  |
+| community/fish  |   fish   |  fish  |
+|  aur/starship   | starship | **NA** |
+|  community/exa  |   exa    |  exa   |
+| community/pydf  |   pydf   |  pydf  |
+|  community/bat  |   bat    |  bat   |
+|    aur/micro    |  micro   | micro  |
+
+{{</table>}}
