@@ -49,3 +49,23 @@ footer {
     }
   }
 }
+
+.not-found {
+  @extend .is-size-1-tablet;
+  @extend .is-size-3-mobile;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50%;
+
+  :nth-child(1) {
+    color: $red;
+    border-right: 2px solid $text;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+}
