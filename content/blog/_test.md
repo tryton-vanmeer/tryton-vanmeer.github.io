@@ -69,6 +69,14 @@ This is is **_italicized and bold_**
 1. item 4
 1. item 5
 
+## Tasks
+
+- [x] task 1
+- [x] task 2
+- [ ] task 3
+- [ ] task 4
+- [ ] task 5
+
 ---
 
 # Code
