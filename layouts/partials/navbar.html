@@ -15,9 +15,13 @@
   </div>
   <div id="navMenu" class="navbar-menu is-shadowless">
     <div class="navbar-end">
-      <span class="navbar-item">
-        <a href="/blog">Blog</a>
+      {{ $current := . }}
+      {{ range .Site.Menus.nav }}
+      {{ $active := cond (eq $current.Page.Title .Name) "is-active" "" }}
+      <span class="navbar-item {{ $active }}">
+        <a href="{{ .URL}}">{{ .Name }}</a>
       </span>
+      {{ end }}
     </div>
   </div>
 </nav>
