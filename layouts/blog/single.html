@@ -2,15 +2,13 @@
 
 {{ $date_colour := cond .Draft "has-text-danger" "" }}
 
-<section class="hero has-text-centered">
-  <div class="hero-body">
-    <p class="title">
-      {{ .Page.Title }}
-    </p>
-    <p class="subtitle {{ $date_colour }}">
-      {{ .Date.Format "Jan 1, 2006" }}
-    </p>
-  </div>
+<section class="has-text-centered">
+  <p class="title">
+    {{ .Page.Title }}
+  </p>
+  <p class="subtitle {{ $date_colour }}">
+    {{ .Date.Format "Jan 1, 2006" }}
+  </p>
 </section>
 
 <section class="section">
