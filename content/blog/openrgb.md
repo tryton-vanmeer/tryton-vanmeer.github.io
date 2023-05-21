@@ -29,8 +29,8 @@ WantedBy=graphical-session.target
 
 {{<table>}}
 
-| Arch Linux    | Fedora | Ubuntu |
-|:-------------:|:------:|:------:|
-| aur/openrgb | **NA** | **NA** |
+| Arch Linux  | Fedora  | Ubuntu |
+| :---------: | :-----: | :----: |
+| aur/openrgb | openrgb | **NA** |
 
 {{</table>}}
