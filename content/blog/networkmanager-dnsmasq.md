@@ -29,5 +29,5 @@ nameserver 127.0.0.1
 
 # What to Configure Next
 
-- [libvirtd](/posts/networkmanager-dnsmasq-libvirtd/)
-- [NGINX + localhost](/posts/networkmanager-dnsmasq-nginx-localhost/)
+- [libvirtd](../networkmanager-dnsmasq-libvirtd/)
+- [NGINX + localhost](../networkmanager-dnsmasq-nginx-localhost/)

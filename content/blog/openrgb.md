@@ -11,7 +11,7 @@ It doesn't depend on the software of manufacturers, and allows you to control th
 
 OpenRGB gives you the ability to save and load profiles. This can be done in the GUI or through the CLI using `openrgb --profile filename.orp`.
 
-You can also programmatically configure devices on the CLI. I use this since I just want to set every device to red on startup. I do this as explained in [Running Services on Login with systemd](/posts/2020-11-10-running-services-on-login-with-systemd/). The complete `openrgb.service` is as follows:
+You can also programmatically configure devices on the CLI. I use this since I just want to set every device to red on startup. I do this as explained in [Running Services on Login with systemd](../running-services-on-login-with-systemd/). The complete `openrgb.service` is as follows:
 
 ```systemd
 [Unit]

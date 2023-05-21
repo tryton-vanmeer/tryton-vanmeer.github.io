@@ -110,14 +110,14 @@ Did you figure out what the ocean theme was? The **Fish** shell, is an obvious o
 
 {{<table>}}
 
-|   Arch Linux    |  Fedora  | Ubuntu |
-| :-------------: | :------: | :----: |
-| community/tilix |  tilix   | tilix  |
-| community/fish  |   fish   |  fish  |
-|  aur/starship   | starship | **NA** |
-|  community/exa  |   exa    |  exa   |
-| community/pydf  |   pydf   |  pydf  |
-|  community/bat  |   bat    |  bat   |
-|    aur/micro    |  micro   | micro  |
+| Arch Linux |  Fedora  | Ubuntu |
+| :--------: | :------: | :----: |
+|   tilix    |  tilix   | tilix  |
+|    fish    |   fish   |  fish  |
+|  starship  | starship | **NA** |
+|    exa     |   exa    |  exa   |
+|    pydf    |   pydf   |  pydf  |
+|    bat     |   bat    |  bat   |
+|   micro    |  micro   | micro  |
 
 {{</table>}}

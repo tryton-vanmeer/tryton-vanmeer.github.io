@@ -4,7 +4,7 @@ date = "2020-11-10"
 description = "systemd is great for managing system services, so why not extend its capabilities to running things on login."
 +++
 
-systemd is great for managing system services, so why not extend its capabilities to running things on login. Doing this allows you to take advantage of systemd's features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.
+`systemd` is great for managing system services, so why not extend its capabilities to running things on login. Doing this allows you to take advantage of systemd's features like restarting on failure for long-running daemons, or using slices/cgroups for resource managment.
 
 My unit files are simple since I'm running oneshot commands.
 
