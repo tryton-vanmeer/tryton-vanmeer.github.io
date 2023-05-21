@@ -11,6 +11,14 @@ $family-primary: "Roboto", sans-serif;
 nav {
   padding: 1rem 2rem;
 
+  .navbar-brand {
+    a {
+      &:hover {
+        color: $danger;
+      }
+    }
+  }
+
   .navbar-item {
     a {
       color: inherit;
