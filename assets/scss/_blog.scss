@@ -1,3 +1,10 @@
 #blog-content {
-
+  :not(pre)>code {
+    padding: 2px 4px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    color: inherit;
+  }
 }
