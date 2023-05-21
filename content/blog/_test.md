@@ -126,3 +126,23 @@ This [link](# "Hi!") has a title.
 | br  | Line break  |
 
 {{</table>}}
+
+# Notes
+
+## Info
+
+{{<note>}}
+This is a note.
+{{</note>}}
+
+## Tip
+
+{{<note tip>}}
+This is a note.
+{{</note>}}
+
+## Warning
+
+{{<note warning>}}
+This is a note.
+{{</note>}}
