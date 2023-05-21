@@ -1,0 +1,10 @@
+baseURL = "https://trytonvanmeer.dev/"
+title = "Tryton"
+languageCode = "en-us"
+pygmentsUseClasses = true
+
+[menu]
+[[menu.nav]]
+name = "Blog"
+url = "/blog/"
+weight = 1

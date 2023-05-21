@@ -1,0 +1,27 @@
+#blog-content {
+  :not(pre)>code {
+    padding: 2px 4px;
+    border-radius: $radius;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    color: inherit;
+  }
+
+  .highlight {
+    margin-bottom: 1rem;
+
+    .chroma {
+      border-radius: $radius;
+    }
+  }
+
+  a {
+    &::after {
+      font-family: 'Font Awesome 6 Free';
+      font-size: 0.75rem;
+      font-variant-position: super;
+      content: " \f08e"
+    }
+  }
+}

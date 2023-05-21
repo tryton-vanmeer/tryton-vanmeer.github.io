@@ -1,57 +1,23 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#121212">
-        {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-        {{ $styles := resources.Get "scss/main.scss" | resources.ToCSS $options | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
-        <title>{{ .Title }}</title>
-    </head>
 
-    <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+  {{ $styles := resources.Get "scss/main.scss" | resources.ToCSS $options | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+  <title>{{ .Title }}</title>
+</head>
 
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="{{ .Site.BaseURL }}">
-                    <h1 class="title">
-                        <span class="text-red">𝝺</span> {{ .Site.Title }}
-                    </h1>
-                </a>
+<body>
+  {{ partial "navbar.html" . }}
 
-                <a id="navbar-burger" class="navbar-burger burger" role="button" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
+  <main>
+    {{ block "main" . }} {{ end }}
+  </main>
 
-            <div id="navbar-menu" class="navbar-menu has-text-centered">
-                <div class="navbar-end">
-                    <a class="navbar-item" href="https://github.com/tryton-vanmeer">
-                        GitHub
-                    </a>
-                    <a class="navbar-item" href="https://trytonvanmeer.dev/Resume/resume.pdf">
-                        Resume
-                    </a>
-                    <a class="navbar-item" href="mailto:hello@trytonvanmeer.dev">
-                        Email
-                    </a>
-                </div>
-            </div>
-        </nav>
+  {{ partial "footer.html" . }}
+</body>
 
-        <main>
-            {{ block "main" . }} {{ end }}
-        </main>
-
-        <footer class="has-text-centered">
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">© 2020 Tryton Van Meer</a>
-            <a href="https://github.com/tryton-vanmeer/tryton-vanmeer.github.io">[Source]</a>
-        </footer>
-
-        {{ $scripts := resources.Get "js/main.js" | fingerprint }}
-        <script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
-    </body>
 </html>

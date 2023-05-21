@@ -1,15 +1,9 @@
 {{ define "main" }}
 
-<div class="container has-text-centered subtitle">
-  Canadian who loves Linux and all things computers.
-</div>
-
 <section class="section">
   <div class="container">
 
-    <p class="title">Recent Posts</p>
-
-    {{ range first 5 (where .Site.RegularPages "Type" "blog") }}
+    {{ range .Pages }}
     <div class="mb-4">
       <div>
         {{ if .Draft }}

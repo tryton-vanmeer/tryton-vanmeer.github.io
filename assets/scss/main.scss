@@ -1,8 +1,71 @@
-@import "fonts";
-@import "colors";
+$family-primary: "Roboto", sans-serif;
 
-@import "../../node_modules/bulma/bulma";
+@import "../vendor/bulma/bulma";
+@import "../vendor/bulma-prefers-dark/bulma-prefers-dark";
 
-@import "elements";
+@import "font-awesome";
+
 @import "syntax";
-@import "posts";
+@import "blog";
+
+nav {
+  padding: 1rem 2rem;
+
+  .navbar-brand {
+    a {
+      &:hover {
+        color: $danger;
+      }
+    }
+  }
+
+  .navbar-item {
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $link;
+      }
+    }
+  }
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  main {
+    flex: 1;
+  }
+}
+
+footer {
+  a.icon {
+    color: inherit;
+
+    &:hover {
+      color: $link;
+    }
+  }
+}
+
+.not-found {
+  @extend .is-size-1-tablet;
+  @extend .is-size-3-mobile;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50%;
+
+  :nth-child(1) {
+    color: $red;
+    border-right: 2px solid $text;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+}
