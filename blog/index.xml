@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tryton</title>
-    <link>https://trytonvanmeer.dev/</link>
-    <description>Recent content on Tryton</description>
+    <title>Blog on Tryton</title>
+    <link>https://trytonvanmeer.dev/blog/</link>
+    <description>Recent content in Blog on Tryton</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shells on the Beach 🦀 🏖️ 🐟</title>
       <link>https://trytonvanmeer.dev/blog/shells-on-the-beach/</link>
