@@ -1,5 +1,4 @@
 baseURL = "https://trytonvanmeer.dev/"
 title = "Tryton"
 languageCode = "en-us"
-buildDrafts = true
 pygmentsUseClasses = true
