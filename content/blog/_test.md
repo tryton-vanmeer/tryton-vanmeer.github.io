@@ -83,6 +83,11 @@ fn main() {
 }
 ```
 
+```python
+if __name__ == "__main__":
+    print("Hello, World!")
+```
+
 # Links
 
 This website is powered by [Bulma](https://bulma.io).
