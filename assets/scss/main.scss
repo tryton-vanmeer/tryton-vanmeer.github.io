@@ -1,6 +1,9 @@
 $family-primary: "Roboto", sans-serif;
 
 @import "../vendor/bulma/bulma";
+
+$blue-light: hsl(209, 71%, 63%);
+$link-dark: $blue-light;
 @import "../vendor/bulma-prefers-dark/bulma-prefers-dark";
 
 @import "font-awesome";
@@ -24,7 +27,7 @@ nav {
       color: inherit;
 
       &:hover {
-        color: $link;
+        color: $link-dark;
       }
     }
   }
@@ -45,7 +48,7 @@ footer {
     color: inherit;
 
     &:hover {
-      color: $link;
+      color: $link-dark;
     }
   }
 }
