@@ -15,13 +15,4 @@
       border-radius: $radius;
     }
   }
-
-  a {
-    &::after {
-      font-family: 'Font Awesome 6 Free';
-      font-size: 0.75rem;
-      font-variant-position: super;
-      content: " \f08e"
-    }
-  }
 }
