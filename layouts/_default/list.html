@@ -1,7 +1,15 @@
 {{ define "main" }}
 
-<div class="container content">
-  {{ .Content }}
-</div>
+<section class="has-text-centered">
+  <p class="title">
+    {{ .Page.Title }}
+  </p>
+</section>
+
+<section class="section">
+  <div class="container content">
+    {{ .Content }}
+  </div>
+</section>
 
 {{ end }}

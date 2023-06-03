@@ -2,8 +2,6 @@
 title = "About"
 +++
 
-# About {.has-text-centered}
-
 Developer based in Ottawa with experience in various technologies.
 
 Pro-FOSS Linux user.
