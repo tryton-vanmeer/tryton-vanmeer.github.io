@@ -5,6 +5,21 @@
 </div>
 
 <div class="container">
+  <p class="title">Projects</p>
+
+  {{ range $.Site.Data.projects.project }}
+  <div class="mb-4">
+    <a class="is-size-4-tablet has-text-weight-bold" href="{{ .url }}">
+      {{ .name }}
+    </a>
+    <div>
+      {{ .description }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+<div class="container">
   <p class="title">Recent Posts</p>
 
   {{ range first 5 (where .Site.RegularPages "Type" "blog") }}
