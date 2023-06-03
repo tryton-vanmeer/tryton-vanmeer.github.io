@@ -24,3 +24,13 @@ and my resume and can be viewed
 **Font** JetBrains Mono\
 **Colour Scheme** Dracula\
 **Editor** VSCodium
+
+
+## This Website
+
+Was built with [Hugo](https://gohugo.io) and [Bulma](https://bulma.io)
+
+The [code](https://github.com/tryton-vanmeer/tryton-vanmeer.github.io)
+is licensed under GPLv3.
+
+The content is [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0).
