@@ -16,7 +16,7 @@ and my resume and can be viewed
 
 ## Software & Tools
 
-**Operating System** Fedora Workstation
+**Operating System** Fedora Workstation\
 **Desktop Environment** GNOME\
 **Shell** Fish\
 **Font** JetBrains Mono\
