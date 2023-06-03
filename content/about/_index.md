@@ -22,6 +22,10 @@ Hello, World!
 **Microphone** Audio-Technica AT2020USB+\
 **Operating System** Fedora Linux
 
+### Steam Deck
+
+**Storage** 512GB
+
 ## Software & Tools
 
 **Desktop Environment** GNOME\
