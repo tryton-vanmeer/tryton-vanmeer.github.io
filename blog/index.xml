@@ -6,7 +6,17 @@
     <description>Recent content in Blog on Tryton</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://trytonvanmeer.dev/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Got Into Linux</title>
+      <link>https://trytonvanmeer.dev/blog/how-i-got-into-linux/</link>
+      <pubDate>Fri, 16 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://trytonvanmeer.dev/blog/how-i-got-into-linux/</guid>
+      <description>As of this post, I have been a Linux user of some kind for at least 13 years. I wanted to document how I started using Linux and how I got to where I am now. I&amp;rsquo;ll be covering the important milestones, since my memory of the specifics is a bit fuzzy.
+First Personal Computer I&amp;rsquo;ve been into computers since the moment I started using them. For the longest time, the only computer I&amp;rsquo;ve used is someone else&amp;rsquo;s, such as the shared family computer.</description>
+    </item>
+    
     <item>
       <title>Shells on the Beach 🦀 🏖️ 🐟</title>
       <link>https://trytonvanmeer.dev/blog/shells-on-the-beach/</link>
