@@ -12,7 +12,7 @@ about their design and mechanics.
 I can be reached at
 [hello@tryton.thelux.family](mailto:hello@tryton.thelux.family)
 and my resume and can be viewed
-[here](https://trytonvanmeer.dev/Resume/resume.pdf).
+[here](https://www.tryton.thelux.family/Resume/resume.pdf).
 
 ## Software & Tools
 
