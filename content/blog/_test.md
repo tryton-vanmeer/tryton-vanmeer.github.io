@@ -159,3 +159,7 @@ This is a tip.
 {{<note warning>}}
 This is a warning.
 {{</note>}}
+
+# Keyboard Shortcuts
+
+Press {{<key ctrl>}} + {{<key alt>}} + {{<key t>}} to open a terminal.

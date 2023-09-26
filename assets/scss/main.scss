@@ -51,6 +51,21 @@ footer {
   }
 }
 
+kbd {
+  display: inline-block;
+  color: #555;
+  background: #eee;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  padding: 0px 4px;
+  margin: 2px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #777;
+  vertical-align: text-bottom;
+}
+
 .not-found {
   @extend .is-size-1-tablet;
   @extend .is-size-3-mobile;
