@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Tryton</title>
-    <link>https://www.tryton.thelux.family/about/</link>
+    <link>https://www.trytonlux.ca/about/</link>
     <description>Recent content in About on Tryton</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://www.tryton.thelux.family/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.trytonlux.ca/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
