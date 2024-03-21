@@ -1,21 +1,6 @@
-:not(pre)>code {
-  padding: 2px 4px;
-  border-radius: $radius;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  word-break: keep-all;
-  color: inherit;
-}
-
-.highlight {
-  margin-bottom: 1rem;
-
-  .chroma {
-    border-radius: $radius;
-  }
-}
-
-// chroma styling
+/*
+  Chroma Styling - Dracula
+*/
 
 /* Background */ .bg { color: #f8f8f2 !important; background-color: #282a36 !important; }
 /* PreWrapper */ .chroma { color: #f8f8f2 !important; background-color: #282a36 !important; }
