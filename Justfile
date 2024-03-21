@@ -4,6 +4,3 @@ serve:
   --appendPort=false \
   --liveReloadPort=443 \
   --buildDrafts
-
-submodules:
-  git submodule update --init
