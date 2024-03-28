@@ -1,5 +1,5 @@
 {{ $scripts := resources.Get "js/navbar.js" | fingerprint }}
-<script src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
+<script defer src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
