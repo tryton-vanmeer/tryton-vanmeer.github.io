@@ -18,7 +18,7 @@ I can be reached at
 **Desktop Environment** GNOME\
 **Shell** Fish\
 **Font** JetBrains Mono\
-**Colour Scheme** Dracula\
+**Colour Scheme** Catppuccin Mocha\
 **Editor** VSCodium
 
 
