@@ -10,7 +10,7 @@ Passionate about video and tabletop games. Love playing them and talking
 about their design and mechanics.
 
 I can be reached at
-[hello@tryton.thelux.family](mailto:hello@tryton.thelux.family).
+[hello@trytonlux.ca](mailto:hello@trytonlux.ca).
 
 ## Software & Tools
 
