@@ -21,6 +21,10 @@ kbd {
   vertical-align: text-bottom;
 }
 
+.navbar-item {
+  line-height: 1;
+}
+
 .not-found {
   display: flex;
   justify-content: center;
