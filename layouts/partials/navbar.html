@@ -17,11 +17,15 @@
 
   <div id="navMenu" class="navbar-menu">
     <div class="navbar-end">
-      {{ $current := . }}
-      {{ range .Site.Menus.nav }}
-      {{ $active := cond (eq $current.Page.Title .Name) "is-selected" "" }}
-        <a class="navbar-item {{ $active }}" href="{{ .URL}}">{{ .Name }}</a>
-      {{ end }}
+      {{ $is_about := cond (eq .Page.Title "About") "is-selected" "" }}
+      <a class="navbar-item {{ $is_about }}" href="/about">
+        About
+      </a>
+
+      {{ $is_blog := cond (eq .Page.Title "Blog") "is-selected" "" }}
+      <a class="navbar-item {{ $is_blog }}" href="/blog">
+        Blog
+      </a>
     </div>
   </div>
 </nav>
