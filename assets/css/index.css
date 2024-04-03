@@ -25,6 +25,12 @@ kbd {
   line-height: 1;
 }
 
+.navbar-menu.is-active {
+  position: absolute;
+  width: 100%;
+  background-color: var(--bulma-scheme-main-bis);
+}
+
 .not-found {
   display: flex;
   justify-content: center;
