@@ -33,19 +33,12 @@ kbd {
 
 .not-found {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 50%;
-  font-size: 8vw;
+  font-size: 3rem;
 
   :nth-child(1) {
     color: var(--bulma-danger);
-    border-right: 2px solid var(--bulma-text);
-    padding-right: 1rem;
-    margin-right: 1rem;
   }
 }
 
