@@ -63,7 +63,7 @@ software and is upstream first. Most of Fedora Workstations defaults are how I
 was configuring or doing things in Arch anyway. I figured why not use a
 distribution that aligns with me and is less work.
 
-That concludes my journy from the beginning. From trying to solve a tech problem
-to becoming a pro-FOSS Linux user. My distro journy was a bit unusual, and I do
+That concludes my journey from the beginning. From trying to solve a tech problem
+to becoming a pro-FOSS Linux user. My distro journey was a bit unusual, and I do
 regret never using the canonical (🥁) Ubuntu flavour and experiencing Unity. But,
 I eventually settled into my two go-to distros: Fedora Workstation and Arch Linux.
